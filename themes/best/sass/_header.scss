@@ -3,5 +3,56 @@
 .site-header {
     width: 100%;
     height: 56px;
-    background-color: $color_main;
+    background-color: $color__main;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .main-navigation {
+        width: 63px;
+        height: 56px;
+        display: flex; 
+        align-items: center;
+        .hamburger-menu {
+            width: 24px;
+            height: 24px;
+            margin: 0 auto;
+            div {
+                width: 22px;
+                height: 0.33px;
+                border: 1px solid $color__header;
+                box-sizing: border-box;
+                margin: 0 auto 8px;
+            }
+        }
+    }
+    .best-header-logo {
+        height: 28px;
+        width: 73px;
+    }
+}
+
+/* Search Form */ 
+
+.search-form {
+    display: flex;
+    align-items: center;
+    .search-field {
+        margin-right: 8px;
+        border-radius: 16px;
+    }
+    .search-submit {
+        width: 24px;
+        height: 24px;
+        margin-right: 26px;
+        border: none;
+        box-shadow: none;
+        background: none;
+        border-radius: unset;
+        text-shadow: none;
+        padding: unset;
+        button :hover {
+            box-shadow: none;
+            border-color: none;
+        }
+    }
 }
