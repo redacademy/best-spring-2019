@@ -767,10 +767,12 @@ object {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center; 
+  }
   .search-form .search-field {
     margin-right: 8px;
-    border-radius: 16px; }
+    border-radius: 16px; 
+  }
   .search-form .search-submit {
     width: 24px;
     height: 24px;
@@ -781,8 +783,20 @@ object {
     background: none;
     border-radius: unset;
     text-shadow: none;
-    padding: unset; }
-    .search-form .search-submit button :hover {
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      border-color: none; }
+    padding: unset; 
+  }
+  .search-form .search-submit button :hover {
+    -webkit-box-shadow: none;
+      box-shadow: none;
+      border-color: none; 
+    }
+
+.site-footer {
+  background: #e7e7e7;
+  width: 100%;
+  height: 190px; }
+  .site-footer .best-footer-logo {
+    width: 114px;
+    height: 44px; }
+  .site-footer .social-media {
+    text-align: right; }
