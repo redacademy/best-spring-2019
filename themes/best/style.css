@@ -227,71 +227,71 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-Light.eot");
-  src: url("../Assets/fonts/JosefinSans-Light.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-Light.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-Light.woff") format("woff"), url("../Assets/fonts/JosefinSans-Light.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-Light.eot");
+  src: url("../../Assets/fonts/JosefinSans-Light.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Light.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Light.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-ThinItalic.eot");
-  src: url("../Assets/fonts/JosefinSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-ThinItalic.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-ThinItalic.woff") format("woff"), url("../Assets/fonts/JosefinSans-ThinItalic.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-ThinItalic.eot");
+  src: url("../../Assets/fonts/JosefinSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-ThinItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-ThinItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-Italic.eot");
-  src: url("../Assets/fonts/JosefinSans-Italic.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-Italic.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-Italic.woff") format("woff"), url("../Assets/fonts/JosefinSans-Italic.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-Italic.eot");
+  src: url("../../Assets/fonts/JosefinSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Italic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Italic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-Thin.eot");
-  src: url("../Assets/fonts/JosefinSans-Thin.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-Thin.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-Thin.woff") format("woff"), url("../Assets/fonts/JosefinSans-Thin.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-Thin.eot");
+  src: url("../../Assets/fonts/JosefinSans-Thin.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Thin.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Thin.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-Regular.eot");
-  src: url("../Assets/fonts/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-Regular.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-Regular.woff") format("woff"), url("../Assets/fonts/JosefinSans-Regular.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-Regular.eot");
+  src: url("../../Assets/fonts/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Regular.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Regular.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-SemiBold.eot");
-  src: url("../Assets/fonts/JosefinSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-SemiBold.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-SemiBold.woff") format("woff"), url("../Assets/fonts/JosefinSans-SemiBold.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-SemiBold.eot");
+  src: url("../../Assets/fonts/JosefinSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-SemiBold.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-SemiBold.woff") format("woff"), url("../../Assets/fonts/JosefinSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-SemiBoldItalic.eot");
-  src: url("../Assets/fonts/JosefinSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-SemiBoldItalic.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-SemiBoldItalic.woff") format("woff"), url("../Assets/fonts/JosefinSans-SemiBoldItalic.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-SemiBoldItalic.eot");
+  src: url("../../Assets/fonts/JosefinSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-SemiBoldItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-SemiBoldItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-BoldItalic.eot");
-  src: url("../Assets/fonts/JosefinSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-BoldItalic.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-BoldItalic.woff") format("woff"), url("../Assets/fonts/JosefinSans-BoldItalic.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-BoldItalic.eot");
+  src: url("../../Assets/fonts/JosefinSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-BoldItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-BoldItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-LightItalic.eot");
-  src: url("../Assets/fonts/JosefinSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-LightItalic.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-LightItalic.woff") format("woff"), url("../Assets/fonts/JosefinSans-LightItalic.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-LightItalic.eot");
+  src: url("../../Assets/fonts/JosefinSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-LightItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-LightItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../Assets/fonts/JosefinSans-Bold.eot");
-  src: url("../Assets/fonts/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"), url("../Assets/fonts/JosefinSans-Bold.woff2") format("woff2"), url("../Assets/fonts/JosefinSans-Bold.woff") format("woff"), url("../Assets/fonts/JosefinSans-Bold.ttf") format("truetype");
+  src: url("../../Assets/fonts/JosefinSans-Bold.eot");
+  src: url("../../Assets/fonts/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Bold.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Bold.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -438,13 +438,6 @@ input[type='submit'] {
   line-height: 1;
   padding: 0.6rem 1rem 0.4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type='button']:hover,
-  input[type='reset']:hover,
-  input[type='submit']:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
   input[type='button']:active,
   input[type='button']:focus,
@@ -733,4 +726,63 @@ object {
 .site-header {
   width: 100%;
   height: 56px;
-  background-color: #228f7a; }
+  background-color: #228f7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-header .main-navigation {
+    width: 63px;
+    height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .site-header .main-navigation .hamburger-menu {
+      width: 24px;
+      height: 24px;
+      margin: 0 auto; }
+      .site-header .main-navigation .hamburger-menu div {
+        width: 22px;
+        height: 0.33px;
+        border: 1px solid white;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin: 0 auto 8px; }
+  .site-header .best-header-logo {
+    height: 28px;
+    width: 73px; }
+
+/* Search Form */
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .search-form .search-field {
+    margin-right: 8px;
+    border-radius: 16px; }
+  .search-form .search-submit {
+    width: 24px;
+    height: 24px;
+    margin-right: 26px;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: none;
+    border-radius: unset;
+    text-shadow: none;
+    padding: unset; }
+    .search-form .search-submit button :hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-color: none; }
