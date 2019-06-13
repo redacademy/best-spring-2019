@@ -303,8 +303,8 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: Josefin Sans, sans-serif;
+  color: #000;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -482,17 +482,16 @@ textarea {
 # Navigation
 --------------------------------------------------------------*/
 /* Links */
-a:visited {
-  color: purple; }
-
-a:hover, a:focus, a:active {
-  color: #176f5d; }
-
-a:focus {
-  outline: thin dotted; }
-
-a:hover, a:active {
-  outline: 0; }
+a {
+  color: none; }
+  a:visited {
+    color: purple; }
+  a:hover, a:focus, a:active {
+    color: #176f5d; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
 
 /* Menus */
 .main-navigation {
@@ -595,12 +594,10 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .alignleft {
   display: inline;
-  float: left;
   margin-right: 1.5rem; }
 
 .alignright {
   display: inline;
-  float: right;
   margin-left: 1.5rem; }
 
 .aligncenter {
@@ -614,7 +611,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .clearfix {
   clear: both;
-  content: "";
+  content: '';
   display: table; }
 
 /*--------------------------------------------------------------
@@ -767,12 +764,10 @@ object {
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; 
-  }
+          align-items: center; }
   .search-form .search-field {
     margin-right: 8px;
-    border-radius: 16px; 
-  }
+    border-radius: 16px; }
   .search-form .search-submit {
     width: 24px;
     height: 24px;
@@ -783,13 +778,11 @@ object {
     background: none;
     border-radius: unset;
     text-shadow: none;
-    padding: unset; 
-  }
-  .search-form .search-submit button :hover {
-    -webkit-box-shadow: none;
-      box-shadow: none;
-      border-color: none; 
-    }
+    padding: unset; }
+    .search-form .search-submit button :hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-color: none; }
 
 .site-footer {
   background: #e7e7e7;

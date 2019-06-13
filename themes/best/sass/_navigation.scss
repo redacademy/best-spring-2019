@@ -5,8 +5,7 @@
 /* Links */
 
 a {
-<<<<<<< HEAD
-  // color: $color__link;
+  color: $color__link;
 
   &:visited {
     color: $color__link-visited;
@@ -23,25 +22,6 @@ a {
   &:active {
     outline: 0;
   }
-=======
-	// color: $color__link;
-
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
-	&:focus {
-		outline: thin dotted;
-	}
-	&:hover,
-	&:active {
-		outline: 0;
-	}
->>>>>>> f30f818eb4c4e3c69d7c8b37178f527e551cdbe2
 }
 
 /* Menus */
