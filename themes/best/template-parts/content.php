@@ -25,15 +25,6 @@
 
 
 	<div class="entry-content">
-		<?php the_excerpt(); ?>
-		<div class="main-carousel">
-  <div class="carousel-cell">
-  <img src="../assets/Images/star-logo.png"</div>
-  <div class="carousel-cell">...</div>
-  <div class="carousel-cell">...</div>
-  ...
-</div>
+
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
-<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-	<script src="/path/to/flickity.pkgd.min.js"></script>

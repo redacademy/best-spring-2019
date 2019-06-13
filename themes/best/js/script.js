@@ -9,6 +9,10 @@
           searchBar.toggle('show');
           searchBar.focus();
         });
-    
+        $('.main-carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true
+        });
     });
 })(jQuery);
