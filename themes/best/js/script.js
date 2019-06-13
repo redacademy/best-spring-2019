@@ -9,6 +9,12 @@
           searchBar.toggle('show');
           searchBar.focus();
         });
-    
+
+        searchBar.on('blur', function(event) {
+            event.preventDefault();
+            if ( searchBar.val() === '' ) {
+                searchBar.hide('slide');
+            }
+        });
     });
 })(jQuery);
