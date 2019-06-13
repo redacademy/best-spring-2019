@@ -16,5 +16,11 @@
                 searchBar.hide('slide');
             }
         });
+
+        $('.main-carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true
+        });
     });
 })(jQuery);
