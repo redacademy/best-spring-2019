@@ -392,7 +392,11 @@ ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  ul a {
+    text-decoration: none; }
 
 ol {
   list-style: decimal; }
@@ -407,12 +411,6 @@ dt {
 
 dd {
   margin: 0 1.5rem 1.5rem; }
-
-img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
-  max-width: 100%;
-  /* Adhere to container width. */ }
 
 table {
   margin: 0 0 1.5rem;
@@ -631,7 +629,6 @@ a {
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -884,16 +881,33 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-footer {
+  padding: 20px;
   background: #e7e7e7;
   width: 100%;
-  height: 190px; }
-  .site-footer .best-footer-logo {
-    width: 114px;
-    height: 44px; }
-  .site-footer .social-media {
-    text-align: right; }
-  .site-footer .menu-item-222 {
-    list-style-type: none; }
+  height: auto; }
+  .site-footer .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .site-footer .social-media-icons span {
+    font-size: 30px; }
+    .site-footer .social-media-icons span .follow-text {
+      padding: 0;
+      margin: 0; }
+  .site-footer .major-sponsor-text {
+    font-weight: 400;
+    color: #404040;
+    text-align: center; }
+  .site-footer .translink-logo-grey {
+    width: 70%;
+    margin-left: 50px; }
 
 .tab-content {
   display: none; }
