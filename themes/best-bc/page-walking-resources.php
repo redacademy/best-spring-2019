@@ -22,28 +22,21 @@ get_header(); ?>
                 <?php $tabs = CFS()->get('tab_menu_tab');
                 foreach ($tabs as $tab) :
                     $tab_title =  $tab['tab_menu_title'];
-                    $tab_body =  $tab['tab_menu_body']; ?>
+                    ?>
                     <li><a href="#" class="tab-link"><?php echo $tab_title; ?></a></li>
                 <?php endforeach; ?>
             </ul>
             <div class="tab-content-wrapper">
                 <?php $tabs = CFS()->get('tab_menu_tab');
                 foreach ($tabs as $tab) :
-                    echo $tab['tab_menu_title'];
-                    echo $tab['tab_menu_body']; ?>
+                    $tab_title =  $tab['tab_menu_title'];
+                    $tab_body =  $tab['tab_menu_body'];
+                    ?>
                     <div class="tab-content">
-                        <h2>Tab 1</h2>
-                        <p>Some content here</p>
+                        <h2><?php echo $tab_title ?></h2>
+                        <p><?php echo $tab_body ?></p>
                     </div>
-                    <div class="tab-content">
-                        <h2>Tab 2</h2>
-                        <p>Some content here</p>
-                    </div>
-                    <div class="tab-content">
-                        <h2>Tab 3</h2>
-                        <p>Some content here</p>
-                    </div>
-                    <!-- endforeach; -->
+
                 <?php endforeach; ?>
             </div>
         </div>

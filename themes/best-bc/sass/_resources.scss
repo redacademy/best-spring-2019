@@ -1,5 +1,18 @@
 //Walking, Biking, Transit
 
+.page {
+  .tabs {
+    width: 90%;
+    margin: auto auto 25px auto;
+    padding: 10px 50px 25px 50px;
+    border: 2px solid #228f7a;
+    border-radius: 12px;
+  }
+  h2 {
+    padding-left: 50px;
+  }
+}
+
 .tab-content {
   display: none;
   &:first-child {
@@ -11,9 +24,12 @@
   padding: 0;
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .tab-link {
   padding: 1rem;
   text-decoration: none;
+  font-size: 1.5rem;
 }
