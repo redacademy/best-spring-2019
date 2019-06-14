@@ -418,6 +418,71 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+/* Header */
+.site-header {
+  width: 100%;
+  height: 56px;
+  background-color: #228f7a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .site-header .main-navigation {
+    width: 63px;
+    height: 56px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .site-header .main-navigation .hamburger-menu {
+      width: 24px;
+      height: 24px;
+      margin: 0 auto; }
+      .site-header .main-navigation .hamburger-menu div {
+        width: 22px;
+        height: 0.33px;
+        border: 1px solid white;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        margin: 0 auto 8px; }
+  .site-header .best-header-logo {
+    height: 28px;
+    width: 73px; }
+
+/* Search Form */
+.search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .search-form .search-field {
+    margin-right: 8px;
+    border-radius: 16px; }
+  .search-form .search-submit {
+    width: 24px;
+    height: 24px;
+    margin-right: 26px;
+    border: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: none;
+    border-radius: unset;
+    text-shadow: none;
+    padding: unset; }
+    .search-form .search-submit button :hover {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      border-color: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -617,6 +682,43 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.involved-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-rows: 250px;
+  grid-gap: 20px 20px;
+  height: 30vw;
+  padding: 0;
+  margin: 0; }
+
+.donate-and-member-block {
+  width: 100%; }
+
+.sponsor-and-volunteer-block {
+  width: 100%; }
+
+.donate {
+  background-image: url(../../assets/Images/HomepageDonateCard.jpg);
+  height: 100%;
+  background-size: cover; }
+
+.membership {
+  background-image: url(../../assets/Images/HomePageMembershipCard.jpg);
+  height: 100%;
+  background-size: cover; }
+
+.sponsor {
+  background-image: url(../../assets/Images/HomePageSponsorCard.jpg);
+  height: 100%;
+  background-size: cover; }
+
+.volunteer {
+  background-image: url(../../assets/Images/HomePageVolunteerCard.jpg);
+  height: 100%;
+  background-size: cover; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -719,71 +821,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-/* Header */
-.site-header {
-  width: 100%;
-  height: 56px;
-  background-color: #228f7a;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .site-header .main-navigation {
-    width: 63px;
-    height: 56px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .site-header .main-navigation .hamburger-menu {
-      width: 24px;
-      height: 24px;
-      margin: 0 auto; }
-      .site-header .main-navigation .hamburger-menu div {
-        width: 22px;
-        height: 0.33px;
-        border: 1px solid white;
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-        margin: 0 auto 8px; }
-  .site-header .best-header-logo {
-    height: 28px;
-    width: 73px; }
-
-/* Search Form */
-.search-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .search-form .search-field {
-    margin-right: 8px;
-    border-radius: 16px; }
-  .search-form .search-submit {
-    width: 24px;
-    height: 24px;
-    margin-right: 26px;
-    border: none;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    background: none;
-    border-radius: unset;
-    text-shadow: none;
-    padding: unset; }
-    .search-form .search-submit button :hover {
-      -webkit-box-shadow: none;
-              box-shadow: none;
-      border-color: none; }
-
 .site-footer {
   background: #e7e7e7;
   width: 100%;
@@ -793,3 +830,5 @@ object {
     height: 44px; }
   .site-footer .social-media {
     text-align: right; }
+  .site-footer .menu-item-222 {
+    list-style-type: none; }
