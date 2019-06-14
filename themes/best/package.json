@@ -2,7 +2,9 @@
   "name": "redstarter",
   "version": "1.1.0",
   "description": "A starter theme for RED students, based on Underscores.",
-  "dependencies": {},
+  "dependencies": {
+    "flickity": "^2.2.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
