@@ -1,5 +1,5 @@
 /*!
-Theme Name: Best Theme
+Theme Name: Best BC
 Theme URI: http://underscores.me/
 Author: Jeff, Vincent, Rishab, Tenzin
 Author URI: http://www.redacademy.com
@@ -855,3 +855,19 @@ object {
     height: 44px; }
   .site-footer .social-media {
     text-align: right; }
+
+.tab-content {
+  display: none; }
+  .tab-content:first-child {
+    display: block; }
+
+.tab-nav {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.tab-link {
+  padding: 1rem;
+  text-decoration: none; }
