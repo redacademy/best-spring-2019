@@ -31,21 +31,33 @@
     const headerNav = $('.header-primary-menu');
       headerSlider.on('click', function(event) {
       event.preventDefault();
-      headerSlider.toggleClass('.open');
-      if (headerSlider.toggleClass('open')) {
-        event.preventDefault();
+      $(this).toggleClass('active');
+      headerSlider.toggleClass('open');
+      if (headerSlider.hasClass('open')) {
         headerNav.show();
-      } 
+      } else {
+        headerNav.hide();
+      }
     });
 
     //Menu Button
-    let php = '<?php echo get_template_directory_uri(); ?>';
-    // let dropDown = bestCustomScripts.theme_directory + 'Assets/vector-icons/icons/chevrons/down.svg'
-    let dropDown = '<img src="' + php + 'Assets/vector-icons/icons/chevrons/down.svg">'
-    $('.menu-item-204').append(dropDown);
-    $('.menu-item-261').append(dropDown);
+    let arrowDown = '<button class="arrow-down"></button>'
+    $('.menu-item-204').append(arrowDown);
+    $('.menu-item-261').append(arrowDown);
+
+    const dropDown = $('.arrow-down');
+    const subMenu = $('.sub-menu');
+    subMenu.hide();
+    dropDown.on('hover', function(event) {
+      event.preventDefault();
+      subMenu.show('slide');
+    });
+
+
+
+
     // End of Header //
-    
+
     // Start of Flickity //
     $('.main-carousel').flickity({
       // options
