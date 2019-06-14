@@ -90,15 +90,15 @@ function best_scripts() {
 
 	wp_enqueue_style('best-hamburger', 'https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.1.3/hamburgers.css');
 
-	wp_enqueue_script( 'best-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
-	wp_enqueue_script( 'best-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'best-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '', true );
+	wp_enqueue_script( 'best-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '', true );
 
 	//flickity
 	wp_enqueue_style('best-flickity','https://unpkg.com/flickity@2/dist/flickity.min.css');
-	wp_enqueue_script( 'best-flickity', get_template_directory_uri() . 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '20151215', true );
+	wp_enqueue_script( 'best-flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array('jquery'), '', true );
 	
 	// Add Custom Script
-	wp_enqueue_script('best-scripts', get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '', true);
+	wp_enqueue_script('best-scripts', get_template_directory_uri() . '/build/js/script.min.js', array('jquery', 'best-flickity'), '', true);
 	// wp_enqueue_script('best-custom-scripts', get_template_directory_uri() . 'Assets/vector-icons/icons/chevrons/down.svg');
 	// wp_localize_script('best-custom-scripts', 'bestCustomScripts', array('theme_directory' => get_template_directory_uri()));
 
