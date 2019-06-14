@@ -34,13 +34,13 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #
 themes/*
-!themes/best/
+!themes/best-bc/
 
 # Ignore npm packages #
 # =================== #
-themes/best/node_modules/*
+themes/best-bc/node_modules/*
 
 # Ignore build files #
 # ================== #
-themes/best/gulpfile.js
-themes/best/build/*
+themes/best-bc/gulpfile.js
+themes/best-bc/build/*
