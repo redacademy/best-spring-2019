@@ -99,8 +99,6 @@ function best_scripts() {
 	
 	// Add Custom Script
 	wp_enqueue_script('best-scripts', get_template_directory_uri() . '/build/js/script.min.js', array('jquery', 'best-flickity'), '', true);
-	// wp_enqueue_script('best-custom-scripts', get_template_directory_uri() . 'Assets/vector-icons/icons/chevrons/down.svg');
-	// wp_localize_script('best-custom-scripts', 'bestCustomScripts', array('theme_directory' => get_template_directory_uri()));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
