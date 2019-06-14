@@ -6,7 +6,6 @@
  */
 
 ?>
-
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
@@ -18,10 +17,11 @@
 				<div class="footer-block-item">
 					<div class="social-media">
 						<h3 class="follow-text">Follow us</h3>
-						<p><span><i class="fab fa-facebook"></i></span>
+						<div>
+						<span><i class="fab fa-facebook"></i></span>
 						<span><i class="fab fa-instagram"></i></span>
 						<span><i class="fab fa-twitter-square"></i></span>
-						</p>
+						</div>
 
 						
 					</div> <!--social media ending-->
