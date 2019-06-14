@@ -1,6 +1,5 @@
 (function($) {
   $(function() {
-
     // Start of Header //
 
     // Search Bar
@@ -13,23 +12,23 @@
     });
 
     searchBar.on('blur', function(event) {
-    event.preventDefault();
-      if ( searchBar.val() === '' ) {
+      event.preventDefault();
+      if (searchBar.val() === '') {
         searchBar.hide('slide');
       }
     });
-    
+
     // Hamburger Menu
     const hamburger = $('.hamburger-menu');
-      hamburger.on('click', function(event) {
+    hamburger.on('click', function(event) {
       event.preventDefault();
       hamburger.toggleClass('is-active');
     });
-    
+
     // Menu Slider
     const headerSlider = $('.main-navigation');
     const headerNav = $('.header-primary-menu');
-      headerSlider.on('click', function(event) {
+    headerSlider.on('click', function(event) {
       event.preventDefault();
       $(this).toggleClass('active');
       headerSlider.toggleClass('open');
@@ -52,16 +51,12 @@
       event.preventDefault();
       subMenu.show('slide');
     });
-
-
-
-
     // End of Header //
 
     // Start of Flickity //
     $('.main-carousel').flickity({
       // options
-      cellAlign: 'left',
+      cellAlign: 'center',
       contain: true
     });
     // End of Flickity //
@@ -72,8 +67,9 @@
 
     $tabLinks.on('click', function(event) {
       event.preventDefault();
-
+      console.log('click');
       let tabIndex = $tabLinks.index(this);
+      // console.log(tabIndex);
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
     });
