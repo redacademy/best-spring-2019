@@ -22,25 +22,23 @@ get_header(); ?>
             <div class="main-carousel">
   <div class="carousel-cell">
   Hey How are you?
-  <img src="<?php echo get_template_directory_uri(); ?>assets/Images/modo-logo.png" alt="flickity"/>
+  <img src="<?php echo get_template_directory_uri(); ?>assets/images/modo-logo.png" alt="flickity"/>
   </div>
-  <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>assets/Images/modo-logo.png" alt="flickity"/>
+  <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>assets/images/modo-logo.png" alt="flickity"/>
   </div>
-  <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>assets/Images/modo-logo.png" alt="flickity"/>
+  <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>assets/images/modo-logo.png" alt="flickity"/>
   </div>
   
 </div>
         <?php endwhile;
     ?>
       <div class="involved-container">
-        <div class="donate-and-member-block">
-            <div class="donate"></div>
-            <div class="membership"></div>
-        </div><!--donateandmeber-block-->
-        <div class="sponsor-and-volunteer-block">
-            <div class="sponsor"></div>
-            <div calss="volunteer"></div>
-        </div><!--sponsorandvolunteer-block-->
+      
+            <div class="donate"><span class="involved-header">Donate</span></div>         
+            <div class="membership"><span class="involved-header">Membership</span></div>
+            <div class="sponsor"><span class="involved-header">Sponsor</span></div>
+            <div class="volunteer"><span class="involved-header">Volunteer</span></div>
+       
       </div> <!--involved container-->
     </main><!-- #main -->
 </div><!-- #primary -->
