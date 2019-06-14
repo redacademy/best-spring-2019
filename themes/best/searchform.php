@@ -1,7 +1,7 @@
 <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
 
 	<label>
-		<input type="search" class="search-field" placeholder="  Looking for..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
+		<input type="search" class="search-field" placeholder=" Looking for..." value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="Search for:" />
 	</label>
 
 	<button class="search-submit creen-reader-text">
