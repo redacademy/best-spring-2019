@@ -15,6 +15,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+	<!-- <link href="dist/hamburgers.css" rel="stylesheet"> -->
 	
 
 	<?php wp_head(); ?>
@@ -30,16 +31,21 @@
 				<h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 			</div><!-- .site-branding -->
 
-			<nav id="site-navigation" class="main-navigation" role="navigation">
+			<div class="nav-container">
+				<nav id="site-navigation" class="main-navigation" role="navigation">
 
-				<div class="hamburger-menu">
-					<div></div>
-					<div></div>
-					<div></div>
-				</div>
+					<button class="hamburger-menu hamburger--slider" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
 
-				<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-			</nav><!-- navigation -->
+					<div class="header-primary-menu">
+						<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+					</div>
+
+				</nav><!-- navigation -->
+			</div>
 
 			<div class="best-header-logo">
 				<img src="<?php echo get_template_directory_uri(); ?>/Assets/vector-icons/best-logo/Best-v1-white.svg" alt="">

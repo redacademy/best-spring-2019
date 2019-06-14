@@ -1,0 +1,48 @@
+//get involved section//
+
+.involved-container{
+    width: 100%;
+    // height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    grid-gap: 20px 20px;
+    height: 30vw;
+    padding: 0;
+    margin: 0;
+    
+}
+.donate-and-member-block{
+    width: 100%;
+    // height: 500px;
+}
+.sponsor-and-volunteer-block{
+    width: 100%;
+    // height: 500px;
+}
+
+
+.donate{
+    background-image: url(../../assets/Images/HomepageDonateCard.jpg);
+    height: 100%;
+    background-size: cover;
+}
+.membership{
+    background-image: url(../../assets/Images/HomePageMembershipCard.jpg);
+    height: 100%;
+    background-size: cover;
+
+}
+.sponsor{
+    background-image: url(../../assets/Images/HomePageSponsorCard.jpg);
+    height: 100%;
+    background-size: cover;
+
+}
+.volunteer{
+    background-image: url(../../assets/Images/HomePageVolunteerCard.jpg);
+    height: 100%;
+    background-size: cover;
+    
+}
