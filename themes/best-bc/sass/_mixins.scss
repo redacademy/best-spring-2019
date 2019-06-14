@@ -10,3 +10,14 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+// Remove preset
+@mixin remove {
+	border: none;
+    box-shadow: none;
+    text-shadow: none;
+    background: none;
+	border-radius: unset;
+	border-color: unset;
+	padding: unset;
+}
