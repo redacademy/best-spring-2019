@@ -795,37 +795,47 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-auto-rows: 250px;
   grid-gap: 20px 20px;
-  height: 30vw;
+  height: 50vw;
   padding: 0;
   margin: 0; }
 
-.donate-and-member-block {
-  width: 100%; }
-
-.sponsor-and-volunteer-block {
-  width: 100%; }
-
 .donate {
-  background-image: url(../../assets/Images/HomepageDonateCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomepageDonateCard.jpg);
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px; }
 
 .membership {
-  background-image: url(../../assets/Images/HomePageMembershipCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomePageMembershipCard.jpg);
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px; }
 
 .sponsor {
-  background-image: url(../../assets/Images/HomePageSponsorCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomePageSponsorCard.jpg);
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px; }
 
 .volunteer {
-  background-image: url(../../assets/Images/HomePageVolunteerCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomePageVolunteerCard.jpg);
   height: 100%;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px; }
+
+.involved-header {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 39%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px; }
 
 .flickity-slider {
   padding-bottom: 50px; }
