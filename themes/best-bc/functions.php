@@ -93,6 +93,10 @@ function best_scripts() {
 	wp_enqueue_script( 'best-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'best-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
 
+	//flickity
+	wp_enqueue_style('best-flickity','https://unpkg.com/flickity@2/dist/flickity.min.css');
+	wp_enqueue_script( 'best-flickity', get_template_directory_uri() . 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js', array(), '20151215', true );
+	
 	// Add Custom Script
 	wp_enqueue_script('best-scripts', get_template_directory_uri() . '/build/js/script.min.js', array('jquery'), '', true);
 	// wp_enqueue_script('best-custom-scripts', get_template_directory_uri() . 'Assets/vector-icons/icons/chevrons/down.svg');

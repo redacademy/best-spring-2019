@@ -1,4 +1,5 @@
 (function ($) {
+<<<<<<< HEAD
   $(function() {
 
     // Search Bar
@@ -52,4 +53,23 @@
     });
 
   });
+=======
+    $(function() {
+
+        const searchBar = $('.search-field');
+      
+        searchBar.hide();
+        $('.search-submit').on('click', function(event) {
+          event.preventDefault();
+          searchBar.toggle('show');
+          searchBar.focus();
+        });
+        $('.main-carousel').flickity({
+          // options
+          cellAlign: 'left',
+          contain: true,
+          wrapAround: true
+        });
+    });
+>>>>>>> 622a58fa52ad9c1f16de0fa949dbeea1906626f6
 })(jQuery);

@@ -16,13 +16,7 @@ get_header(); ?>
         <?php endwhile;
     ?>
 		<?php the_excerpt(); ?>
-		<div class="main-carousel">
-  <div class="carousel-cell">
-  <img src="../assets/Images/star-logo.png"/></div>
-  <div class="carousel-cell">...</div>
-  <div class="carousel-cell">...</div>
-  ...
-</div>
+
     </main><!-- #main -->
 </div><!-- #primary -->
 
