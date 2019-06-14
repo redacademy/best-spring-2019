@@ -14,10 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	<link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-	<!-- <link href="dist/hamburgers.css" rel="stylesheet"> -->
 	
-
 	<?php wp_head(); ?>
 </head>
 
