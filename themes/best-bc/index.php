@@ -17,7 +17,13 @@ get_header(); ?>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
 				</header>
 			<?php endif; ?>
+			<div class="main-carousel">
+  <div class="carousel-cell">
+  <img src="../assets/Images/star-logo.png"/>Hey</div>
+  <div class="carousel-cell">...</div>
+  <div class="carousel-cell">...</div>
 
+</div>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
