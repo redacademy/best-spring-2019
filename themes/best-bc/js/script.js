@@ -2,8 +2,6 @@
   $(function() {
     const searchBar = $('.search-field');
 
-    const searchBar = $('.search-field');
-
     searchBar.hide();
     $('.search-submit').on('click', function(event) {
       event.preventDefault();
