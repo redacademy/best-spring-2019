@@ -793,3 +793,19 @@ object {
     height: 44px; }
   .site-footer .social-media {
     text-align: right; }
+
+.tab-content {
+  display: none; }
+  .tab-content:first-child {
+    display: block; }
+
+.tab-nav {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none; }
+
+.tab-link {
+  padding: 1rem;
+  text-decoration: none; }
