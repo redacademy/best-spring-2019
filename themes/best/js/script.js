@@ -1,5 +1,7 @@
 (function ($) {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   $(function() {
 
     // Search Bar
@@ -54,6 +56,7 @@
 
   });
 =======
+>>>>>>> bbc4d98877437aaef5cf8593fe9155f7b486391a
     $(function() {
 
         const searchBar = $('.search-field');
@@ -67,9 +70,17 @@
         $('.main-carousel').flickity({
           // options
           cellAlign: 'left',
+<<<<<<< HEAD
+          contain: true
+        });
+    });
+})(jQuery);
+
+=======
           contain: true,
           wrapAround: true
         });
     });
 >>>>>>> 622a58fa52ad9c1f16de0fa949dbeea1906626f6
 })(jQuery);
+>>>>>>> bbc4d98877437aaef5cf8593fe9155f7b486391a
