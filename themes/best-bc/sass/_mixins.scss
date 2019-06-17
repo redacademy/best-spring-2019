@@ -6,7 +6,7 @@
 //media query//
 $desktop-width: 620px;
 @mixin desktop {
-    @media(min-width: $desktop-width) {
+    @media(min-width: $desktop-width){
         @content;
     }
 }

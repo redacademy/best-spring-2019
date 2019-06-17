@@ -2,14 +2,18 @@
 
 .involved-container{
     width: 100%;
-    // height: 300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px 20px;
-    height: 50vw;
-    padding: 0;
-    margin: 0;
+    height: 66vw;
+    padding: 4.5rem;
+    margin: 0 auto;
+    @include desktop{
+        width: 86%;
+        height: 57vw;
+
+    }
     
 }
 
@@ -49,7 +53,20 @@
     border-radius: 11px;
     
 }
-<<<<<<< HEAD
+.involved-header {
+    color: #fff;
+    position: relative;
+    top: 45%;
+    left: 31%;
+    font-family: $font__main;
+    font-weight: bold;
+    font-size: 20px;
+    @include desktop{
+        top: 50%;
+        left: 39%;
+
+    }
+}
 // flickity-slider
 .flickity-slider{
     padding-bottom: 50px;
@@ -62,15 +79,4 @@
     img{
         padding-left: 10px;
     }
-=======
-.involved-header{
-    color: #fff;
-    position: relative;
-    top: 50%;
-    left: 39%;
-    font-family: $font__main;
-    font-weight: bold;
-    font-size: 20px;
-
->>>>>>> 7276ad850f14e80b379eab3c282437a201ed4d8f
 }

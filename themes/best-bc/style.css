@@ -638,7 +638,6 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-<<<<<<< HEAD
 
 .arrow-down {
   height: 48px;
@@ -655,8 +654,6 @@ table {
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center; }
-=======
->>>>>>> d4567d6058de8e30adbf40ff0051ed6e29cc852e
 
 /*--------------------------------------------------------------
 # Forms
@@ -858,9 +855,13 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px 20px;
-  height: 50vw;
-  padding: 0;
-  margin: 0; }
+  height: 66vw;
+  padding: 4.5rem;
+  margin: 0 auto; }
+  @media (min-width: 620px) {
+    .involved-container {
+      width: 86%;
+      height: 57vw; } }
 
 .donate {
   background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomepageDonateCard.jpg);
@@ -893,11 +894,15 @@ a {
 .involved-header {
   color: #fff;
   position: relative;
-  top: 50%;
-  left: 39%;
+  top: 45%;
+  left: 31%;
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   font-size: 20px; }
+  @media (min-width: 620px) {
+    .involved-header {
+      top: 50%;
+      left: 39%; } }
 
 .flickity-slider {
   padding-bottom: 50px; }
