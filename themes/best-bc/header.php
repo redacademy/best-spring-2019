@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	
+
 	<?php wp_head(); ?>
 </head>
 
@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="best-header-logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/Assets/vector-icons/best-logo/Best-v1-white.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/vector-icons/best-logo/Best-v1-white.svg" alt="">
 			</div><!-- heder-logo -->
 
 			<div class="search-form">
