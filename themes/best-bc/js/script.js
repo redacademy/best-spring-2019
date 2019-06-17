@@ -40,7 +40,7 @@
     });
 
     //Menu Button
-    let arrowDown = '<button class="arrow-down"></button>'
+    let arrowDown = '<button class="arrow-down"></button>';
     $('.menu-item-204').append(arrowDown);
     $('.menu-item-261').append(arrowDown);
 
@@ -69,10 +69,21 @@
       event.preventDefault();
       console.log('click');
       let tabIndex = $tabLinks.index(this);
-      // console.log(tabIndex);
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
     });
+
+    $('.tab-carousel').flickity({
+      cellAlign: 'center',
+      contain: true,
+      freeScroll: true,
+      prevNextButtons: true,
+      pageDots: false,
+      draggable: false,
+      percentPosition: false,
+      initialIndex: 0
+    });
+
     //END OF TAB MENU CODE
   });
 })(jQuery);

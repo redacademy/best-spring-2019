@@ -1,76 +1,83 @@
 //get involved section//
 
-.involved-container{
-    width: 100%;
-    // height: 300px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px 20px;
-    height: 50vw;
-    padding: 0;
-    margin: 0;
-    
+.involved-container {
+  width: 100%;
+  // height: 300px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px 20px;
+  height: 50vw;
+  padding: 0;
+  margin: 0;
 }
 
-.donate{
-    background-image: linear-gradient(120deg, rgba(89, 65, 18,0.7) 5%,rgba(13, 56, 48,0.7) 95%),
-                      url(../../assets/images/HomepageDonateCard.jpg);
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 11px;
-    
+.donate {
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
+    url(../../assets/images/HomepageDonateCard.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px;
 }
-.membership{
-    background-image: linear-gradient(120deg, rgba(89, 65, 18,0.7) 5%,rgba(13, 56, 48,0.7) 95%),
-                    url(../../assets/images/HomePageMembershipCard.jpg);
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 11px;
-
+.membership {
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
+    url(../../assets/images/HomePageMembershipCard.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px;
 }
-.sponsor{
-    background-image: linear-gradient(120deg, rgba(89, 65, 18,0.7) 5%,rgba(13, 56, 48,0.7) 95%),
-                    url(../../assets/images/HomePageSponsorCard.jpg);
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 11px;
-
+.sponsor {
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
+    url(../../assets/images/HomePageSponsorCard.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px;
 }
-.volunteer{
-    background-image: linear-gradient(120deg, rgba(89, 65, 18,0.7) 5%,rgba(13, 56, 48,0.7) 95%),
-                     url(../../assets/images/HomePageVolunteerCard.jpg);
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    border-radius: 11px;
-    
+.volunteer {
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
+    url(../../assets/images/HomePageVolunteerCard.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 11px;
 }
-<<<<<<< HEAD
+.involved-header {
+  color: #fff;
+  position: relative;
+  top: 50%;
+  left: 39%;
+  font-family: $font__main;
+  font-weight: bold;
+  font-size: 20px;
+}
 // flickity-slider
-.flickity-slider{
-    padding-bottom: 50px;
+.flickity-slider {
+  padding-bottom: 50px;
 }
-.flickity-page-dots{
-    display: none;
+.flickity-page-dots {
+  display: none;
 }
-.carousel-cell{
-    
-    img{
-        padding-left: 10px;
-    }
-=======
-.involved-header{
-    color: #fff;
-    position: relative;
-    top: 50%;
-    left: 39%;
-    font-family: $font__main;
-    font-weight: bold;
-    font-size: 20px;
-
->>>>>>> 7276ad850f14e80b379eab3c282437a201ed4d8f
+.carousel-cell {
+  img {
+    padding-left: 10px;
+  }
 }

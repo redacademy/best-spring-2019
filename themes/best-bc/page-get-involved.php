@@ -18,7 +18,7 @@ get_header(); ?>
     ?>
 
         <div class="tabs">
-            <ul class="tab-nav tab-carousel">
+            <ul class="tab-nav">
                 <?php $tabs = CFS()->get('tab_menu_tab');
                 foreach ($tabs as $tab) :
                     $tab_title =  $tab['tab_menu_title'];

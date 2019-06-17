@@ -638,7 +638,6 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-<<<<<<< HEAD
 
 .arrow-down {
   height: 48px;
@@ -655,8 +654,6 @@ table {
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center; }
-=======
->>>>>>> d4567d6058de8e30adbf40ff0051ed6e29cc852e
 
 /*--------------------------------------------------------------
 # Forms
@@ -1039,35 +1036,36 @@ object {
     width: 70%;
     margin-left: 50px; }
 
+.page .resource-p {
+  padding-left: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem; }
+
 .page .tabs {
   width: 90%;
   margin: auto auto 25px auto;
-  padding: 10px 50px 25px 50px;
+  padding: 15px 0px 20px 0px;
   border: 2px solid #228f7a;
   border-radius: 12px; }
 
-.page h2 {
-  padding-left: 50px; }
-
 .tab-content {
-  display: none; }
+  padding-left: 10px;
+  padding-right: 10px;
+  display: none;
+  font-family: "Josefin Sans", sans-serif; }
   .tab-content:first-child {
     display: block; }
 
 .tab-nav {
   padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   list-style: none;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  white-space: nowrap; }
 
 .tab-link {
   padding: 1rem;
   text-decoration: none;
   font-size: 1.5rem; }
+
+@media (min-width: 620px) {
+  .flickity-button {
+    display: none; } }
