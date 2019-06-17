@@ -506,6 +506,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .site-header .search-field {
+    display: none; }
   .site-header .nav-container {
     width: 63px;
     height: 56px;

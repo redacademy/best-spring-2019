@@ -4,10 +4,10 @@
 
     // Search Bar
     const searchBar = $('.search-field');
+    const searchToggleIcon = $('.search-toggle-icon');
 
-    searchBar.hide();
-    $('.search-submit').on('click', function(event) {
-      event.preventDefault();
+    // searchBar.hide();
+    searchToggleIcon.on('click', function() {
       searchBar.toggle('show');
       searchBar.focus();
     });
@@ -100,6 +100,5 @@
       percentPosition: false,
       initialIndex: 0
     });
-
   });
 })(jQuery);

@@ -5,7 +5,10 @@
 	</label>
 
 	<button class="search-submit screen-reader-text">
-		<img src="<?php echo get_template_directory_uri(); ?>/assets/vector-icons/icons/search.svg" alt="">
+		Search
 	</button>
+
+	<img class="search-toggle-icon" src="<?php echo get_template_directory_uri(); ?>/assets/vector-icons/icons/search.svg" alt="">
+
 
 </form>
