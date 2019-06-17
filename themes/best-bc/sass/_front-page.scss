@@ -86,20 +86,23 @@
 }
 
 // flickity-slider
+.main-carousel{
+  height: 200px;
+
+ 
+}
 .flickity-slider {
   padding-bottom: 50px;
 }
 .flickity-page-dots {
   display: none;
+
 }
 .carousel-cell {
+
     img {
-        padding-left: 10px;
-    }
-}
-.carousel-cell {
-    img {
-        padding-left: 10px;
+        width: 200px;
+        padding:20px;
     }
 }
 

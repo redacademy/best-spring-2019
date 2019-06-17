@@ -914,6 +914,9 @@ a {
       top: 50%;
       left: 39%; } }
 
+.main-carousel {
+  height: 200px; }
+
 .flickity-slider {
   padding-bottom: 50px; }
 
@@ -921,7 +924,8 @@ a {
   display: none; }
 
 .carousel-cell img {
-  padding-left: 10px; }
+  width: 200px;
+  padding: 20px; }
 
 .carousel-cell img {
   padding-left: 10px; }
@@ -1078,14 +1082,32 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.staff-members .staff-image {
+  width: 164px;
+  height: 190px; }
+
+.staff-members .staff-name {
+  color: #228f7a;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0; }
+
+.staff-members .staff-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 300; }
+
 /* Front page */
 .site-footer {
   padding: 20px;
   background: #e7e7e7;
-  width: 100%;
-  height: auto; }
+  width: 100%; }
   @media (min-width: 620px) {
     .site-footer {
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 50px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1114,25 +1136,34 @@ object {
             -ms-flex-direction: column;
                 flex-direction: column; } }
   .site-footer .social-media-icons span {
-    font-size: 30px; }
+    font-size: 1.8rem; }
+    @media (min-width: 620px) {
+      .site-footer .social-media-icons span {
+        font-size: 2.8rem;
+        padding-right: 10px; } }
     .site-footer .social-media-icons span .follow-text {
       padding: 0;
       margin: 0; }
+      @media (min-width: 620px) {
+        .site-footer .social-media-icons span .follow-text {
+          padding-top: 15px;
+          font-size: 1.4rem; } }
   .site-footer .major-sponsor-text {
     font-weight: 400;
     color: #404040;
     text-align: center; }
     @media (min-width: 620px) {
       .site-footer .major-sponsor-text {
-        text-align: right; } }
+        text-align: right;
+        font-size: 1.8rem; } }
   .site-footer .translink-logo-grey {
     width: 70%;
     margin-left: 50px; }
     @media (min-width: 620px) {
       .site-footer .translink-logo-grey {
         margin: 0;
-        width: 300px;
-        margin-left: 800px; } }
+        width: 200px;
+        left: 0; } }
 
 .page .resource-p {
   padding-left: 50px;
@@ -1165,7 +1196,7 @@ object {
   font-size: 1.5rem; }
 
 @media (min-width: 620px) {
-  .flickity-button {
+  .tabs .tab.nav .flickity-button {
     display: none; } }
 
 /* Single Post Page */
