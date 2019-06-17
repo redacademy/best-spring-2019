@@ -43,12 +43,7 @@
     });
 
     //Menu Button
-<<<<<<< HEAD
     let arrowDown = '<button class="arrow-down"></button>';
-=======
-    let arrowDown = '<button class="arrow-down"></button>'
-
->>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
     $('.menu-item-204').append(arrowDown);
     $('.menu-item-261').append(arrowDown);
 
@@ -93,9 +88,8 @@
       } else {
         timeline.hide();
       }
-    });
+    }); /* End of Timeline */
 
-<<<<<<< HEAD
     $('.tab-carousel').flickity({
       cellAlign: 'center',
       contain: true,
@@ -106,10 +100,7 @@
       percentPosition: false,
       initialIndex: 0
     });
-=======
->>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
 
-    //END OF TAB MENU CODE
   });
 })(jQuery);
 

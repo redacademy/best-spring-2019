@@ -1,17 +1,5 @@
 //get involved section//
 
-<<<<<<< HEAD
-.involved-container {
-  width: 100%;
-  // height: 300px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px 20px;
-  height: 50vw;
-  padding: 0;
-  margin: 0;
-=======
 .involved-container{
     width: 100%;
     display: grid;
@@ -24,12 +12,8 @@
     @include desktop{
         width: 86%;
         height: 57vw;
-
     }
-    
->>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
 }
-
 .donate {
   background-image: linear-gradient(
       120deg,
@@ -87,8 +71,6 @@
   font-weight: bold;
   font-size: 20px;
 }
-<<<<<<< HEAD
-=======
 .involved-header {
     color: #fff;
     position: relative;
@@ -100,10 +82,9 @@
     @include desktop{
         top: 50%;
         left: 39%;
-
     }
 }
->>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
+
 // flickity-slider
 .flickity-slider {
   padding-bottom: 50px;
@@ -112,15 +93,12 @@
   display: none;
 }
 .carousel-cell {
-  img {
-    padding-left: 10px;
-  }
+    img {
+        padding-left: 10px;
+    }
 }
-<<<<<<< HEAD
-=======
 .carousel-cell {
-    
-    img{
+    img {
         padding-left: 10px;
     }
 }
@@ -172,4 +150,3 @@
 
 
 
->>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
