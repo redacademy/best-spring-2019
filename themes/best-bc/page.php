@@ -2,7 +2,7 @@
 /**
  * The template for displaying all pages.
  *
- * @package RED_Starter_Theme
+ * @package Best_Theme
  */
 
 get_header(); ?>
@@ -14,8 +14,7 @@ get_header(); ?>
 
 			<?php get_template_part('template-parts/content', 'page'); ?>
 
-		<?php endwhile; 
-	?>
+		<?php endwhile; ?>
 
 	</main><!-- #main -->
 </div><!-- #primary -->
