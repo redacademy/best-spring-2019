@@ -2,6 +2,7 @@
 /**
  *
  * @package RED_Starter_Theme
+ * Template Name: About
  */
 
 get_header(); ?>
@@ -13,16 +14,21 @@ get_header(); ?>
 
             <?php get_template_part('template-parts/content', 'page'); ?>
 
+            
         <?php endwhile; ?>
-        
+     
 		<?php the_excerpt(); ?>
-        <!-- // staff members
-    $fields = CFS()->get('staff member');
-  foreach ( $staffMember as $staffmember ) {
-    echo $field['staff_image'];
-    echo $field['staff_name'];
-    echo $field['staff_position'];
-} -->
+
+        <?php
+    $staff_member = CFS()->get('staff_member');
+foreach ( $staff_member as $staff) :?>
+<div class ="staffs">
+  <img class="staff-image" src="<?php echo $staff['staff_image'];?>"/>
+    <p class ="staff-name"><?php echo $staff['staff_name']; ?></p>
+   <h3 class ="staff-title"><?php echo $staff['staff_title'];?></h3>
+</div>
+          <?php endforeach; ?>
+
     </main><!-- #main -->
 </div><!-- #primary -->
 
