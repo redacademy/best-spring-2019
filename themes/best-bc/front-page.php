@@ -1,6 +1,7 @@
 <?php
 /*
  * @package Best_Theme
+ * Template Name: Front-page
  */
 get_header(); ?>
 

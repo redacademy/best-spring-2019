@@ -1070,6 +1070,22 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.staff-members .staff-image {
+  width: 164px;
+  height: 190px; }
+
+.staff-members .staff-name {
+  color: #228f7a;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0; }
+
+.staff-members .staff-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 300; }
+
 /* Front page */
 .site-footer {
   padding: 20px;
@@ -1097,7 +1113,10 @@ object {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     @media (min-width: 620px) {
       .site-footer .footer-content {
         -webkit-box-orient: vertical;
