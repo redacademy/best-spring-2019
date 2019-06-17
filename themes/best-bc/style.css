@@ -886,7 +886,7 @@ a {
   border-radius: 11px; }
 
 .volunteer {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomePageVolunteerCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomepageVolunteerCard.jpg);
   height: 100%;
   background-size: cover;
   background-position: center;

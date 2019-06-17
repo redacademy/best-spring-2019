@@ -1,18 +1,18 @@
 //get involved section//
 
-.involved-container{
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px 20px;
-    height: 66vw;
-    padding: 4.5rem;
-    margin: 0 auto;
-    @include desktop{
-        width: 86%;
-        height: 57vw;
-    }
+.involved-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 20px 20px;
+  height: 66vw;
+  padding: 4.5rem;
+  margin: 0 auto;
+  @include desktop {
+    width: 86%;
+    height: 57vw;
+  }
 }
 .donate {
   background-image: linear-gradient(
@@ -56,7 +56,7 @@
       rgba(89, 65, 18, 0.7) 5%,
       rgba(13, 56, 48, 0.7) 95%
     ),
-    url(../../assets/images/HomePageVolunteerCard.jpg);
+    url(../../assets/images/HomepageVolunteerCard.jpg);
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -72,17 +72,17 @@
   font-size: 20px;
 }
 .involved-header {
-    color: #fff;
-    position: relative;
-    top: 45%;
-    left: 31%;
-    font-family: $font__main;
-    font-weight: bold;
-    font-size: 20px;
-    @include desktop{
-        top: 50%;
-        left: 39%;
-    }
+  color: #fff;
+  position: relative;
+  top: 45%;
+  left: 31%;
+  font-family: $font__main;
+  font-weight: bold;
+  font-size: 20px;
+  @include desktop {
+    top: 50%;
+    left: 39%;
+  }
 }
 
 // flickity-slider
@@ -93,14 +93,14 @@
   display: none;
 }
 .carousel-cell {
-    img {
-        padding-left: 10px;
-    }
+  img {
+    padding-left: 10px;
+  }
 }
 .carousel-cell {
-    img {
-        padding-left: 10px;
-    }
+  img {
+    padding-left: 10px;
+  }
 }
 
 // News
@@ -147,5 +147,3 @@
     }
   }
 }
-
-
