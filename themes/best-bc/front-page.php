@@ -11,19 +11,20 @@ get_header(); ?>
 
       <?php get_template_part('template-parts/content', 'page'); ?>
 
-    <?php endwhile;?>
+    <?php endwhile; ?>
 
     <!-- News -->
-		<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 2 ); $news_posts = get_posts($args); ?> 
+    <?php $args = array('post_type' => 'post', 'posts_per_page' => 2);
+    $news_posts = get_posts($args); ?>
     <h2>News</h2>
     <div class="fp-news">
-      <?php foreach ( $news_posts as $post ) : setup_postdata( $post ); ?>
-        <div class="fp-news-wrapper">     
+      <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
+        <div class="fp-news-wrapper">
 
           <!-- Thumbnail -->
-          <?php if ( has_post_thumbnail() ) { ?>
+          <?php if (has_post_thumbnail()) { ?>
             <div class="fp-news-thumbnail">
-              <?php the_post_thumbnail( 'medium' ); ?>
+              <?php the_post_thumbnail('medium'); ?>
             </div>
           <?php } ?>
 
@@ -32,7 +33,7 @@ get_header(); ?>
             <div class="fp-news-title">
               <h3><?php the_title(); ?></h3>
             </div>
-            
+
             <div class="fp-news-post">
               <?php echo get_the_content(); ?>
               <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>
@@ -40,23 +41,25 @@ get_header(); ?>
           </div>
 
         </div><!-- End of Wrapper -->
-      <?php endforeach; wp_reset_postdata(); ?>
+      <?php endforeach;
+    wp_reset_postdata(); ?>
     </div><!-- End of News -->
 
     <div class="involved-container">
-      <div class="donate"><span class="involved-header">Donate</span></div>         
+      <div class="donate"><span class="involved-header">Donate</span></div>
       <div class="membership"><span class="involved-header">Membership</span></div>
       <div class="sponsor"><span class="involved-header">Sponsor</span></div>
       <div class="volunteer"><span class="involved-header">Volunteer</span></div>
-    </div> <!--involved container-->
+    </div>
+    <!--involved container-->
 
     <!-- Flickity -->
     <div class="main-carousel">
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/city-logo.png" alt="city-logo"/></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/icbc-logo.png" alt="icbc-logo"/></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/coastal-logo.png" alt="coastal-logo"/></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/vancity-logo-lrg.png" alt="vancity-logo"/></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/century-logo-sm.png" alt="century-logo"/></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/city-logo.png" alt="city-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icbc-logo.png" alt="icbc-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/coastal-logo.png" alt="coastal-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/vancity-logo-lrg.png" alt="vancity-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/century-logo-sm.png" alt="century-logo" /></div>
     </div><!-- End of Flickity -->
 
   </main><!-- #main -->
