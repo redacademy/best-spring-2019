@@ -74,12 +74,12 @@
       let tabIndex = $tabLinks.index(this);
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
-    });//END OF TAB MENU CODE
+    }); //END OF TAB MENU CODE
 
     /* Start of Timeline */
     const timeline = $('timeline-content');
     const timelineOpen = $('timeline-btn');
-    
+
     timelineOpen.on('click', function(event) {
       event.preventDefault();
       timelineOpen.toggleClass('timeline-open');
@@ -103,4 +103,3 @@
 
   });
 })(jQuery);
-
