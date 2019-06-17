@@ -546,7 +546,7 @@ table {
             background: white; }
       .site-header .nav-container .main-navigation .header-primary-menu {
         display: none; }
-  .site-header .best-header-logo {
+  .site-header .best-header-logo img {
     height: 28px;
     width: 73px; }
 
@@ -562,9 +562,6 @@ table {
     margin-right: 8px;
     border-radius: 16px; }
   .search-form .search-submit {
-    width: 24px;
-    height: 24px;
-    margin-right: 26px;
     border: none;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -572,7 +569,11 @@ table {
     background: none;
     border-radius: unset;
     border-color: unset;
-    padding: unset; }
+    padding: unset;
+    margin-right: 26px; }
+    .search-form .search-submit img {
+      width: 24px;
+      height: 24px; }
     .search-form .search-submit button :hover {
       border: none;
       -webkit-box-shadow: none;
@@ -638,7 +639,6 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-<<<<<<< HEAD
 
 .arrow-down {
   height: 48px;
@@ -655,8 +655,6 @@ table {
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center; }
-=======
->>>>>>> d4567d6058de8e30adbf40ff0051ed6e29cc852e
 
 /*--------------------------------------------------------------
 # Forms
@@ -908,6 +906,12 @@ a {
 .carousel-cell img {
   padding-left: 10px; }
 
+.fp-news .fp-news-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 343px; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1071,3 +1075,90 @@ object {
   padding: 1rem;
   text-decoration: none;
   font-size: 1.5rem; }
+
+/* Timeline for History page */
+.timeline {
+  text-align: center;
+  margin: 64px; }
+  .timeline .timeline-title {
+    /* Timeline Left Side */
+    /* Timeline Right Side */
+    /* Timeline Color Cycle */ }
+    .timeline .timeline-title .timeline-years {
+      width: 239px;
+      height: 88px;
+      position: relative; }
+    .timeline .timeline-title .timeline-content {
+      display: none; }
+    .timeline .timeline-title div:nth-child(odd) {
+      margin-right: auto;
+      border-right: 6px solid #228f7a;
+      text-align: left; }
+      .timeline .timeline-title div:nth-child(odd) .timeline-btn {
+        height: 88px;
+        width: 85px;
+        border-radius: 50px;
+        margin-left: 16px;
+        text-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border-color: unset;
+        border: none; }
+        .timeline .timeline-title div:nth-child(odd) .timeline-btn h2 {
+          padding: unset;
+          font-size: 1.5rem; }
+      .timeline .timeline-title div:nth-child(odd) .timeline-line {
+        margin: unset;
+        height: 5px;
+        width: 132px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        background: #e3a72f;
+        background: linear-gradient(145deg, #e3a72f, #388374 100%); }
+    .timeline .timeline-title div:nth-child(even) {
+      margin-left: auto;
+      border-left: 6px solid #228f7a;
+      text-align: right; }
+      .timeline .timeline-title div:nth-child(even) .timeline-btn {
+        height: 88px;
+        width: 85px;
+        border-radius: 50px;
+        margin-right: 16px;
+        text-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        border-color: unset;
+        border: none; }
+        .timeline .timeline-title div:nth-child(even) .timeline-btn h2 {
+          padding: unset;
+          font-size: 1.5rem; }
+      .timeline .timeline-title div:nth-child(even) .timeline-line {
+        margin: unset;
+        height: 5px;
+        width: 132px;
+        text-align: left;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: #e3a72f;
+        background: linear-gradient(245deg, #e3a72f, #388374 100%); }
+    .timeline .timeline-title div:nth-child(5n + 1) .timeline-btn {
+      background: #8caba3; }
+    .timeline .timeline-title div:nth-child(5n + 2) .timeline-btn {
+      background: #e67937; }
+    .timeline .timeline-title div:nth-child(5n + 3) .timeline-btn {
+      background: #228f7a; }
+    .timeline .timeline-title div:nth-child(5n + 4) .timeline-btn {
+      background: #183241; }
+    .timeline .timeline-title div:nth-child(5n + 5) .timeline-btn {
+      background: #e3a72f; }
+
+.timeline-open {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background: #228f7a; }
