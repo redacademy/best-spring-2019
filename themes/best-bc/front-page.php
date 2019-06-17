@@ -8,10 +8,11 @@ get_header(); ?>
   <main id="main" class="site-main" role="main">
 
     <?php while (have_posts()) : the_post(); ?>
-
+    
       <?php get_template_part('template-parts/content', 'page'); ?>
-
+      
     <?php endwhile;?>
+
 
     <!-- News -->
 		<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 2 ); $news_posts = get_posts($args); ?> 
