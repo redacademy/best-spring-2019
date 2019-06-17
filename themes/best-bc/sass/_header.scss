@@ -15,7 +15,6 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
-
             &.active {
             position: fixed;
             height: 100vh;
@@ -24,7 +23,7 @@
             }
             .hamburger-menu {
                 cursor: pointer;
-                @include remove;
+                @include clean-all;
                 .hamburger-inner {
                     background: $color__header;
                     &::before {
@@ -40,7 +39,7 @@
             }
         }
     }
-    .best-header-logo {
+    .best-header-logo img {
         height: 28px;
         width: 73px;
     }
@@ -55,12 +54,14 @@
         border-radius: 16px;
     }
     .search-submit {
-        width: 24px;
-        height: 24px;
+        @include clean-all;
         margin-right: 26px;
-        @include remove;
+        img {
+            width: 24px;
+            height: 24px;
+        }
         button :hover {
-            @include remove;
+            @include clean-all;
         }
     }
 }
@@ -121,7 +122,7 @@
 .arrow-down {
     height: 48px;
     width: 48px;
-    @include remove;
+    @include clean-all;
     background-image: url(../../assets/vector-icons/icons/chevrons/down.svg);
     background-size: 60%;
     background-repeat: no-repeat;

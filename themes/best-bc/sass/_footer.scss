@@ -3,11 +3,20 @@
     background:$color__background;
     width: 100%;
     height: auto;
+    @include desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+     
+    }
+
     .footer-content{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        @include desktop{
+            flex-direction: column;
+        }
     }
     .social-media-icons span{
         font-size: 30px; 
@@ -20,12 +29,20 @@
         font-weight: 400;
         color: $color__text-screen;
         text-align:center;
+        @include desktop{
+            text-align: right;
+        }
     }
 
     .translink-logo-grey{
-        width:70%;
-       margin-left: 50px;
-        
-    }
+            width:70%;
+            margin-left: 50px;
+             @include desktop{
+                 margin: 0;
+                 width: 300px;
+                margin-left: 800px;
+             }
+        }
+       
 
 }

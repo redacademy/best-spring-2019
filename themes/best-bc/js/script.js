@@ -1,9 +1,10 @@
 (function($) {
   $(function() {
-    // Start of Header //
+    /* Start of Header */
 
     // Search Bar
     const searchBar = $('.search-field');
+
     searchBar.hide();
     $('.search-submit').on('click', function(event) {
       event.preventDefault();
@@ -20,6 +21,7 @@
 
     // Hamburger Menu
     const hamburger = $('.hamburger-menu');
+
     hamburger.on('click', function(event) {
       event.preventDefault();
       hamburger.toggleClass('is-active');
@@ -28,6 +30,7 @@
     // Menu Slider
     const headerSlider = $('.main-navigation');
     const headerNav = $('.header-primary-menu');
+
     headerSlider.on('click', function(event) {
       event.preventDefault();
       $(this).toggleClass('active');
@@ -40,23 +43,29 @@
     });
 
     //Menu Button
+<<<<<<< HEAD
     let arrowDown = '<button class="arrow-down"></button>';
+=======
+    let arrowDown = '<button class="arrow-down"></button>'
+
+>>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
     $('.menu-item-204').append(arrowDown);
     $('.menu-item-261').append(arrowDown);
 
     const dropDown = $('.arrow-down');
     const subMenu = $('.sub-menu');
+
     subMenu.hide();
     dropDown.on('hover', function(event) {
       event.preventDefault();
       subMenu.show('slide');
     });
-    // End of Header //
+    /* End of Header */
 
     // Start of Flickity //
     $('.main-carousel').flickity({
       // options
-      cellAlign: 'center',
+      cellAlign: 'left',
       contain: true
     });
     // End of Flickity //
@@ -67,12 +76,26 @@
 
     $tabLinks.on('click', function(event) {
       event.preventDefault();
-      console.log('click');
       let tabIndex = $tabLinks.index(this);
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
+    });//END OF TAB MENU CODE
+
+    /* Start of Timeline */
+    const timeline = $('timeline-content');
+    const timelineOpen = $('timeline-btn');
+    
+    timelineOpen.on('click', function(event) {
+      event.preventDefault();
+      timelineOpen.toggleClass('timeline-open');
+      if (timelineOpen.hasClass('timeline-open')) {
+        timeline.show();
+      } else {
+        timeline.hide();
+      }
     });
 
+<<<<<<< HEAD
     $('.tab-carousel').flickity({
       cellAlign: 'center',
       contain: true,
@@ -83,7 +106,10 @@
       percentPosition: false,
       initialIndex: 0
     });
+=======
+>>>>>>> 06063868e892ac246d941d7c643a8cb61da36a63
 
     //END OF TAB MENU CODE
   });
 })(jQuery);
+

@@ -27,11 +27,12 @@
 					</div>
 				
 				</div>	
+				<div class="translink">
 				<h2 class="major-sponsor-text">Our Major Sponsor:</h2>
 				<img class="translink-logo-grey" src="<?php echo get_template_directory_uri();
 				 ?>/assets/images/translink-logo-grey.png" alt="translink-logo"">	
 						
-			
+					</div>
 			
 			
 
