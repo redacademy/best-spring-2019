@@ -104,48 +104,60 @@
 }
 
 // News
-.fp-news {
-  margin: 32px;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-rows: 1fr 1fr;
-  .fp-news-wrapper {
-    display: flex;
-    width: 100%;
-    .fp-news-thumbnail {
-      grid-template-areas: 'thumbnail';
-      width: 40%;
-      position: relative;
-      overflow: hidden;
-      img {
-        position: absolute;
-        left: -20%;
-        top: -5%;
-      }
+
+.fp-news-background {
+    height: 700px;
+    width: 100vw;
+    background: $color__wrapper-news;
+    h2 {
+        text-align: center;
+        color: $color__background-news;
     }
-    .fp-news-info {
-      grid-template-areas: 'content';
-      width: 60%;
-      display: flex;
-      flex-direction: column;
-      padding-left: 16px;
-      background: $color__background-news;
-      .fp-news-title {
-        color: $color__header;
-        h3 {
-          margin: unset;
-          margin-top: 16px;
+    .fp-news-background-2 {
+        background: url(../../assets/Images/Newspapercutout.jpg) no-repeat;
+        background-size: 30%;
+        .fp-news {
+            margin: 32px;
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-rows: 1fr 1fr;
+            .fp-news-wrapper {
+                display: flex;
+                width: 100%;
+                height: 188px;
+                .fp-news-thumbnail {
+                    width: 35%;
+                    position: relative;
+                    overflow: hidden;
+                    img {
+                        position: absolute;
+                        height: 200px;
+                    }
+                }
+                .fp-news-info {
+                    width: 65%;
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 16px;
+                    background: $color__background-news;
+                    .fp-news-title {
+                        color: $color__header;
+                        h3 {
+                            margin: unset;
+                            margin-top: 16px;
+                        }
+                    }
+                    .fp-news-post {
+                        color: $color__header;
+                    }
+                    .fp-news-btn {
+                        text-decoration: none;
+                        color: $color__header;
+                        margin-top: auto;
+                    }
+                }
+            }
         }
-      }
-      .fp-news-post {
-        color: $color__header;
-        .fp-news-btn {
-          text-decoration: none;
-          color: $color__header;
-        }
-      }
     }
-  }
 }
-
-
+    
