@@ -30,12 +30,12 @@ get_header(); ?>
           <!-- Title & Post-->
           <div class="fp-news-info">
             <div class="fp-news-title">
-              <a href="<?php  echo get_the_permalink(); ?>"><h3><?php the_title(); ?></h3></a>
+              <h3><?php the_title(); ?></h3>
             </div>
             
             <div class="fp-news-post">
               <?php echo get_the_content(); ?>
-              <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More</a>
+              <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>
             </div>
           </div>
 
