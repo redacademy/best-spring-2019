@@ -8,40 +8,44 @@ get_header(); ?>
   <main id="main" class="site-main" role="main">
 
     <?php while (have_posts()) : the_post(); ?>
-
+      
       <?php get_template_part('template-parts/content', 'page'); ?>
-
+      
     <?php endwhile;?>
 
     <!-- News -->
-		<?php $args = array( 'post_type' => 'post', 'posts_per_page' => 2 ); $news_posts = get_posts($args); ?> 
-    <h2>News</h2>
-    <div class="fp-news">
-      <?php foreach ( $news_posts as $post ) : setup_postdata( $post ); ?>
-        <div class="fp-news-wrapper">     
+    <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 2 ); $news_posts = get_posts($args); ?> 
+    <section class="fp-news-background">
+      <div class="fp-news-background-2">
+        <h2>News</h2>
+        <div class="fp-news">
+          <?php foreach ( $news_posts as $post ) : setup_postdata( $post ); ?>
+            <div class="fp-news-wrapper">     
 
-          <!-- Thumbnail -->
-          <?php if ( has_post_thumbnail() ) { ?>
-            <div class="fp-news-thumbnail">
-              <?php the_post_thumbnail( 'medium' ); ?>
-            </div>
-          <?php } ?>
+              <!-- Thumbnail -->
+              <?php if ( has_post_thumbnail() ) { ?>
+                <div class="fp-news-thumbnail">
+                  <?php the_post_thumbnail( 'medium' ); ?>
+                </div>
+              <?php } ?>
 
-          <!-- Title & Post-->
-          <div class="fp-news-info">
-            <div class="fp-news-title">
-              <h3><?php the_title(); ?></h3>
-            </div>
-            
-            <div class="fp-news-post">
-              <?php echo get_the_content(); ?>
-              <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>
-            </div>
-          </div>
+              <!-- Title & Post-->
+              <div class="fp-news-info">
+                <div class="fp-news-title">
+                  <h3><?php the_title(); ?></h3>
+                </div>
+                
+                <div class="fp-news-post">
+                  <?php echo get_the_content(); ?>
+                </div>
 
-        </div><!-- End of Wrapper -->
-      <?php endforeach; wp_reset_postdata(); ?>
-    </div><!-- End of News -->
+                <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>
+              </div>
+            </div><!-- End of Wrapper -->
+          <?php endforeach; wp_reset_postdata(); ?>
+        </div>
+      </div>
+    </section><!-- End of News -->
 
     <div class="involved-container">
       <div class="donate"><span class="involved-header">Donate</span></div>         
