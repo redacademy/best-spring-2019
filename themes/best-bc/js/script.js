@@ -56,7 +56,7 @@
     // Start of Flickity //
     $('.main-carousel').flickity({
       // options
-      cellAlign: 'center',
+      cellAlign: 'left',
       contain: true
     });
     // End of Flickity //
@@ -73,6 +73,9 @@
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
     });
+
+
     //END OF TAB MENU CODE
   });
 })(jQuery);
+

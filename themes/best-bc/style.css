@@ -638,7 +638,6 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-<<<<<<< HEAD
 
 .arrow-down {
   height: 48px;
@@ -655,8 +654,6 @@ table {
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center; }
-=======
->>>>>>> d4567d6058de8e30adbf40ff0051ed6e29cc852e
 
 /*--------------------------------------------------------------
 # Forms
@@ -890,15 +887,6 @@ a {
   background-position: center;
   border-radius: 11px; }
 
-.involved-header {
-  color: #fff;
-  position: relative;
-  top: 50%;
-  left: 39%;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: bold;
-  font-size: 20px; }
-
 .flickity-slider {
   padding-bottom: 50px; }
 
@@ -1015,6 +1003,18 @@ object {
   background: #e7e7e7;
   width: 100%;
   height: auto; }
+  @media (min-width: 620px) {
+    .site-footer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   .site-footer .footer-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1026,6 +1026,12 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    @media (min-width: 620px) {
+      .site-footer .footer-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; } }
   .site-footer .social-media-icons span {
     font-size: 30px; }
     .site-footer .social-media-icons span .follow-text {
@@ -1035,9 +1041,17 @@ object {
     font-weight: 400;
     color: #404040;
     text-align: center; }
+    @media (min-width: 620px) {
+      .site-footer .major-sponsor-text {
+        text-align: right; } }
   .site-footer .translink-logo-grey {
     width: 70%;
     margin-left: 50px; }
+    @media (min-width: 620px) {
+      .site-footer .translink-logo-grey {
+        margin: 0;
+        width: 300px;
+        margin-left: 800px; } }
 
 .page .tabs {
   width: 90%;
