@@ -6,7 +6,7 @@
 //media query//
 $desktop-width: 620px;
 @mixin desktop {
-    @media(min-width: $desktop-width) {
+    @media(min-width: $desktop-width){
         @content;
     }
 }
@@ -20,12 +20,19 @@ $desktop-width: 620px;
 }
 
 // Remove preset
-@mixin remove {
+@mixin clean-all {
 	border: none;
-    box-shadow: none;
-    text-shadow: none;
-    background: none;
+  box-shadow: none;
+  text-shadow: none;
+  background: none;
 	border-radius: unset;
 	border-color: unset;
 	padding: unset;
+}
+
+@mixin clean-timeline {
+  text-shadow: none;
+  box-shadow: none;
+  border-color: unset;
+  border: none;
 }

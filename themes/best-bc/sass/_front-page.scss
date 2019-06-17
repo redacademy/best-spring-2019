@@ -2,14 +2,18 @@
 
 .involved-container{
     width: 100%;
-    // height: 300px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 20px 20px;
-    height: 50vw;
-    padding: 0;
-    margin: 0;
+    height: 66vw;
+    padding: 4.5rem;
+    margin: 0 auto;
+    @include desktop{
+        width: 86%;
+        height: 57vw;
+
+    }
     
 }
 
@@ -49,6 +53,20 @@
     border-radius: 11px;
     
 }
+.involved-header {
+    color: #fff;
+    position: relative;
+    top: 45%;
+    left: 31%;
+    font-family: $font__main;
+    font-weight: bold;
+    font-size: 20px;
+    @include desktop{
+        top: 50%;
+        left: 39%;
+
+    }
+}
 // flickity-slider
 .flickity-slider{
     padding-bottom: 50px;
@@ -56,9 +74,57 @@
 .flickity-page-dots{
     display: none;
 }
-.carousel-cell{
+.carousel-cell {
     
     img{
         padding-left: 10px;
     }
 }
+
+// News
+.fp-news {
+    margin: 32px;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: 1fr 1fr;
+    .fp-news-wrapper {
+        display: flex;
+        width: 100%;
+        .fp-news-thumbnail {
+            grid-template-areas: "thumbnail";
+            width: 40%;
+            position: relative;
+            overflow: hidden;
+            img {
+                position: absolute;
+                left: -20%;
+                top: -5%;
+            }
+        }
+        .fp-news-info {
+            grid-template-areas: "content";
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            padding-left: 16px;
+            background: $color__background-news;
+            .fp-news-title {
+                color: $color__header;
+                h3 {
+                    margin: unset;
+                    margin-top: 16px;  
+                }
+            }
+            .fp-news-post {
+                color: $color__header;
+                .fp-news-btn {
+                    text-decoration: none;
+                    color: $color__header;
+                }
+            }
+        }
+    }
+}
+
+
+
