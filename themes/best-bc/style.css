@@ -1195,8 +1195,27 @@ object {
   font-size: 1.5rem; }
 
 @media (min-width: 620px) {
-  .tabs .tab.nav .flickity-button {
-    display: none; } }
+  .tabs .tab-nav .flickity-button {
+    display: none; }
+  .tab-content-flexed {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .tab-column-one {
+    max-width: 45%;
+    margin-right: 20px; }
+  .tab-column-two {
+    max-width: 45%;
+    width: 50%;
+    margin-left: 20px; }
+  .gform_wrapper .top_label input.medium {
+    width: 100%; } }
 
 /* Single Post Page */
 .entry-meta {

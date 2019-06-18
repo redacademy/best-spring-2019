@@ -1,6 +1,7 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for displaying get involved page.
+ * Template Name: Get Involved
  *
  * @package RED_Starter_Theme
  */
@@ -26,15 +27,24 @@ get_header(); ?>
                     <li><a href="#" class="tab-link"><?php echo $tab_title; ?></a></li>
                 <?php endforeach; ?>
             </ul>
+
             <div class="tab-content-wrapper">
                 <?php $tabs = CFS()->get('tab_menu_tab');
                 foreach ($tabs as $tab) :
                     $tab_title =  $tab['tab_menu_title'];
                     $tab_body =  $tab['tab_menu_body'];
+                    $tab_gform_id = $tab['tab_gform_id'];
                     ?>
                     <div class="tab-content">
-                        <h2><?php echo $tab_title ?></h2>
-                        <p><?php echo $tab_body ?></p>
+                        <div class="tab-content-flexed">
+                            <div class="tab-column-one">
+                                <h2><?php echo $tab_title ?></h2>
+                                <p><?php echo $tab_body ?></p>
+                            </div>
+                            <div class="tab-column-two">
+                                <?php echo do_shortcode('[gravityform id=' . $tab_gform_id  . ' name=ContactUs title=false description=false]');  ?>
+                            </div>
+                        </div>
                     </div>
 
                 <?php endforeach; ?>

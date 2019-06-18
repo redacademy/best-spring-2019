@@ -38,7 +38,25 @@
 }
 
 @include desktop {
-  .tabs .tab.nav .flickity-button {
+  .tabs .tab-nav .flickity-button {
     display: none;
+  }
+  .tab-content-flexed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  .tab-column-one {
+    max-width: 45%;
+    margin-right: 20px;
+  }
+  .tab-column-two {
+    max-width: 45%;
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  .gform_wrapper .top_label input.medium {
+    width: 100%;
   }
 }

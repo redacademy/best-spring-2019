@@ -90,7 +90,7 @@
       }
     }); /* End of Timeline */
 
-    $('.tab-carousel').flickity({
+    $('.tab-nav').flickity({
       cellAlign: 'center',
       contain: true,
       freeScroll: true,
