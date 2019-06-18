@@ -13,8 +13,36 @@ get_header(); ?>
       <?php get_template_part('template-parts/content', 'page'); ?>
       
     <?php endwhile;?>
+      <!--transportation choices-->
 
 
+
+<div class="bike-container">
+      <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/bike-weekcutout2.png" alt="bike"/></div>
+      <div class="fp-bike-valet">
+        <h3>The Bicycle Valet</h3>
+        <p>Provided safe storage to 208,603 bikes since 2002</p>
+      </div> <!--end of bike-valet-->
+</div> <!--bike container-->
+      <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/hp-dashed-curvy.png" alt="dashed-line"/></div>
+
+
+
+      <div class="bus-container">
+<div class="fp-park-bus">
+        <h3>Park Bus</h3>
+        <p>is your ride to the great outdoors, connecting the city to campgrounds, canoe access points, lodges and hiking trails.</p>
+      </div> <!--park bus-->
+    
+    <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/parkbus-cut-out.png" alt="bus"/></div>
+      
+</div><!--bus container-->
+
+
+
+
+      
+      <!--end of transportation choices-->
     <!-- News -->
     <?php $args = array( 'post_type' => 'post', 'posts_per_page' => 2 ); $news_posts = get_posts($args); ?> 
     <section class="fp-news-background">
