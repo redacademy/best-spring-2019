@@ -11,14 +11,8 @@ get_header(); ?>
     <?php while (have_posts()) : the_post(); ?>
 
       <?php get_template_part('template-parts/content', 'page'); ?>
-<<<<<<< HEAD
-      
-    <?php endwhile;?>
-      <!--transportation choices-->
-=======
 
     <?php endwhile; ?>
->>>>>>> 6eac933ea65963fb84347f31fa5961c1fe5fd289
 
 
 
