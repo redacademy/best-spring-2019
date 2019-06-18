@@ -19,25 +19,31 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
+      <?php /* Start the Loop */ ?>
+      <div class="programs">
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
-				?>
+      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <div class="entry-content">
+          <?php if ( has_post_thumbnail() ) : ?>
+           <img class="article-thumbnail" src="<?php the_post_thumbnail( 'large' ); ?>
+          <?php endif; ?>
+
+          <a href="<?php echo CFS()->get('program_url'); ?>">
+          
+          <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
+          </a>
+
+</div><!-- entry -->
+
+      </article><!-- #post-## -->
 
 			<?php endwhile; ?>
-
-			<?php the_posts_navigation(); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
+</div>
 		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
