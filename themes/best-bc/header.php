@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="best-header-logo">
-				<img src="<?php echo get_template_directory_uri(); ?>/Assets/vector-icons/best-logo/Best-v1-white.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/assets/vector-icons/best-logo/Best-v1-white.svg" alt="">
 			</div><!-- heder-logo -->
 
 			<div class="search-form">
