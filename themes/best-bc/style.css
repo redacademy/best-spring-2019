@@ -227,120 +227,120 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-Light.eot");
-  src: url("../../Assets/fonts/JosefinSans-Light.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Light.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Light.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Light.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-Light.eot");
+  src: url("../../assets/fonts/JosefinSans-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-Light.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-Light.woff") format("woff"), url("../../assets/fonts/JosefinSans-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-ThinItalic.eot");
-  src: url("../../Assets/fonts/JosefinSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-ThinItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-ThinItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-ThinItalic.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-ThinItalic.eot");
+  src: url("../../assets/fonts/JosefinSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-ThinItalic.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-ThinItalic.woff") format("woff"), url("../../assets/fonts/JosefinSans-ThinItalic.ttf") format("truetype");
   font-weight: 100;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-Italic.eot");
-  src: url("../../Assets/fonts/JosefinSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Italic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Italic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Italic.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-Italic.eot");
+  src: url("../../assets/fonts/JosefinSans-Italic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-Italic.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-Italic.woff") format("woff"), url("../../assets/fonts/JosefinSans-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-Thin.eot");
-  src: url("../../Assets/fonts/JosefinSans-Thin.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Thin.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Thin.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Thin.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-Thin.eot");
+  src: url("../../assets/fonts/JosefinSans-Thin.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-Thin.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-Thin.woff") format("woff"), url("../../assets/fonts/JosefinSans-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-Regular.eot");
-  src: url("../../Assets/fonts/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Regular.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Regular.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Regular.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-Regular.eot");
+  src: url("../../assets/fonts/JosefinSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-Regular.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-Regular.woff") format("woff"), url("../../assets/fonts/JosefinSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-SemiBold.eot");
-  src: url("../../Assets/fonts/JosefinSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-SemiBold.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-SemiBold.woff") format("woff"), url("../../Assets/fonts/JosefinSans-SemiBold.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-SemiBold.eot");
+  src: url("../../assets/fonts/JosefinSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-SemiBold.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-SemiBold.woff") format("woff"), url("../../assets/fonts/JosefinSans-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-SemiBoldItalic.eot");
-  src: url("../../Assets/fonts/JosefinSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-SemiBoldItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-SemiBoldItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-SemiBoldItalic.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-SemiBoldItalic.eot");
+  src: url("../../assets/fonts/JosefinSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-SemiBoldItalic.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-SemiBoldItalic.woff") format("woff"), url("../../assets/fonts/JosefinSans-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-BoldItalic.eot");
-  src: url("../../Assets/fonts/JosefinSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-BoldItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-BoldItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-BoldItalic.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-BoldItalic.eot");
+  src: url("../../assets/fonts/JosefinSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-BoldItalic.woff") format("woff"), url("../../assets/fonts/JosefinSans-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-LightItalic.eot");
-  src: url("../../Assets/fonts/JosefinSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-LightItalic.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-LightItalic.woff") format("woff"), url("../../Assets/fonts/JosefinSans-LightItalic.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-LightItalic.eot");
+  src: url("../../assets/fonts/JosefinSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-LightItalic.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-LightItalic.woff") format("woff"), url("../../assets/fonts/JosefinSans-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: 'Josefin Sans';
-  src: url("../../Assets/fonts/JosefinSans-Bold.eot");
-  src: url("../../Assets/fonts/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../Assets/fonts/JosefinSans-Bold.woff2") format("woff2"), url("../../Assets/fonts/JosefinSans-Bold.woff") format("woff"), url("../../Assets/fonts/JosefinSans-Bold.ttf") format("truetype");
+  src: url("../../assets/fonts/JosefinSans-Bold.eot");
+  src: url("../../assets/fonts/JosefinSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/JosefinSans-Bold.woff2") format("woff2"), url("../../assets/fonts/JosefinSans-Bold.woff") format("woff"), url("../../assets/fonts/JosefinSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-Medium.eot");
-  src: url("../../Assets/fonts/Mukta-Medium.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-Medium.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-Medium.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-Medium.ttf") format("../../Assets/fonts/truetype");
+  src: url("../../assets/fonts/Mukta-Medium.eot");
+  src: url("../../assets/fonts/Mukta-Medium.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-Medium.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-Medium.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-Medium.ttf") format("../../assets/fonts/truetype");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-ExtraLight.eot");
-  src: url("../../Assets/fonts/Mukta-ExtraLight.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-ExtraLight.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-ExtraLight.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-ExtraLight.ttf") format("../../Assets/fonts/truetype");
+  src: url("../../assets/fonts/Mukta-ExtraLight.eot");
+  src: url("../../assets/fonts/Mukta-ExtraLight.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-ExtraLight.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-ExtraLight.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-ExtraLight.ttf") format("../../assets/fonts/truetype");
   font-weight: 200;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-ExtraBold.eot");
-  src: url("../../Assets/fonts/Mukta-ExtraBold.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-ExtraBold.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-ExtraBold.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-ExtraBold.ttf") format("../../Assets/fonts/truetype");
+  src: url("../../assets/fonts/Mukta-ExtraBold.eot");
+  src: url("../../assets/fonts/Mukta-ExtraBold.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-ExtraBold.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-ExtraBold.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-ExtraBold.ttf") format("../../assets/fonts/truetype");
   font-weight: 800;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-SemiBold.eot");
-  src: url("../../Assets/fonts/Mukta-SemiBold.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-SemiBold.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-SemiBold.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-SemiBold.ttf") format("../../Assets/fonts/truetype");
+  src: url("../../assets/fonts/Mukta-SemiBold.eot");
+  src: url("../../assets/fonts/Mukta-SemiBold.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-SemiBold.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-SemiBold.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-SemiBold.ttf") format("../../assets/fonts/truetype");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-Regular.eot");
-  src: url("../../Assets/fonts/Mukta-Regular.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-Regular.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-Regular.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-Regular.ttf") format("../../Assets/fonts/truetype");
+  src: url("../../assets/fonts/Mukta-Regular.eot");
+  src: url("../../assets/fonts/Mukta-Regular.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-Regular.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-Regular.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-Regular.ttf") format("../../assets/fonts/truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-Light.eot");
-  src: url("../../Assets/fonts/Mukta-Light.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-Light.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-Light.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-Light.ttf") format("../../Assets/fonts/truetype");
+  src: url("../../assets/fonts/Mukta-Light.eot");
+  src: url("../../assets/fonts/Mukta-Light.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-Light.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-Light.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-Light.ttf") format("../../assets/fonts/truetype");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: 'Mukta';
-  src: url("../../Assets/fonts/Mukta-Bold.eot");
-  src: url("../../Assets/fonts/Mukta-Bold.eot?#iefix") format("../../Assets/fonts/embedded-opentype"), url("../../Assets/fonts/Mukta-Bold.woff2") format("../../Assets/fonts/woff2"), url("../../Assets/fonts/Mukta-Bold.woff") format("../../Assets/fonts/woff"), url("../../Assets/fonts/Mukta-Bold.ttf") format("truetype");
+  src: url("../../assets/fonts/Mukta-Bold.eot");
+  src: url("../../assets/fonts/Mukta-Bold.eot?#iefix") format("../../assets/fonts/embedded-opentype"), url("../../assets/fonts/Mukta-Bold.woff2") format("../../assets/fonts/woff2"), url("../../assets/fonts/Mukta-Bold.woff") format("../../assets/fonts/woff"), url("../../assets/fonts/Mukta-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
@@ -506,6 +506,8 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
+  .site-header .search-field {
+    display: none; }
   .site-header .nav-container {
     width: 63px;
     height: 56px;
@@ -527,7 +529,10 @@ table {
         position: fixed;
         height: 100vh;
         width: 100%;
-        z-index: 99; }
+        z-index: 99;
+        -webkit-transition: 0.5s;
+        transition: 0.5s;
+        background: #228f7a; }
       .site-header .nav-container .main-navigation .hamburger-menu {
         cursor: pointer;
         border: none;
@@ -571,9 +576,6 @@ table {
     border-color: unset;
     padding: unset;
     margin-right: 26px; }
-    .search-form .search-submit img {
-      width: 24px;
-      height: 24px; }
     .search-form .search-submit button :hover {
       border: none;
       -webkit-box-shadow: none;
@@ -583,30 +585,30 @@ table {
       border-radius: unset;
       border-color: unset;
       padding: unset; }
+  .search-form .search-toggle-icon {
+    width: 24px;
+    height: 24px; }
 
 .has-background-dim {
   z-index: 0; }
 
 /* Menu & Animation */
-.open {
-  height: 100vh;
-  width: 100vw;
+.open .hamburger-menu {
   position: fixed;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background: #228f7a; }
-  .open .hamburger-menu {
-    position: fixed;
-    top: 64px;
-    right: 16px; }
-  .open .menu-item-204 .sub-menu,
-  .open .menu-item-261 .sub-menu {
-    margin-top: 24px;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
-    .open .menu-item-204 .sub-menu a,
-    .open .menu-item-261 .sub-menu a {
-      padding-left: 48px; }
+  top: 64px;
+  right: 16px; }
+
+.open .menu-item-204 .sub-menu,
+.open .menu-item-261 .sub-menu {
+  margin-top: 24px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+  .open .menu-item-204 .sub-menu a,
+  .open .menu-item-261 .sub-menu a {
+    padding-left: 48px; }
+
+.open-2 {
+  margin-bottom: 150px; }
 
 .header-primary-menu ul {
   display: -webkit-box;
@@ -964,14 +966,14 @@ a {
   border-radius: 11px; }
 
 .sponsor {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomePageSponsorCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomepageSponsorCard.jpg);
   height: 100%;
   background-size: cover;
   background-position: center;
   border-radius: 11px; }
 
 .volunteer {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomePageVolunteerCard.jpg);
+  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomepageVolunteerCard.jpg);
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -1020,7 +1022,7 @@ a {
     text-align: center;
     color: #8caba3; }
   .fp-news-background .fp-news-background-2 {
-    background: url(../../assets/Images/Newspapercutout.jpg) no-repeat;
+    background: url(../../assets/images/Newspapercutout.jpg) no-repeat;
     background-size: 30%; }
     .fp-news-background .fp-news-background-2 .fp-news {
       margin: 32px;
@@ -1259,15 +1261,14 @@ object {
   font-size: 1.25rem; }
 
 .page .tabs {
-  width: 90%;
-  margin: auto auto 25px auto;
+  margin-top: 25px;
   padding: 15px 0px 20px 0px;
   border: 2px solid #228f7a;
-  border-radius: 12px; }
+  border-radius: 12px;
+  margin: 32px; }
 
 .tab-content {
-  padding-left: 10px;
-  padding-right: 10px;
+  margin: 0 32px;
   display: none;
   font-family: "Josefin Sans", sans-serif; }
   .tab-content:first-child {
@@ -1281,12 +1282,36 @@ object {
 .tab-link {
   padding: 1rem;
   text-decoration: none;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: #228f7a; }
 
 @media (min-width: 620px) {
   .tabs .tab.nav .flickity-button {
     display: none; } }
 
+<<<<<<< HEAD
+=======
+.flickity-slider li {
+  margin: 0 auto; }
+
+.flickity-button {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  background: none;
+  border-radius: unset;
+  border-color: unset;
+  padding: unset;
+  background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.flickity-button-icon {
+  display: none; }
+
+>>>>>>> 6eac933ea65963fb84347f31fa5961c1fe5fd289
 /* Single Post Page */
 .entry-meta {
   display: none; }
