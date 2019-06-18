@@ -17,13 +17,13 @@ get_header(); ?>
 
 
 <div class="bike-container">
-      <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/bike-weekcutout2.png" alt="bike"/></div>
+      <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout2.png" alt="bike"/></div>
       <div class="fp-bike-valet">
         <h3>The Bicycle Valet</h3>
         <p>Provided safe storage to 208,603 bikes since 2002</p>
       </div> <!--end of bike-valet-->
 </div> <!--bike container-->
-      <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/hp-dashed-curvy.png" alt="dashed-line"/></div>
+      <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/hp-dashed-curvy.png" alt="dashed-line"/></div>
 
 
 
@@ -33,7 +33,7 @@ get_header(); ?>
         <p>is your ride to the great outdoors, connecting the city to campgrounds, canoe access points, lodges and hiking trails.</p>
       </div> <!--park bus-->
     
-    <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/parkbus-cut-out.png" alt="bus"/></div>
+    <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/parkbus-cut-out.png" alt="bus"/></div>
       
 </div><!--bus container-->
 
