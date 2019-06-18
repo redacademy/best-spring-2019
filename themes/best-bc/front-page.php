@@ -61,11 +61,11 @@ get_header(); ?>
 
     <!-- Flickity -->
     <div class="main-carousel">
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/city-logo.png" alt="city-logo" /></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/icbc-logo.png" alt="icbc-logo" /></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/coastal-logo.png" alt="coastal-logo" /></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/vancity-logo.png" alt="vancity-logo" /></div>
-      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/century-logo-sm.png" alt="century-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/city-logo.png" alt="city-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icbc-logo.png" alt="icbc-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/coastal-logo.png" alt="coastal-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/vancity-logo.png" alt="vancity-logo" /></div>
+      <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/century-logo-sm.png" alt="century-logo" /></div>
     </div><!-- End of Flickity -->
     <!-- staff members -->
 
