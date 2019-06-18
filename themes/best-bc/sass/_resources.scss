@@ -7,17 +7,19 @@
     font-size: 1.25rem;
   }
   .tabs {
-    width: 90%;
-    margin: auto auto 25px auto;
+    // width: 90%;
+    margin-top: 25px;
     padding: 15px 0px 20px 0px;
     border: 2px solid #228f7a;
     border-radius: 12px;
+    margin: 32px;
   }
 }
 
 .tab-content {
-  padding-left: 10px;
-  padding-right: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  margin: 0 32px;
   display: none;
   font-family: $font__main;
   &:first-child {
@@ -35,10 +37,28 @@
   padding: 1rem;
   text-decoration: none;
   font-size: 1.5rem;
+  color: $color__main;
 }
 
 @include desktop {
   .tabs .tab.nav .flickity-button {
     display: none;
   }
+}
+
+// testing 
+.flickity-slider li {
+  margin: 0 auto;
+}
+
+.flickity-button {
+  @include clean-all;
+  background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.flickity-button-icon {
+  display: none;
 }
