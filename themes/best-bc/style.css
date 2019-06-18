@@ -852,7 +852,6 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-<<<<<<< HEAD
 .bike-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,8 +937,6 @@ a {
           width: 587px;
           height: 367px; } }
 
-=======
->>>>>>> 26fdf9566ea35559a33a3dca3c7f94e21f79aaf1
 .involved-container {
   width: 100%;
   display: grid;
