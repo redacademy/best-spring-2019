@@ -1,10 +1,19 @@
-.archive{
-    .programs{
-       display: flex;
-       flex-direction: row;
-       flex-wrap: wrap;
-       justify-content: space-between;
+// archive-programs
 
+.archive{
+    margin: 0 auto;
+    .programs{
+        // margin: 100px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        @include desktop{
+            // margin: 100px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        } 
     }
     .entry-content{
         position: relative;
@@ -21,7 +30,6 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-           
             a{
                 color: $color__header;
                 text-decoration: none;
@@ -29,4 +37,26 @@
         }
     }
    
+
+    // overlay content
+    .overlay{
+        background-color: $color__main;
+        width: 340px;
+        height: 300px;
+        border-radius: 20px;
+        position: relative;
+    .overlay-title{
+        text-align: center;
+        top: 10px;
+    }
+    .overlay-content p {
+        
+            font-family: $font__main;
+            position: absolute;
+            color: white;
+            font-weight:100;
+       
+    }
+
+    }
 }

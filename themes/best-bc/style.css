@@ -347,17 +347,6 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-  color: #000;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
-
 /* Headings */
 h1,
 h2,
@@ -1198,37 +1187,63 @@ object {
   .tabs .tab.nav .flickity-button {
     display: none; } }
 
-.archive .programs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.archive .entry-content {
-  position: relative;
-  width: 340px;
-  height: 300px; }
-  .archive .entry-content .article-thumbnail {
-    width: 100%;
-    height: 100%;
-    border-radius: 20px; }
-  .archive .entry-content .entry-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-    .archive .entry-content .entry-title a {
+.archive {
+  margin: 0 auto; }
+  .archive .programs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around; }
+    @media (min-width: 620px) {
+      .archive .programs {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly; } }
+  .archive .entry-content {
+    position: relative;
+    width: 340px;
+    height: 300px; }
+    .archive .entry-content .article-thumbnail {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px; }
+    .archive .entry-content .entry-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+      .archive .entry-content .entry-title a {
+        color: white;
+        text-decoration: none; }
+  .archive .overlay {
+    background-color: #228f7a;
+    width: 340px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative; }
+    .archive .overlay .overlay-title {
+      text-align: center;
+      top: 10px; }
+    .archive .overlay .overlay-content p {
+      font-family: "Josefin Sans", sans-serif;
+      position: absolute;
       color: white;
-      text-decoration: none; }
+      font-weight: 100; }
 
 /* Single Post Page */
 .entry-meta {

@@ -21,26 +21,41 @@ get_header(); ?>
 
       <?php /* Start the Loop */ ?>
       <div class="programs">
-			<?php while ( have_posts() ) : the_post(); ?>
+			  <?php while ( have_posts() ) : the_post(); ?>
 
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content">
           <?php if ( has_post_thumbnail() ) : ?>
            <img class="article-thumbnail" src="<?php the_post_thumbnail( 'large' ); ?>
           <?php endif; ?>
 
-          <a href="<?php echo CFS()->get('program_url'); ?>">
-          
-          <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-          </a>
+        
+          <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( CFS()->get('program_url') ) ), '</a></h2>' ); ?>
 
-</div><!-- entry -->
+        </div> <!-- entry -->
+
+      <div class="overlay">
+ <h3 class="overlay-title"> <?php the_title() ?></h3>
+<p class="overlay-content"><?php the_content()?></p>
+<a class="visit-btn" href="<?php echo esc_url( CFS()->get('program_url'))?>">Visit Website</a>
+
+</div>
+
 
       </article><!-- #post-## -->
 
+
+
+
+
+
+
+
 			<?php endwhile; ?>
-</div>
-		<?php endif; ?>
+          </div>
+    <?php endif; ?>
+
+	
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
