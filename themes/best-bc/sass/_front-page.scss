@@ -1,3 +1,85 @@
+.bike-container{
+  display: flex;
+  justify-content: space-evenly
+}
+
+.fp-yellow-bike{ 
+  text-align: center;
+  width: 50%;
+  padding: 21px;
+img{
+  width: 164px;
+  height: 164px;
+  @include desktop{
+    width: 433px;
+    height: 433px;
+
+    }
+  } 
+}
+.fp-bike-valet {
+  width: 50%;
+  padding: 21px;
+  h3{
+    color: $color__button-light;
+    font-size: 20px;
+    @include desktop{
+      font-size: 36px;
+    }
+  }
+  p{
+    padding-right: 20vw;
+    @include desktop{
+      font-size: 24px;
+    }
+  }
+}
+.fp-linebreak-image img{
+  width: 100%;
+
+}
+
+//  bus container 
+.bus-container{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+.fp-park-bus{ 
+  @include desktop{
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 95px;
+  }
+  padding: 30px;
+  h3{
+  color:$color__button-light;
+  @include desktop{
+    font-size: 36px;
+  }
+  p{
+    @include desktop{
+      font-size: 24px;
+    }
+  }
+}}
+.fp-bus-image{ 
+  width: 50%;
+  padding: 50px;
+    @include desktop{
+      width: 47%;
+      padding: 0;
+    }
+img{
+  width: 198px;
+  height: 138px;
+  @include desktop{
+    width: 587px;
+    height: 367px;
+  }
+}}
+}//bus contatiner//
 //get involved section//
 .involved-container {
   width: 100%;
