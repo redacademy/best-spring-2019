@@ -38,7 +38,7 @@
 }
 
 @include desktop {
-  .tabs .tab-nav .flickity-button {
+  .tabs .tab.nav .flickity-button {
     display: none;
   }
 }
