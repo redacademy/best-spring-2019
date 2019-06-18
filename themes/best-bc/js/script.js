@@ -6,7 +6,7 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-    // searchBar.hide();
+
     searchToggleIcon.on('click', function() {
       searchBar.toggle('show');
       searchBar.focus();
@@ -49,11 +49,12 @@
 
     const dropDown = $('.arrow-down');
     const subMenu = $('.sub-menu');
-
-    subMenu.hide();
-    dropDown.on('hover', function(event) {
-      event.preventDefault();
-      subMenu.show('slide');
+    const test = $('.menu-item-204');
+    
+    dropDown.on('click', function() {
+      test.toggleClass('open-2');
+      console.log(dropDown);
+      console.log(subMenu);
     });
     /* End of Header */
 
