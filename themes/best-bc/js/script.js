@@ -6,7 +6,6 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-
     searchToggleIcon.on('click', function() {
       searchBar.toggle('show');
       searchBar.focus();
@@ -50,7 +49,7 @@
     const dropDown = $('.arrow-down');
     const subMenu = $('.sub-menu');
     const test = $('.menu-item-204');
-    
+
     dropDown.on('click', function() {
       test.toggleClass('open-2');
       console.log(dropDown);
@@ -72,6 +71,8 @@
 
     $tabLinks.on('click', function(event) {
       event.preventDefault();
+      $tabLinks.removeClass('active-tab');
+      $(this).addClass('active-tab');
       let tabIndex = $tabLinks.index(this);
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
@@ -94,12 +95,12 @@
     $('.tab-nav').flickity({
       cellAlign: 'center',
       contain: true,
-      freeScroll: true,
+      freeScroll: false,
       prevNextButtons: true,
       pageDots: false,
-      draggable: false,
+      draggable: true,
       percentPosition: false,
-      initialIndex: 0
+      groupCells: 1
     });
   });
 })(jQuery);

@@ -1,0 +1,27 @@
+// specific to the Get Involved Page and it's sub tab menus
+
+.page .entry-header .entry-title {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 34%;
+  left: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+
+.img-container img {
+  opacity: 0.5;
+}
+
+.page .get-involved-hero-banner img {
+  position: relative;
+  width: 100vw;
+}
+
+.section-intro {
+  font-size: 1.5rem;
+  padding-left: 60px;
+  padding-right: 25px;
+}
