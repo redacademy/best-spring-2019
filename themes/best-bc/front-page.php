@@ -39,39 +39,45 @@ get_header(); ?>
     <?php $args = array('post_type' => 'post', 'posts_per_page' => 2);
     $news_posts = get_posts($args); ?>
     <section class="fp-news-background">
-      <div class="fp-news-background-2">
-        <h2>News</h2>
-        <p class="news-text">Stay up to date with all our events and monthly updates!</p>
-        <div class="fp-news">
-          <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
-            <div class="fp-news-wrapper">
+      <div class="fp-news-background-letter"></div>
+      <h2>News</h2>
+      <p class="news-text">Stay up to date with all our events and monthly updates!</p>
+      <div class="fp-news">
+        <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
+          <div class="fp-news-wrapper">
 
-              <!-- Thumbnail -->
-              <?php if (has_post_thumbnail()) { ?>
-                <div class="fp-news-thumbnail">
-                  <?php the_post_thumbnail('large'); ?>
-                </div>
-              <?php } ?>
-
-              <!-- Title & Post-->
-              <div class="fp-news-info">
-                <div class="fp-news-title">
-                  <h3><?php the_title(); ?></h3>
-                </div>
-
-                <div class="fp-news-post">
-                  <?php the_excerpt(); ?>
-                </div>
-
-                <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>
+            <!-- Thumbnail -->
+            <?php if (has_post_thumbnail()) { ?>
+              <div class="fp-news-thumbnail">
+                <?php the_post_thumbnail('medium'); ?>
               </div>
-            </div><!-- End of Wrapper -->
-          <?php endforeach;
-        wp_reset_postdata(); ?>
-        </div>
-      </div>
-    </section><!-- End of News -->
+            <?php } ?>
 
+            <!-- Title & Post-->
+            <div class="fp-news-info">
+              <div class="fp-news-title">
+                <h3><?php the_title(); ?></h3>
+              </div>
+
+              <div class="fp-news-post">
+                <?php the_excerpt(); ?>
+              </div>
+
+              <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>
+            </div>
+          </div><!-- End of Wrapper -->
+        <?php endforeach;
+        wp_reset_postdata(); ?>
+      </div><!-- End of fp-news -->
+      <button class="fp-news-signup"><a href="">Sign up for our newsletter</a></button>
+      <button class="fp-news-signup-mobile"><a href="">Newsletter signup</a></button>
+      <a class="fp-news-archives" href="<?php echo get_the_permalink(); ?>">Read our news archive</a>
+    </section><!-- End of News -->
+    
+    <div class="fp-involved-title">
+      <h2>Get involved</h2>
+      <div class="fp-news-background-hand"></div>
+    </div>
     <div class="involved-container">
       <div class="donate"><span class="involved-header">Donate</span></div>
       <div class="membership"><span class="involved-header">Membership</span></div>
@@ -79,8 +85,9 @@ get_header(); ?>
       <div class="volunteer"><span class="involved-header">Volunteer</span></div>
     </div>
     <!--involved container-->
-
+    <div class="fp-line-break"></div>
     <!-- Flickity -->
+    <h2 class="fp-carousel-title">Thank you to our sponsors</h2>
     <div class="main-carousel">
       <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/city-logo.png" alt="city-logo" /></div>
       <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/icbc-logo.png" alt="icbc-logo" /></div>
