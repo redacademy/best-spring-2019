@@ -1267,6 +1267,10 @@ object {
   border-radius: 12px;
   margin: 32px; }
 
+.page .wp-block-image img {
+  position: relative;
+  width: 100vw; }
+
 .tab-content {
   margin: 0 32px;
   display: none;
@@ -1280,14 +1284,18 @@ object {
   white-space: nowrap; }
 
 .tab-link {
-  padding: 1rem;
-  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-size: 1.5rem;
-  color: #228f7a; }
+  color: #e7e7e7; }
+  .tab-link :hover {
+    background-color: #8caba3; }
+
+.page ul a:active,
+.page ul a:focus {
+  border-bottom: 3px solid #228f7a; }
 
 @media (min-width: 620px) {
-  .tabs .tab-nav .flickity-button {
-    display: none; }
   .tab-content-flexed {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1484,3 +1492,28 @@ object {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background: #228f7a; }
+
+.page .entry-header .entry-title {
+  position: absolute;
+  color: #fff;
+  z-index: 1;
+  top: 34%;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 300px; }
+
+.img-container img {
+  opacity: 0.5; }
+
+.page .get-involved-hero-banner img {
+  position: relative;
+  width: 100vw; }
+
+.section-intro {
+  font-size: 1.5rem;
+  padding-left: 60px;
+  padding-right: 25px; }

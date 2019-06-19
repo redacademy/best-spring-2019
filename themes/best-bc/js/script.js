@@ -6,7 +6,6 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-
     searchToggleIcon.on('click', function() {
       searchBar.toggle('show');
       searchBar.focus();
@@ -50,7 +49,7 @@
     const dropDown = $('.arrow-down');
     const subMenu = $('.sub-menu');
     const test = $('.menu-item-204');
-    
+
     dropDown.on('click', function() {
       test.toggleClass('open-2');
       console.log(dropDown);
@@ -97,9 +96,10 @@
       freeScroll: true,
       prevNextButtons: true,
       pageDots: false,
-      draggable: false,
+      draggable: true,
       percentPosition: false,
-      initialIndex: 0
+      initialIndex: 0,
+      groupCells: 1
     });
   });
 })(jQuery);

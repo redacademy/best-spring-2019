@@ -16,6 +16,11 @@
   }
 }
 
+.page .wp-block-image img {
+  position: relative;
+  width: 100vw;
+}
+
 .tab-content {
   // padding-left: 10px;
   // padding-right: 10px;
@@ -34,16 +39,25 @@
 }
 
 .tab-link {
-  padding: 1rem;
-  text-decoration: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  // text-decoration: none;
   font-size: 1.5rem;
-  color: $color__main;
+  color: $color__background;
+  :hover {
+    background-color: $color__background-news;
+  }
+}
+
+.page ul a:active,
+.page ul a:focus {
+  border-bottom: 3px solid $color__main;
 }
 
 @include desktop {
-  .tabs .tab-nav .flickity-button {
-    display: none;
-  }
+  // .tabs .tab-nav .flickity-button {
+  //   display: none;
+  // }
   .tab-content-flexed {
     display: flex;
     flex-direction: row;
@@ -64,7 +78,7 @@
   }
 }
 
-// testing 
+// testing
 .flickity-slider li {
   margin: 0 auto;
 }
