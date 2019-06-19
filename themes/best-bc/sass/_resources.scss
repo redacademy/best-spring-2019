@@ -22,8 +22,6 @@
 }
 
 .tab-content {
-  // padding-left: 10px;
-  // padding-right: 10px;
   margin: 0 32px;
   display: none;
   font-family: $font__main;
@@ -41,17 +39,18 @@
 .tab-link {
   padding-left: 1rem;
   padding-right: 1rem;
-  // text-decoration: none;
   font-size: 1.5rem;
   color: $color__background;
-  :hover {
-    background-color: $color__background-news;
-  }
 }
 
-.page ul a:active,
-.page ul a:focus {
+.active-tab {
   border-bottom: 3px solid $color__main;
+  color: $color__main;
+}
+
+.tab-link:active {
+  border-bottom: 3px solid $color__main;
+  color: $color__main;
 }
 
 @include desktop {

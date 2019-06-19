@@ -1288,12 +1288,14 @@ object {
   padding-right: 1rem;
   font-size: 1.5rem;
   color: #e7e7e7; }
-  .tab-link :hover {
-    background-color: #8caba3; }
 
-.page ul a:active,
-.page ul a:focus {
-  border-bottom: 3px solid #228f7a; }
+.active-tab {
+  border-bottom: 3px solid #228f7a;
+  color: #228f7a; }
+
+.tab-link:active {
+  border-bottom: 3px solid #228f7a;
+  color: #228f7a; }
 
 @media (min-width: 620px) {
   .tab-content-flexed {

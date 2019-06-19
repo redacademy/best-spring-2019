@@ -71,6 +71,8 @@
 
     $tabLinks.on('click', function(event) {
       event.preventDefault();
+      $tabLinks.removeClass('active-tab');
+      $(this).addClass('active-tab');
       let tabIndex = $tabLinks.index(this);
       $tabContent.hide();
       $tabContent.eq(tabIndex).show();
@@ -93,12 +95,11 @@
     $('.tab-nav').flickity({
       cellAlign: 'center',
       contain: true,
-      freeScroll: true,
+      freeScroll: false,
       prevNextButtons: true,
       pageDots: false,
       draggable: true,
       percentPosition: false,
-      initialIndex: 0,
       groupCells: 1
     });
   });
