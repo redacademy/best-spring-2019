@@ -21,6 +21,7 @@ get_header(); ?>
 
       <?php /* Start the Loop */ ?>
       <div class="programs">
+        
 			  <?php while ( have_posts() ) : the_post(); ?>
 
          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -32,7 +33,6 @@ get_header(); ?>
         
           <?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( CFS()->get('program_url') ) ), '</a></h2>' ); ?>
 
-        </div> <!-- entry -->
 
       <div class="overlay">
  <h3 class="overlay-title"> <?php the_title() ?></h3>
@@ -40,6 +40,8 @@ get_header(); ?>
 <a class="visit-btn" href="<?php echo esc_url( CFS()->get('program_url'))?>">Visit Website</a>
 
 </div>
+        </div> <!-- entry -->
+
 
 
       </article><!-- #post-## -->

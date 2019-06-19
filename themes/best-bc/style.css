@@ -1340,6 +1340,14 @@ object {
             flex-direction: column;
     -ms-flex-line-pack: distribute;
         align-content: space-around; }
+    .archive .programs .program {
+      position: relative; }
+      .archive .programs .program:hover .overlay {
+        opacity: 1;
+        top: 0; }
+      .archive .programs .program .overlay {
+        opacity: 0;
+        position: absolute; }
     @media (min-width: 620px) {
       .archive .programs {
         display: -webkit-box;
