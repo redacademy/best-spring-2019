@@ -16,38 +16,32 @@ get_header(); ?>
 
 
 
-<div class="bike-container">
-      <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/bike-weekcutout2.png" alt="bike"/></div>
-      <div class="fp-bike-valet">
-        <h3>The Bicycle Valet</h3>
-        <p>Provided safe storage to 208,603 bikes since 2002</p>
-      </div> <!--end of bike-valet-->
-</div> <!--bike container-->
-      <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/hp-dashed-curvy.png" alt="dashed-line"/></div>
+      <div class="bike-container">
+            <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout2.png" alt="bike"/></div>
+            <div class="fp-bike-valet">
+              <h3>The Bicycle Valet</h3>
+              <p>Provided safe storage to 208,603 bikes since 2002</p>
+            </div> <!--end of bike-valet-->
+      </div> <!--bike container-->
 
-
+      <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/hp-dashed-curvy.png" alt="dashed-line"/></div>
 
       <div class="bus-container">
-<div class="fp-park-bus">
-        <h3>Park Bus</h3>
-        <p>is your ride to the great outdoors, connecting the city to campgrounds, canoe access points, lodges and hiking trails.</p>
-      </div> <!--park bus-->
-    
-    <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/Images/parkbus-cut-out.png" alt="bus"/></div>
-      
-</div><!--bus container-->
-
-
-
-
-      
+        <div class="fp-park-bus">
+          <h3>Park Bus</h3>
+          <p>is your ride to the great outdoors, connecting the city to campgrounds, canoe access points, lodges and hiking trails.</p>
+        </div> <!--park bus-->
+        <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/parkbus-cut-out.png" alt="bus"/></div>
+      </div><!--bus container-->
       <!--end of transportation choices-->
+
     <!-- News -->
     <?php $args = array('post_type' => 'post', 'posts_per_page' => 2);
     $news_posts = get_posts($args); ?>
     <section class="fp-news-background">
       <div class="fp-news-background-2">
         <h2>News</h2>
+        <p class="news-text">Stay up to date with all our events and monthly updates!</p>
         <div class="fp-news">
           <?php foreach ($news_posts as $post) : setup_postdata($post); ?>
             <div class="fp-news-wrapper">
@@ -55,7 +49,7 @@ get_header(); ?>
               <!-- Thumbnail -->
               <?php if (has_post_thumbnail()) { ?>
                 <div class="fp-news-thumbnail">
-                  <?php the_post_thumbnail('medium'); ?>
+                  <?php the_post_thumbnail('large'); ?>
                 </div>
               <?php } ?>
 
@@ -66,7 +60,7 @@ get_header(); ?>
                 </div>
 
                 <div class="fp-news-post">
-                  <?php echo get_the_content(); ?>
+                  <?php the_excerpt(); ?>
                 </div>
 
                 <a class="fp-news-btn" href="<?php echo get_the_permalink(); ?>">Read More ></a>

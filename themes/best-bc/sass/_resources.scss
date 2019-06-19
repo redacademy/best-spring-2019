@@ -63,20 +63,3 @@
     width: 100%;
   }
 }
-
-// testing 
-.flickity-slider li {
-  margin: 0 auto;
-}
-
-.flickity-button {
-  @include clean-all;
-  background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important;
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.flickity-button-icon {
-  display: none;
-}

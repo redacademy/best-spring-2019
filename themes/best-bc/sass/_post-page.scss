@@ -1,0 +1,23 @@
+/* Home Post Page for Newsletter */
+
+.news-content{
+    .news-banner {
+        width: 100%;
+        height: 500px;
+        background-image: url(../../assets/Images/AboutUsNewsletterBanner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        h1 {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color__header;
+            font-size: 2.5rem;
+        }
+    }
+    p {
+        text-align: center;
+    }
+}

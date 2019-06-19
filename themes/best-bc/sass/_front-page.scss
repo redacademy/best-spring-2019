@@ -1,3 +1,85 @@
+.bike-container{
+  display: flex;
+  justify-content: space-evenly
+}
+
+.fp-yellow-bike{ 
+  text-align: center;
+  width: 50%;
+  padding: 21px;
+img{
+  width: 164px;
+  height: 164px;
+  @include desktop{
+    width: 433px;
+    height: 433px;
+
+    }
+  } 
+}
+.fp-bike-valet {
+  width: 50%;
+  padding: 21px;
+  h3{
+    color: $color__button-light;
+    font-size: 20px;
+    @include desktop{
+      font-size: 36px;
+    }
+  }
+  p{
+    padding-right: 20vw;
+    @include desktop{
+      font-size: 24px;
+    }
+  }
+}
+.fp-linebreak-image img{
+  width: 100%;
+
+}
+
+//  bus container 
+.bus-container{
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+.fp-park-bus{ 
+  @include desktop{
+    width: 30%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 95px;
+  }
+  padding: 30px;
+  h3{
+  color:$color__button-light;
+  @include desktop{
+    font-size: 36px;
+  }
+  p{
+    @include desktop{
+      font-size: 24px;
+    }
+  }
+}}
+.fp-bus-image{ 
+  width: 50%;
+  padding: 50px;
+    @include desktop{
+      width: 47%;
+      padding: 0;
+    }
+img{
+  width: 198px;
+  height: 138px;
+  @include desktop{
+    width: 587px;
+    height: 367px;
+  }
+}}
+}//bus contatiner//
 //get involved section//
 .involved-container {
   width: 100%;
@@ -101,60 +183,112 @@
   }
 }
 
-// News
+/* Custom Flickity Bottom */
+.next {
+  @include clean-all;
+  background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important; 
+  background-size: 60% !important; 
+  background-repeat: no-repeat !important; 
+  background-position: center !important; 
+}
+.previous {
+  @include clean-all;
+  background: url(../../assets/vector-icons/icons/chevrons/left@1x.png) !important; 
+  background-size: 60% !important; 
+  background-repeat: no-repeat !important; 
+  background-position: center !important; 
+}
+.flickity-button-icon {
+  display: none;
+}
 
+// News
 .fp-news-background {
   height: 700px;
-  width: 100vw;
+  width: 100%;
   background: $color__wrapper-news;
   h2 {
     text-align: center;
     color: $color__background-news;
   }
+  .news-text {
+    text-align: center;
+    @include mobile {
+      display: none;
+    } 
+  }
   .fp-news-background-2 {
     background: url(../../assets/images/Newspapercutout.jpg) no-repeat;
     background-size: 30%;
-    .fp-news {
-      margin: 32px;
-      display: grid;
-      grid-gap: 1rem;
-      grid-template-rows: 1fr 1fr;
-      .fp-news-wrapper {
-        display: flex;
-        width: 100%;
-        height: 188px;
-        .fp-news-thumbnail {
-          width: 35%;
-          position: relative;
-          overflow: hidden;
-          img {
-            position: absolute;
-            height: 200px;
-          }
-        }
-        .fp-news-info {
-          width: 65%;
-          display: flex;
-          flex-direction: column;
-          padding-left: 16px;
-          background: $color__background-news;
-          .fp-news-title {
-            color: $color__header;
-            h3 {
-              margin: unset;
-              margin-top: 16px;
-            }
-          }
-          .fp-news-post {
-            color: $color__header;
-          }
-          .fp-news-btn {
-            text-decoration: none;
-            color: $color__header;
-            margin-top: auto;
-          }
-        }
-      }
+    // .fp-news {
+    //   margin: 32px;
+    //   display: grid;
+    //   grid-gap: 1rem;
+    //   grid-template-rows: 1fr 1fr;
+    //   .fp-news-wrapper {
+    //     display: flex;
+    //     width: 100%;
+    //     height: 188px;
+    //     .fp-news-thumbnail {
+    //       width: 35%;
+    //       position: relative;
+    //       overflow: hidden;
+    //       img {
+    //         position: absolute;
+    //         height: 200px;
+    //       }
+    //     }
+    //     .fp-news-info {
+    //       width: 65%;
+    //       display: flex;
+    //       flex-direction: column;
+    //       padding-left: 16px;
+    //       background: $color__background-news;
+    //       .fp-news-title {
+    //         color: $color__header;
+    //         h3 {
+    //           margin: unset;
+    //           margin-top: 16px;
+    //         }
+    //       }
+    //       .fp-news-post {
+    //         color: $color__header;
+    //       }
+    //       .fp-news-btn {
+    //         text-decoration: none;
+    //         color: $color__header;
+    //         margin-top: auto;
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}
+
+
+.fp-news {
+  display: flex;
+  padding: 10rem;
+  padding-top: unset;
+  // grid-template-columns: repeat(2, 500px);
+  .fp-news-wrapper {
+    position: relative;
+    height: 400px;
+    width: 50%;
+    overflow: hidden;
+    .fp-news-thumbnail {
+      position: absolute;
+      // top: -85%;
+      height: 50%;
+      // overflow: hidden;
+      width: 100%;
+    }
+    .fp-news-info {
+      position: absolute;
+      bottom: 0;
+      height: 50%;
+      background: $color__background-news;
+      color: $color__header;
     }
   }
 }

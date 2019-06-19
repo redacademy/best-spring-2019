@@ -115,3 +115,24 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+/* Custom function for Post */
+function best_pre_get_posts( $query ){
+    $month = $_GET["month"];
+    $year = $_GET["year"];
+
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set( 'posts_per_page', '5' );
+        $query->set( 'monthnum', $month);
+		$query->set( 'year', $year);
+    }
+    return $query;
+}
+add_action( 'pre_get_posts', 'best_pre_get_posts' );
+
+/* Custom filter for WP Excerpt */
+function best_custom_excerpt_length() {
+	return 14;
+}
+add_filter( 'excerpt_length', 'best_custom_excerpt_length');
