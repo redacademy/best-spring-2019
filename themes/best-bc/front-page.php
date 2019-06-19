@@ -92,7 +92,7 @@ get_header(); ?>
         </div>
       </div>
     </section><!-- End of News -->
-    <div class="get-involved-title"><h3>Get Involved<h3></div>
+   
     <div class="involved-container">
       <a href="<?php echo home_url('donate'); ?>"><div class="donate"><span class="involved-header">Donate</span></div></a>
       <a href="<?php echo home_url('get-involved #membership')?>"><div class="membership"><span class="involved-header">Membership</span></div></a>
