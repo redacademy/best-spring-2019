@@ -1,14 +1,35 @@
 // archive-programs
 
-.archive{
-    margin: 0 auto;
+.post-type-archive-program{
+
     .programs{
-        // margin: 100px;
+           
+        .program{
+         
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            &:hover{
+                .overlay{
+                    opacity:1;
+                    top:0;
+                    overflow: hidden;
+                } 
+           
+            }
+            .overlay{
+                opacity: 0;
+                position: absolute;
+                overflow: hidden;
+            }
+          
+        }
+      
         display: flex;
         flex-direction: column;
-        align-content: space-around;
+        align-items:center;
+
         @include desktop{
-            // margin: 100px;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -19,17 +40,26 @@
         position: relative;
         width: 340px;
         height: 300px;
+        
+        margin-top: 0;
+
         .article-thumbnail{
             width:100%;
             height: 100%;
-            border-radius: 20px;
-    
+            
+           
         }
         .entry-title{
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background: linear-gradient(   rgba(34,143,122,0.63), rgba(227,167,47,0.34));
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0;
             a{
                 color: $color__header;
                 text-decoration: none;
@@ -39,24 +69,53 @@
    
 
     // overlay content
-    .overlay{
-        background-color: $color__main;
-        width: 340px;
-        height: 300px;
-        border-radius: 20px;
-        position: relative;
-    .overlay-title{
-        text-align: center;
-        top: 10px;
-    }
-    .overlay-content p {
-        
-            font-family: $font__main;
-            position: absolute;
+    .entry-content{
+        .overlay {
+            background-color: $color__main;
+            text-align: center;
+            width: 340px;
+            height: 300px;
+            border-radius: 20px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+      
+        .overlay-title{
+            margin: 10px 10px 0 10px;
             color: white;
-            font-weight:100;
-       
-    }
+            font-weight: 500;
+            text-transform: capitalize;
+            padding-top: 5px;
+        }
+
+        .overlay-content {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+        }
+        p {
+                font-family: $font__second;
+                color: white;
+                font-weight:100;
+                margin: 0 10px 10px 10px;
+    
+            
+            }
+        a{
+            // button style
+            color:white;
+            font-family: $font__main;
+            text-transform: uppercase;
+            font-weight: 450;
+            display: inline-block;
+                @include visit-btn;
+              
+           
+        }
+
+     
+        }
 
     }
+  
 }

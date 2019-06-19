@@ -21,9 +21,9 @@
 		<div class=social-media">
 			<p class="follow-text">Follow us</p>
 			<div class="social-media-icons">
-				<span><i class="fab fa-facebook"></i></span>
-				<span><i class="fab fa-instagram"></i></span>
-				<span><i class="fab fa-twitter-square"></i></span>
+				<a href="https://www.facebook.com/pages/Better-Environmentally-Sound-Transportation-BEST/173929964216"><span><i class="fab fa-facebook"></i></span></a>
+				<a href="https://www.instagram.com/thebicyclevalet/"><span><i class="fab fa-instagram"></i></span></a>
+				<a href="https://twitter.com/BESTmobility"><span><i class="fab fa-twitter-square"></i></span></a>
 			</div>
 		</div>
 

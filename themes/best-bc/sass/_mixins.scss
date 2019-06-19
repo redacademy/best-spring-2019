@@ -42,3 +42,13 @@ $mobile-width: 619px;
   border-color: unset;
   border: none;
 }
+
+//visit button
+@mixin visit-btn{
+
+  border: 1px solid $color__button-light;
+  border-radius: 40px;
+  background-color: $color__button-light;
+  padding: 8px 60px;
+  padding-top: 10px;
+}
