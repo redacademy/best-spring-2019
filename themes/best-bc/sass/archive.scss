@@ -3,6 +3,23 @@
 .archive{
     margin: 0 auto;
     .programs{
+        .program{
+            position: relative;
+            &:hover{
+                .overlay{
+                    opacity:1;
+                    top:0;
+                } 
+           
+            }
+            .overlay{
+                opacity: 0;
+                position: absolute;
+               
+            }
+          
+        }
+      
         // margin: 100px;
         display: flex;
         flex-direction: column;
@@ -19,6 +36,7 @@
         position: relative;
         width: 340px;
         height: 300px;
+
         .article-thumbnail{
             width:100%;
             height: 100%;
@@ -39,7 +57,7 @@
    
 
     // overlay content
-    .overlay{
+    .overlay   {
         background-color: $color__main;
         width: 340px;
         height: 300px;
@@ -56,7 +74,7 @@
             color: white;
             font-weight:100;
        
-    }
+         }
 
     }
 }
