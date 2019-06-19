@@ -900,14 +900,15 @@ a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
-  .bike-container .home .fp-since {
-    font-size: 30px;
-    color: #228f7a;
-    font-weight: 600;
-    font-style: normal; }
-    @media (min-width: 620px) {
-      .bike-container .home .fp-since {
-        font-size: 48px; } }
+
+.home .fp-since {
+  font-size: 30px;
+  color: #228f7a;
+  font-weight: 600;
+  font-style: normal; }
+  @media (min-width: 620px) {
+    .home .fp-since {
+      font-size: 48px; } }
 
 .fp-1991-paragraph {
   margin: 0 auto;

@@ -7,7 +7,9 @@
 .bike-container { 
   display: flex;
   justify-content: space-evenly;
-  .home .fp-since{
+  
+}
+.home .fp-since{
   font-size: 30px;
   color:$color__main;
   font-weight: 600;
@@ -15,7 +17,6 @@
   @include desktop {
   font-size: 48px;
   }
-}
 }
 .fp-1991-paragraph{
   margin: 0 auto;
@@ -485,4 +486,3 @@ a{
     display: none !important;
   }
 }
-x
