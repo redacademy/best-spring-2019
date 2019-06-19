@@ -888,21 +888,26 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
-<<<<<<< HEAD
 /* Main Body Overflow */
 .site-content {
   overflow: hidden; }
 
 /* Main Body Overflow */
-=======
-.home .fp-since {
-  font-size: 30px;
-  color: #228f7a;
-  font-weight: 600;
-  font-style: normal; }
-  @media (min-width: 620px) {
-    .home .fp-since {
-      font-size: 48px; } }
+.bike-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+  .bike-container .home .fp-since {
+    font-size: 30px;
+    color: #228f7a;
+    font-weight: 600;
+    font-style: normal; }
+    @media (min-width: 620px) {
+      .bike-container .home .fp-since {
+        font-size: 48px; } }
 
 .fp-1991-paragraph {
   margin: 0 auto;
@@ -910,7 +915,6 @@ a {
   padding-right: 2rem;
   max-width: 1080px; }
 
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f
 .bike-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -989,37 +993,13 @@ a {
         width: 47%;
         padding: 0; } }
     .bus-container .fp-bus-image img {
-      width: 188px;
+      width: 198px;
       height: 138px; }
       @media (min-width: 620px) {
         .bus-container .fp-bus-image img {
           width: 587px;
           height: 367px; } }
 
-<<<<<<< HEAD
-/* Get Involved Section */
-.fp-involved-title {
-  width: 100%;
-  position: relative; }
-  .fp-involved-title h2 {
-    text-align: center;
-    color: #228f7a;
-    font-size: 3rem;
-    text-transform: capitalize; }
-  .fp-involved-title .fp-news-background-hand {
-    background: url(../../assets/Images/Wrench-hand-2.png) no-repeat;
-    height: 160px;
-    width: 160px;
-    background-size: contain;
-    position: absolute;
-    right: 0;
-    top: -10%; }
-    @media (min-width: 620px) {
-      .fp-involved-title .fp-news-background-hand {
-        height: 320px;
-        width: 320px;
-        top: -120%; } }
-=======
 .fp-bus-linebreak {
   display: none; }
   @media (min-width: 620px) {
@@ -1102,7 +1082,29 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px; }
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f
+
+/* Get Involved Section */
+.fp-involved-title {
+  width: 100%;
+  position: relative; }
+  .fp-involved-title h2 {
+    text-align: center;
+    color: #228f7a;
+    font-size: 3rem;
+    text-transform: capitalize; }
+  .fp-involved-title .fp-news-background-hand {
+    background: url(../../assets/Images/Wrench-hand-2.png) no-repeat;
+    height: 160px;
+    width: 160px;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: -10%; }
+    @media (min-width: 620px) {
+      .fp-involved-title .fp-news-background-hand {
+        height: 320px;
+        width: 320px;
+        top: -120%; } }
 
 .involved-container {
   width: 100%;
@@ -1111,11 +1113,7 @@ a {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px 20px;
   height: 66vw;
-<<<<<<< HEAD
   padding: 0 4.5rem 4.5rem 4.5rem;
-=======
-  padding: 2.5rem;
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f
   margin: 0 auto; }
   @media (min-width: 620px) {
     .involved-container {
@@ -1635,31 +1633,6 @@ object {
   .gform_wrapper .top_label input.medium {
     width: 100%; } }
 
-<<<<<<< HEAD
-.archive {
-  margin: 0 auto; }
-  .archive .programs {
-=======
-.flickity-slider li {
-  margin: 0 auto; }
-
-.flickity-button {
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  background: none;
-  border-radius: unset;
-  border-color: unset;
-  padding: unset;
-  background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important;
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.flickity-button-icon {
-  display: none; }
-
 .post-type-archive-program .programs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1713,7 +1686,6 @@ object {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 143, 122, 0.63)), to(rgba(227, 167, 47, 0.34)));
     background: linear-gradient(rgba(34, 143, 122, 0.63), rgba(227, 167, 47, 0.34));
     position: absolute;
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1867,7 +1839,6 @@ object {
   transition: 0.5s;
   background: #228f7a; }
 
-<<<<<<< HEAD
 /* Home Post Page for Newsletter */
 .news-content .news-banner {
   width: 100%;
@@ -1892,7 +1863,7 @@ object {
 
 .news-content p {
   text-align: center; }
-=======
+
 .page .entry-header .entry-title {
   position: absolute;
   color: #fff;
@@ -1917,4 +1888,3 @@ object {
   font-size: 1.5rem;
   padding-left: 60px;
   padding-right: 25px; }
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f

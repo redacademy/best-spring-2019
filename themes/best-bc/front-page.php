@@ -27,27 +27,15 @@ get_header(); ?>
       <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/hp-dashed-curvy.png" alt="dashed-line"/></div>
 
       <div class="bus-container">
-<<<<<<< HEAD
         <div class="fp-park-bus">
           <h3>Park Bus</h3>
           <p>is your ride to the great outdoors, connecting the city to campgrounds, canoe access points, lodges and hiking trails.</p>
         </div> <!--park bus-->
+    
         <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/parkbus-cut-out.png" alt="bus"/></div>
       </div><!--bus container-->
-      <!--end of transportation choices-->
 
-=======
-<div class="fp-park-bus">
-        <h3>Park Bus</h3>
-        <p>is your ride to the great outdoors, connecting the city to campgrounds, canoe access points, lodges and hiking trails.</p>
-      </div> <!--park bus-->
-    
-    <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/parkbus-cut-out.png" alt="bus"/></div>
-      
-</div><!--bus container-->
-<div class="fp-bus-linebreak"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Homepage Line 1.png" alt="bus"/></div>
-      
-
+      <div class="fp-bus-linebreak"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Homepage Line 1.png" alt="bus"/></div>
       <!--end of transportation choices-->
 
       <!--other programs-->
@@ -65,8 +53,6 @@ get_header(); ?>
         <div class="learn-more-button">
         <p class="learn-more"><a href="<?php echo get_post_type_archive_link('program'); ?>" class="button">Learn More</a></p>
         </div> <!--learn more button ends-->
-
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f
     <!-- News -->
     <?php $args = array('post_type' => 'post', 'posts_per_page' => 2);
     $news_posts = get_posts($args); ?>
@@ -105,15 +91,11 @@ get_header(); ?>
       <button class="fp-news-signup-mobile"><a href="">Newsletter signup</a></button>
       <a class="fp-news-archives" href="<?php echo get_the_permalink(); ?>">Read our news archive</a>
     </section><!-- End of News -->
-<<<<<<< HEAD
     
     <div class="fp-involved-title">
       <h2>Get involved</h2>
       <div class="fp-news-background-hand"></div>
     </div>
-=======
-   
->>>>>>> 3669343bdbe6f943e61ec0bb786234523b412f6f
     <div class="involved-container">
       <a href="<?php echo home_url('donate'); ?>"><div class="donate"><span class="involved-header">Donate</span></div></a>
       <a href="<?php echo home_url('get-involved #membership')?>"><div class="membership"><span class="involved-header">Membership</span></div></a>
