@@ -38,6 +38,7 @@ get_header(); ?>
  <h3 class="overlay-title"> <?php the_title() ?></h3>
 <p class="overlay-content"><?php the_content()?></p>
 <a class="visit-btn" href="<?php echo esc_url( CFS()->get('program_url'))?>">Visit Website</a>
+
 </div>
         </div> <!-- entry -->
 
