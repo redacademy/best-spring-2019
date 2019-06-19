@@ -347,16 +347,12 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-  color: #000;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.5; }
+body a,
+button a,
+input a,
+select a,
+textarea a {
+  text-decoration: none; }
 
 /* Headings */
 h1,
@@ -1166,21 +1162,28 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.staff-members .staff-image {
-  width: 164px;
-  height: 190px; }
-
-.staff-members .staff-name {
-  color: #228f7a;
-  font-size: 1.2rem;
-  font-weight: 400;
-  padding: 0;
-  margin: 0; }
-
-.staff-members .staff-title {
-  padding: 0;
-  margin: 0;
-  font-weight: 300; }
+.staff {
+  padding: 100px;
+  background-color: #e7e7e7;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 100px; }
+  .staff .staff-members .staff-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 164px;
+    height: 190px; }
+  .staff .staff-members .staff-name {
+    color: #228f7a;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0;
+    margin: 0; }
+  .staff .staff-members .staff-title {
+    padding: 0;
+    margin: 0;
+    font-weight: 300; }
 
 /* Front page */
 .site-content {
@@ -1191,7 +1194,7 @@ object {
 
 .site-footer {
   padding: 20px;
-  background: #e7e7e7;
+  background: lightgrey;
   width: 100%; }
   @media (min-width: 620px) {
     .site-footer {
@@ -1328,7 +1331,7 @@ object {
 .flickity-button-icon {
   display: none; }
 
-.archive .programs {
+.post-type-archive-program .programs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1339,19 +1342,20 @@ object {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center; }
-  .archive .programs .program {
+  .post-type-archive-program .programs .program {
     position: relative;
-    overflow: hidden; }
-    .archive .programs .program:hover .overlay {
+    overflow: hidden;
+    border-radius: 20px; }
+    .post-type-archive-program .programs .program:hover .overlay {
       opacity: 1;
       top: 0;
       overflow: hidden; }
-    .archive .programs .program .overlay {
+    .post-type-archive-program .programs .program .overlay {
       opacity: 0;
       position: absolute;
       overflow: hidden; }
   @media (min-width: 620px) {
-    .archive .programs {
+    .post-type-archive-program .programs {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1365,38 +1369,82 @@ object {
           -ms-flex-pack: space-evenly;
               justify-content: space-evenly; } }
 
-.archive .entry-content {
+.post-type-archive-program .entry-content {
   position: relative;
   width: 340px;
-  height: 300px; }
-  .archive .entry-content .article-thumbnail {
+  height: 300px;
+  margin-top: 0; }
+  .post-type-archive-program .entry-content .article-thumbnail {
+    width: 100%;
+    height: 100%; }
+  .post-type-archive-program .entry-content .entry-title {
     width: 100%;
     height: 100%;
-    border-radius: 20px; }
-  .archive .entry-content .entry-title {
+    top: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 143, 122, 0.63)), to(rgba(227, 167, 47, 0.34)));
+    background: linear-gradient(rgba(34, 143, 122, 0.63), rgba(227, 167, 47, 0.34));
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
-    .archive .entry-content .entry-title a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    margin: 0; }
+    .post-type-archive-program .entry-content .entry-title a {
       color: white;
       text-decoration: none; }
 
-.archive .overlay {
+.post-type-archive-program .entry-content .overlay {
   background-color: #228f7a;
+  text-align: center;
   width: 340px;
   height: 300px;
   border-radius: 20px;
-  position: relative; }
-  .archive .overlay .overlay-title {
-    text-align: center;
-    top: 10px; }
-  .archive .overlay .overlay-content p {
-    font-family: "Josefin Sans", sans-serif;
-    position: absolute;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .post-type-archive-program .entry-content .overlay .overlay-title {
+    margin: 10px 10px 0 10px;
     color: white;
-    font-weight: 100; }
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-top: 5px; }
+  .post-type-archive-program .entry-content .overlay .overlay-content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .post-type-archive-program .entry-content .overlay p {
+    font-family: "Mukta", sans-serif;
+    color: white;
+    font-weight: 100;
+    margin: 0 10px 10px 10px; }
+  .post-type-archive-program .entry-content .overlay a {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 450;
+    display: inline-block;
+    border: 1px solid #e3a72f;
+    border-radius: 40px;
+    background-color: #e3a72f;
+    padding: 8px 60px;
+    padding-top: 10px; }
 
 /* Single Post Page */
 .entry-meta {

@@ -19,6 +19,7 @@ get_header(); ?>
      
 		<?php the_excerpt(); ?>
 <!-- staff members CFS -->
+<div class="staff">
         <?php $staff_member = CFS()->get('staff_member');
            foreach ( $staff_member as $staff) :?>
         <div class ="staff-members">
@@ -28,7 +29,7 @@ get_header(); ?>
         </div>
           <?php endforeach; ?>
 
-
+</div>
     </main><!-- #main -->
 </div><!-- #primary -->
 

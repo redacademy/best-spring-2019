@@ -27,7 +27,7 @@ get_header(); ?>
          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <div class="entry-content">
           <?php if ( has_post_thumbnail() ) : ?>
-           <img class="article-thumbnail" src="<?php the_post_thumbnail( 'large' ); ?>
+           <img class="article-thumbnail" src="<?php echo get_the_post_thumbnail_url(); ?>">
           <?php endif; ?>
 
         
@@ -35,9 +35,9 @@ get_header(); ?>
 
 
       <div class="overlay">
- <h3 class="overlay-title"> <?php the_title() ?></h3>
-<p class="overlay-content"><?php the_content()?></p>
-<a class="visit-btn" href="<?php echo esc_url( CFS()->get('program_url'))?>">Visit Website</a>
+  <h3 class="overlay-title"> <?php the_title() ?></h3>
+  <div class="overlay-content"><?php the_content()?></div>
+  <p class="visit-btn"><a href="<?php echo esc_url( CFS()->get('program_url'))?>">Visit Website</a></p>
 
 </div>
         </div> <!-- entry -->
