@@ -861,6 +861,12 @@ a {
     .home .fp-since {
       font-size: 48px; } }
 
+.fp-1991-paragraph {
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1080px; }
+
 .bike-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1028,14 +1034,6 @@ a {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 18px; }
-
-.get-involved-title h3 {
-  text-align: center;
-  color: #228F7A;
-  font-size: 30px; }
-  @media (min-width: 620px) {
-    .get-involved-title h3 {
-      font-size: 48px; } }
 
 .involved-container {
   width: 100%;

@@ -6,7 +6,16 @@
   @include desktop{
   font-size: 48px;
   }
+ 
 }
+.fp-1991-paragraph{
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1080px;
+
+}
+
 .bike-container{
   display: flex;
   justify-content: space-evenly
