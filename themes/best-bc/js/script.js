@@ -2,7 +2,7 @@
   $(function() {
     /* Start of Header */
 
-    // Search Bar
+    /* Search Bar */
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
@@ -18,7 +18,7 @@
       }
     });
 
-    // Hamburger Menu
+    /* Hamburger Menu */
     const hamburger = $('.hamburger-menu');
 
     hamburger.on('click', function(event) {
@@ -26,7 +26,7 @@
       hamburger.toggleClass('is-active');
     });
 
-    // Menu Slider
+    /* Menu Slider */
     const headerSlider = $('.main-navigation');
     const headerNav = $('.header-primary-menu');
 
@@ -41,7 +41,7 @@
       }
     });
 
-    //Menu Button
+    /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
     $('.menu-item-204').append(arrowDown);
     $('.menu-item-261').append(arrowDown);

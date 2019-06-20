@@ -1,6 +1,6 @@
 //remove title on front-page banner only
 .home .entry-title {
-  display: none;
+  display: none !important;
 }
 
 /* Main Body Overflow */
@@ -424,6 +424,7 @@ a {
         flex-direction: column;
         padding-left: 16px;
         background: $color__background-news;
+        position: relative;
         @include desktop {
           position: absolute;
           bottom: 0;
@@ -448,10 +449,11 @@ a {
           text-decoration: none;
           color: $color__header;
           margin-top: auto;
+          position: absolute;
+          bottom: 5%;
           @include desktop {
             text-decoration: none;
             color: $color__header;
-            position: absolute;
             right: 5%;
             bottom: 5%;
           }
