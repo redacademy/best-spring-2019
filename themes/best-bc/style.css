@@ -1904,3 +1904,21 @@ object {
   font-size: 1.5rem;
   padding-left: 60px;
   padding-right: 25px; }
+
+.page-template-page-privacy .privacy-heading-title {
+  text-align: center;
+  color: #228f7a; }
+
+.page-template-page-privacy .privacy-paragraph, .page-template-page-privacy .terms-paragraph {
+  margin: 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  margin-bottom: 2.5rem;
+  text-align: center; }
+
+.page-template-page-privacy .terms-heading-title {
+  text-align: center;
+  color: #228f7a; }
