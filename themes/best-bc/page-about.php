@@ -14,10 +14,10 @@ get_header(); ?>
 
             <?php get_template_part('template-parts/content', 'page'); ?>
 
-            
         <?php endwhile; ?>
      
-		<?php the_excerpt(); ?>
+        <?php the_excerpt(); ?>
+        
 <!-- staff members CFS -->
 <div class="staff">
         <?php $staff_member = CFS()->get('staff_member');
@@ -30,6 +30,14 @@ get_header(); ?>
           <?php endforeach; ?>
 
 </div>
+
+<div class="board-team">
+    <h1 class="board">Board Members</h1>
+                <div class="board-members"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/group-photo.jpg"alt="">
+</div>
+<p class ="member-names">Danika Ball, Todd Spieling, Lauren Isaacsont, Ryan Skyes, Caitlin</p> 
+ <p>Roberts, Tylor Sherman, Steve Tannock, Emily Willobee</p>
+			</div>
     </main><!-- #main -->
 </div><!-- #primary -->
 

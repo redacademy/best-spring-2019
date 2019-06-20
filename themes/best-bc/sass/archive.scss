@@ -2,6 +2,10 @@
 
 .post-type-archive-program{
 
+    //  trying to add hero banner here
+//    .site-content{
+//         background-image: url('../../assets/Images/ProgramsBanner.jpg') no-repeat ; 
+//     }
     .programs{
            
         .program{
@@ -87,17 +91,23 @@
             text-align: left;
             text-transform: capitalize;
             padding-top: 5px;
+            font-family: $font__main;
         }
 
         .overlay-content {
-            flex-grow: 1;
+
             display: flex;
-            align-items: center;
+            text-align: left;
+            font-family: $font__second;
             
+        }
         p {
-                font-family: $font__second;
+                font-family:$font__second;
                 color: white;
-                font-weight:100;
+                font-size: 15px;
+                line-height: 28px;
+                padding-top: 30px;
+                padding-bottom: 30px;
                 margin: 0 10px 10px 10px;
     
             
@@ -109,6 +119,7 @@
             text-transform: uppercase;
             font-weight: 450;
             display: inline-block;
+          
                 @include visit-btn;
               
            
@@ -119,5 +130,4 @@
 
     }
   
-}
 }

@@ -1475,13 +1475,24 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.board-team .board {
+  text-align: center;
+  padding: 30px;
+  color: #228f7a; }
+
+.board-team img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-left: 250px; }
+
 .staff {
   padding: 100px;
+  padding-left: 280px;
   background-color: #e7e7e7;
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 200px 200px;
-  grid-gap: 100px; }
+  grid-row-gap: 100px; }
   .staff .staff-members .staff-image {
     -o-object-fit: cover;
        object-fit: cover;
@@ -1722,33 +1733,32 @@ object {
     font-weight: 500;
     text-align: left;
     text-transform: capitalize;
-    padding-top: 5px; }
+    padding-top: 5px;
+    font-family: "Josefin Sans", sans-serif; }
   .post-type-archive-program .entry-content .overlay .overlay-content {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .post-type-archive-program .entry-content .overlay .overlay-content p {
-      font-family: "Mukta", sans-serif;
-      color: white;
-      font-weight: 100;
-      margin: 0 10px 10px 10px; }
-    .post-type-archive-program .entry-content .overlay .overlay-content a {
-      color: white;
-      font-family: "Josefin Sans", sans-serif;
-      text-transform: uppercase;
-      font-weight: 450;
-      display: inline-block;
-      border: 1px solid #e3a72f;
-      border-radius: 40px;
-      background-color: #e3a72f;
-      padding: 8px 60px;
-      padding-top: 10px; }
+    text-align: left;
+    font-family: "Mukta", sans-serif; }
+  .post-type-archive-program .entry-content .overlay p {
+    font-family: "Mukta", sans-serif;
+    color: white;
+    font-size: 15px;
+    line-height: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 10px 10px 10px; }
+  .post-type-archive-program .entry-content .overlay a {
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 450;
+    display: inline-block;
+    border: 1px solid #e3a72f;
+    border-radius: 40px;
+    background-color: #e3a72f;
+    padding: 4px 60px; }
 
 /* Single Post Page */
 .entry-meta {
