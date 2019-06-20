@@ -1,6 +1,6 @@
 <?php
 /**
- * Templage Name: Donate
+ * Template Name: Donate
  *
  * @package Best_Theme
  */

@@ -889,7 +889,7 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .home .entry-title {
-  display: none; }
+  display: none !important; }
 
 /* Main Body Overflow */
 .site-content {
@@ -1508,10 +1508,10 @@ object {
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
-#gform_fields_6 {
+.page-template-page-donate #gform_fields_6 {
   padding-left: 50px; }
 
-.gform_wrapper .gform_footer {
+.page-template-page-donate .gform_wrapper .gform_footer {
   padding-left: 50px; }
 
 .site-footer {

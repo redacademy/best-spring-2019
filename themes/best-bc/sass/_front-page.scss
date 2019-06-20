@@ -1,6 +1,6 @@
 //remove title on front-page banner only
 .home .entry-title {
-  display: none;
+  display: none !important;
 }
 
 /* Main Body Overflow */
