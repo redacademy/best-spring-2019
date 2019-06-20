@@ -84,6 +84,7 @@
             margin: 10px 10px 0 10px;
             color: white;
             font-weight: 500;
+            text-align: left;
             text-transform: capitalize;
             padding-top: 5px;
         }
@@ -92,7 +93,7 @@
             flex-grow: 1;
             display: flex;
             align-items: center;
-        }
+            
         p {
                 font-family: $font__second;
                 color: white;
@@ -118,4 +119,5 @@
 
     }
   
+}
 }
