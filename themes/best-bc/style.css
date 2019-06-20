@@ -1585,6 +1585,18 @@ object {
         margin: 0;
         width: 200px;
         left: 0; } }
+  .site-footer a:link {
+    color: #228f7a; }
+  .site-footer a:visited {
+    color: #228f7a; }
+  .site-footer a:hover {
+    color: #176f5d; }
+  .site-footer .social-media-icons a:link {
+    color: black; }
+  .site-footer .social-media-icons a:visited {
+    color: black; }
+  .site-footer .social-media-icons a:hover {
+    color: #176f5d; }
 
 .page .resource-p {
   padding-left: 50px;
