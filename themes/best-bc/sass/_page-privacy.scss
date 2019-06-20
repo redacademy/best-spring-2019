@@ -1,0 +1,23 @@
+.page-template-page-privacy{
+    .privacy-heading-title{
+        text-align: center;
+        color: $color__main;
+    }
+    
+    .privacy-paragraph, .terms-paragraph{
+    margin: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: $font__main;
+    font-weight: normal;
+    line-height: $font__line-height-body;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    }
+    .terms-heading-title{
+        text-align: center;
+        color: $color__main;
+    }
+    
+    
+}

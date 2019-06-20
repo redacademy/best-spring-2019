@@ -15,9 +15,63 @@
             align-items: center;
             color: $color__header;
             font-size: 2.5rem;
+            margin: unset;
         }
     }
     p {
+        margin: 32px 0;
+        padding: 0 120px;
+        // text-align: center;
+        font-size: 1.4rem;
+        line-height: 1.5;
+    }
+    .news-signup {
+        display: flex;
+        justify-content: center;
+        height: 44px;
+        background: $color__button-light;
+        width: 350px;
+        margin: 0 auto;
+        box-shadow: none;
+        border-radius: 50px;
+        text-shadow: none;
+        margin: 32px auto;
+        a {
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color__header;
+            font-size: 1.2rem;
+            margin: 0 auto;
+        }
+    }
+    .news-select {
         text-align: center;
+        font-size: 1.2rem;
+    }
+    .news-form {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        .news-month {
+            width: 96px;
+            height: 40px;
+            margin: 0 8px;
+            border: 2px solid $color__background-screen;
+        }
+        .news-year {
+            width: 96px;
+            height: 40px;
+            margin: 0 8px;
+            border: 2px solid $color__background-screen;
+        }
+    }
+    .news-submit {
+        box-shadow: none;
+        text-shadow: none;
+        border-radius: 30px;
+        text-align: center;   
+        width: 80px;
+        height: 40px;
     }
 }
