@@ -1,32 +1,35 @@
+//remove title on front-page banner only
+.home .entry-title {
+  display: none;
+}
+
 /* Main Body Overflow */
 .site-content {
   overflow: hidden;
 }
 /* Main Body Overflow */
 
-.bike-container { 
+.bike-container {
   display: flex;
   justify-content: space-evenly;
-  
 }
-.home .fp-since{
+.home .fp-since {
   font-size: 30px;
-  color:$color__main;
+  color: $color__main;
   font-weight: 600;
   font-style: normal;
   @include desktop {
-  font-size: 48px;
+    font-size: 48px;
   }
 }
-.fp-1991-paragraph{
+.fp-1991-paragraph {
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
   max-width: 1080px;
-
 }
 
-.bike-container{
+.bike-container {
   display: flex;
   justify-content: space-evenly;
 }
@@ -110,9 +113,9 @@
 } //bus contatiner//
 
 //bus line break image//
-.fp-bus-linebreak{
-    display: none;
-  @include desktop{
+.fp-bus-linebreak {
+  display: none;
+  @include desktop {
     position: relative;
     left: 34vw;
     bottom: 6vw;
@@ -121,80 +124,77 @@
 }
 
 //other program section//
-.title-other-program{
+.title-other-program {
   text-align: center;
   color: $color__button-light;
-  h3{
-    @include desktop{
+  h3 {
+    @include desktop {
       font-size: 36px;
     }
   }
 }
-.program-wrapper{
-  @include desktop{
+.program-wrapper {
+  @include desktop {
     display: flex;
     justify-content: center;
   }
-
 }
-.program-block{
+.program-block {
   display: flex;
   justify-content: space-evenly;
-    .program-block-item img{
-      width: 164px;
-      height: 85px;
-      border: 2px solid #228F7A;
-      border-radius: 7px;
-      padding: 24px;
-      @include desktop{
-        width: 256px;
-        height: 130px;
-        margin: 0 14px;
-        padding: 26px;
-      }
+  .program-block-item img {
+    width: 164px;
+    height: 85px;
+    border: 2px solid #228f7a;
+    border-radius: 7px;
+    padding: 24px;
+    @include desktop {
+      width: 256px;
+      height: 130px;
+      margin: 0 14px;
+      padding: 26px;
     }
+  }
 }
 
-.program-second-block{
+.program-second-block {
   display: flex;
   justify-content: space-evenly;
-    .program-block-item img{
-      width: 164px;
-      height: 85px;
-      border: 2px solid #228F7A;
-      border-radius: 7px;
-      padding: 24px;
-      @include desktop{
-        width: 256px;
-        height: 130px;
-        margin: 0 14px;
-        padding: 41px;
-      }
+  .program-block-item img {
+    width: 164px;
+    height: 85px;
+    border: 2px solid #228f7a;
+    border-radius: 7px;
+    padding: 24px;
+    @include desktop {
+      width: 256px;
+      height: 130px;
+      margin: 0 14px;
+      padding: 41px;
     }
+  }
 }
 
-
-a{
+a {
   text-decoration: none;
 }
 
-
-.learn-more{
+.learn-more {
   text-align: center;
   margin-bottom: 6vw;
- 
-    .button{
-        background: $color__button-light;
-        border-radius: 20px;
-        padding: 10px;
-        padding-left: 44px;
-        padding-right: 44px;
-        color: white;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: bold;
-        font-size: 18px;
-    }
+
+  .button {
+    background: $color__button-light;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 44px;
+    padding-right: 44px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
 
 /* Get Involved Section */
@@ -238,7 +238,11 @@ a{
   }
 }
 .donate {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%),
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
     url(../../assets/images/HomepageDonateCard.jpg);
   height: 100%;
   background-size: cover;
@@ -246,7 +250,11 @@ a{
   border-radius: 11px;
 }
 .membership {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%),
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
     url(../../assets/images/HomePageMembershipCard.jpg);
   height: 100%;
   background-size: cover;
@@ -254,7 +262,11 @@ a{
   border-radius: 11px;
 }
 .sponsor {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%),
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
     url(../../assets/images/HomepageSponsorCard.jpg);
   height: 100%;
   background-size: cover;
@@ -262,7 +274,11 @@ a{
   border-radius: 11px;
 }
 .volunteer {
-  background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%),
+  background-image: linear-gradient(
+      120deg,
+      rgba(89, 65, 18, 0.7) 5%,
+      rgba(13, 56, 48, 0.7) 95%
+    ),
     url(../../assets/images/HomepageVolunteerCard.jpg);
   height: 100%;
   background-size: cover;

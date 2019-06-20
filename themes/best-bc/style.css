@@ -888,6 +888,9 @@ a {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.home .entry-title {
+  display: none; }
+
 /* Main Body Overflow */
 .site-content {
   overflow: hidden; }
@@ -1036,7 +1039,7 @@ a {
   .program-block .program-block-item img {
     width: 164px;
     height: 85px;
-    border: 2px solid #228F7A;
+    border: 2px solid #228f7a;
     border-radius: 7px;
     padding: 24px; }
     @media (min-width: 620px) {
@@ -1056,7 +1059,7 @@ a {
   .program-second-block .program-block-item img {
     width: 164px;
     height: 85px;
-    border: 2px solid #228F7A;
+    border: 2px solid #228f7a;
     border-radius: 7px;
     padding: 24px; }
     @media (min-width: 620px) {
@@ -1504,6 +1507,10 @@ object {
   margin: 0 auto;
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
+
+#gform_fields_6,
+.gform_wrapper .gform_footer {
+  padding-left: 50px; }
 
 .site-footer {
   padding: 20px;
