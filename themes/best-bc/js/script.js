@@ -3,22 +3,22 @@
     /* Start of Header */
 
     // Search Bar
-    const searchBar = $('.search-field');
-    const searchToggleIcon = $('.search-toggle-icon');
+    // const searchBar = $('.search-field');
+    // const searchToggleIcon = $('.search-toggle-icon');
 
-    searchToggleIcon.on('click', function() {
-      searchBar.toggle('show');
-      searchBar.focus();
-    });
+    // searchToggleIcon.on('click', function() {
+    //   searchBar.toggle('show');
+    //   searchBar.focus();
+    // });
 
-    searchBar.on('blur', function(event) {
-      event.preventDefault();
-      if (searchBar.val() === '') {
-        searchBar.hide('slide');
-      }
-    });
+    // searchBar.on('blur', function(event) {
+    //   event.preventDefault();
+    //   if (searchBar.val() === '') {
+    //     searchBar.hide('slide');
+    //   }
+    // });
 
-    // Hamburger Menu
+    /* Hamburger Menu */
     const hamburger = $('.hamburger-menu');
 
     hamburger.on('click', function(event) {
@@ -26,22 +26,22 @@
       hamburger.toggleClass('is-active');
     });
 
-    // Menu Slider
-    const headerSlider = $('.main-navigation');
-    const headerNav = $('.header-primary-menu');
+    /* Menu Slider */
+    // const headerSlider = $('.main-navigation');
+    // const headerNav = $('.header-primary-menu');
 
-    headerSlider.on('click', function(event) {
-      event.preventDefault();
-      $(this).toggleClass('active');
-      headerSlider.toggleClass('open');
-      if (headerSlider.hasClass('open')) {
-        headerNav.show();
-      } else {
-        headerNav.hide();
-      }
-    });
+    // headerSlider.on('click', function(event) {
+    //   event.preventDefault();
+    //   $(this).toggleClass('active');
+    //   headerSlider.toggleClass('open');
+    //   if (headerSlider.hasClass('open')) {
+    //     headerNav.show();
+    //   } else {
+    //     headerNav.hide();
+    //   }
+    // });
 
-    //Menu Button
+    /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
     $('.menu-item-204').append(arrowDown);
     $('.menu-item-261').append(arrowDown);
