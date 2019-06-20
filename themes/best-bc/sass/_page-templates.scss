@@ -2,6 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 // page about
+<<<<<<< HEAD
 .board-team{
     .board{
         text-align: center;
@@ -25,33 +26,48 @@
         grid-row-gap: 100px;
    
 .staff-members{
+=======
+.staff {
+  padding: 100px;
+  background-color: $color__background;
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 100px;
+>>>>>>> d58d5303b713da2209959e1209149aa645430451
 
-.staff-image {
-    object-fit:cover;
-   width: 164px;
-   height: 190px;
-   
-}
-.staff-name{
-    color: $color__main;
-    font-size: 1.2rem;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-}
-.staff-title{
-    padding:0;
-    margin: 0;
-    font-weight: 300;
-    
-   
-}
-}
-
+  .staff-members {
+    .staff-image {
+      object-fit: cover;
+      width: 164px;
+      height: 190px;
+    }
+    .staff-name {
+      color: $color__main;
+      font-size: 1.2rem;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+    }
+    .staff-title {
+      padding: 0;
+      margin: 0;
+      font-weight: 300;
+    }
+  }
 }
 /* Front page */
-.site-content{
-    max-width: 1240px;
-    margin: 0 auto;
-    box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+.site-content {
+  max-width: 1240px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+// Donate Page
+.page-template-page-donate #gform_fields_6 {
+  padding-left: 50px;
+}
+
+.page-template-page-donate .gform_wrapper .gform_footer {
+  padding-left: 50px;
 }
