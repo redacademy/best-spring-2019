@@ -206,35 +206,6 @@
   margin-bottom: 150px;
 }
 
-// .header-primary-menu ul {
-//   display: flex;
-//   flex-direction: column;
-//   @include desktop {
-// 	flex-direction: row;
-//   }
-//   li {
-//     width: 359px;
-//     height: 48px;
-//     font-size: 20px;
-//     border-bottom: 1px solid white;
-//     display: flex;
-//     align-items: center;
-//     @include desktop {
-//       margin: 0 auto;
-//       height: 40px;
-//       width: 200px;
-//       border: none;
-//       .arrow-down {
-//         display: none;
-//       }
-//     }
-//     a {
-//       color: $color__header;
-//       padding-left: 16px;
-//     }
-//   }
-// }
-
 .menu-item-204,
 .menu-item-261 {
   display: flex;

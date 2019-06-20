@@ -18,7 +18,7 @@ function best_post_type()
         'archives'              => 'Program Archives',
         'attributes'            => 'Program Attributes',
         'parent_item_colon'     => 'Parent Program:',
-        'all_items'             => 'All Programa',
+        'all_items'             => 'All Programs',
         'add_new_item'          => 'Add New Program',
         'add_new'               => 'Add New Program',
         'new_item'              => 'New Program',
