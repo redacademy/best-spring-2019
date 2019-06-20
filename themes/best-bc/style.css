@@ -1708,6 +1708,27 @@ object {
   .gform_wrapper .top_label input.medium {
     width: 100%; } }
 
+.page-header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/images/ProgramsBanner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/ProgramsBanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 65vh;
+  position: relative;
+  margin: 25px 0px 25px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: bottom; }
+
+.post-type-archive-program .page-title {
+  position: absolute;
+  color: white;
+  left: 50%;
+  top: 50%; }
+
+.taxonomy-description p {
+  display: none; }
+
 .post-type-archive-program .programs {
   display: -webkit-box;
   display: -ms-flexbox;
