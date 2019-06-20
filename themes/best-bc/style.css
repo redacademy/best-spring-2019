@@ -997,11 +997,9 @@ a {
         width: 47%;
         padding: 0; } }
     .bus-container .fp-bus-image img {
-      width: 198px;
       height: 138px; }
       @media (min-width: 620px) {
         .bus-container .fp-bus-image img {
-          width: 587px;
           height: 367px; } }
 
 .fp-bus-linebreak {
@@ -1116,13 +1114,13 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px 20px;
-  height: 66vw;
-  padding: 0 4.5rem 4.5rem 4.5rem;
+  height: 58vw;
+  padding: 0 1.5rem 2.5rem 2.5rem;
   margin: 0 auto; }
   @media (min-width: 620px) {
     .involved-container {
       width: 86%;
-      height: 57vw; } }
+      height: 42vw; } }
 
 .donate {
   background-image: linear-gradient(120deg, rgba(89, 65, 18, 0.7) 5%, rgba(13, 56, 48, 0.7) 95%), url(../../assets/images/HomepageDonateCard.jpg);
@@ -1155,16 +1153,26 @@ a {
 .involved-header {
   color: #fff;
   position: relative;
-  top: 45%;
-  left: 26%;
+  top: 25%;
+  left: 0%;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
-  font-size: 20px; }
+  font-size: 20px;
+  text-align: center; }
+  .involved-header a {
+    color: white; }
   @media (min-width: 620px) {
     .involved-header {
-      top: 50%;
-      left: 31%;
+      top: 26%;
+      left: 0%;
       font-size: 42px; } }
+  .involved-header .involved-subtext {
+    display: none; }
+    @media (min-width: 620px) {
+      .involved-header .involved-subtext {
+        font-size: 16px;
+        font-weight: normal;
+        display: block; } }
 
 /* Sponsor Flickity-Slider */
 .fp-line-break {
