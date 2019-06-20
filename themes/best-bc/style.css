@@ -1359,7 +1359,8 @@ a {
             -ms-flex-direction: column;
                 flex-direction: column;
         padding-left: 16px;
-        background: #8caba3; }
+        background: #8caba3;
+        position: relative; }
         @media (min-width: 620px) {
           .fp-news-background .fp-news .fp-news-wrapper .fp-news-info {
             position: absolute;
@@ -1380,12 +1381,13 @@ a {
         .fp-news-background .fp-news .fp-news-wrapper .fp-news-info .fp-news-btn {
           text-decoration: none;
           color: white;
-          margin-top: auto; }
+          margin-top: auto;
+          position: absolute;
+          bottom: 5%; }
           @media (min-width: 620px) {
             .fp-news-background .fp-news .fp-news-wrapper .fp-news-info .fp-news-btn {
               text-decoration: none;
               color: white;
-              position: absolute;
               right: 5%;
               bottom: 5%; } }
   .fp-news-background .fp-news-background-letter {
@@ -1934,10 +1936,70 @@ object {
         -ms-flex-align: center;
             align-items: center;
     color: white;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    margin: unset; }
 
 .news-content p {
-  text-align: center; }
+  margin: 32px 0;
+  padding: 0 120px;
+  font-size: 1.4rem;
+  line-height: 1.5; }
+
+.news-content .news-signup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 44px;
+  background: #e3a72f;
+  width: 350px;
+  margin: 0 auto;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 50px;
+  text-shadow: none;
+  margin: 32px auto; }
+  .news-content .news-signup a {
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 auto; }
+
+.news-content .news-select {
+  text-align: center;
+  font-size: 1.2rem; }
+
+.news-content .news-form {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .news-content .news-form .news-month {
+    width: 96px;
+    height: 40px;
+    margin: 0 8px;
+    border: 2px solid lightgrey; }
+  .news-content .news-form .news-year {
+    width: 96px;
+    height: 40px;
+    margin: 0 8px;
+    border: 2px solid lightgrey; }
+
+.news-content .news-submit {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border-radius: 30px;
+  text-align: center;
+  width: 80px;
+  height: 40px; }
 
 .page .entry-header .entry-title {
   position: absolute;
