@@ -96,13 +96,34 @@ get_header(); ?>
       <h2>Get involved</h2>
       <div class="fp-news-background-hand"></div>
     </div>
+
+<!-- START OF GET INVOLVED FP CONTAINER -->
+
     <div class="involved-container">
-      <a href="<?php echo home_url('donate'); ?>"><div class="donate"><span class="involved-header">Donate</span></div></a>
-      <a href="<?php echo home_url('get-involved #membership')?>"><div class="membership"><span class="involved-header">Membership</span></div></a>
-      <a href="<?php echo home_url('get-involved #sponsorship')?>"><div class="sponsor"><span class="involved-header">Sponsor</span></div></a>
-      <a href="<?php echo home_url('get-involved #volunteer')?>"><div class="volunteer"><span class="involved-header">Volunteer</span></div></a>
+      
+        <div class="donate">
+          <a href="<?php echo home_url('donate'); ?>"><p class="involved-header">Donate<br></a>
+          <span class="involved-subtext">Help keep us going!</span>
+        </div>
+
+        <div class="membership">
+          <a href="<?php echo home_url('get-involved #membership')?>"><p class="involved-header">Membership</a><br>
+          <span class="involved-subtext">Help keep us going!</span></p>
+          </div>
+
+        <div class="sponsor">
+          <a href="<?php echo home_url('get-involved #sponsorship')?>"><p class="involved-header">Sponsor</a><br>
+          <span class="involved-subtext">Help keep us going!</span></p>
+        </div>
+
+        <div class="volunteer"><a href="<?php echo home_url('get-involved #volunteer')?>"><p class="involved-header">Volunteer</a><br>
+          <span class="involved-subtext">Help keep us going!</span></p>
+        </div>
+        
     </div>
-    <!--involved container-->
+
+   <!-- END OF GET INVOLVED FP CONTAINER -->
+
     <div class="fp-line-break"></div>
     <!-- Flickity -->
     <h2 class="fp-carousel-title">Thank you to our sponsors</h2>
