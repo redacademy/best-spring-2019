@@ -6,10 +6,10 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-    let mobile = window.matchMedia('(max-width:619px)');
+    const desktopWidth = 600;
 
     searchToggleIcon.on('click', function() {
-      if (mobile.mathces(event)) {
+      if (window.innerWidth < desktopWidth) {
         event.preventDefault();
         searchBar.focus();
         searchBar.toggle('show');
@@ -18,7 +18,7 @@
 
     searchBar.on('blur', function(event) {
       event.preventDefault();
-      if (searchBar.val() === '' && (mobile.mathces)) {
+      if (searchBar.val() === '' && window.innerWidth < desktopWidth) {
         searchBar.hide('slide');
       }
     });
@@ -39,7 +39,7 @@
         headerNav.hide();
       }
     });
-    
+
     /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
     let arrowDown2 = '<button class="arrow-down2"></button>';
@@ -49,27 +49,14 @@
     const dropDown = $('.arrow-down');
     const dropDown2 = $('.arrow-down2');
     const navDown = $('#menu-item-204');
-    const navDown2 = $('#menu-item-261')
+    const navDown2 = $('#menu-item-261');
     dropDown.on('click', function() {
       navDown.toggleClass('nav-drop-open')
     });
-    navDown.addEventListener('click', function(event) {
-      event.preventDefault;
-    });
     dropDown2.on('click', function() {
-      navDown2.toggleClass('nav-drop-open2')
+      navDown2.toggleClass('nav-drop-open2');
     });
 
-
-    const dropDown = $('.arrow-down');
-    const subMenu = $('.sub-menu');
-    const test = $('.menu-item-204');
-
-    dropDown.on('click', function() {
-      test.toggleClass('open-2');
-      console.log(dropDown);
-      console.log(subMenu);
-    });
     /* End of Header */
 
     // Start of Flickity //

@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 // page about
 
+<<<<<<< HEAD
 .board-members{
 
     .members-title{
@@ -33,8 +34,36 @@
       }
     
     
-}
+=======
+.board-members {
+  .members-title {
+    text-align: center;
+    padding: 30px;
+    color: $color__main;
+  }
+  img {
+    width: 1023px;
+    height: auto;
+    margin-left: 100px;
+  }
+  .members-names {
+    font-family: $font__main;
+    color: $color__text-screen;
+    font-size: 1.25rem;
+    line-height: 20px;
+  }
 
+  a {
+    color: white;
+    font-size: 20px;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-weight: 450;
+    @include orange-btn;
+    box-shadow: 2px;
+  }
+>>>>>>> 6b78566c7548ba24baef71ed510a7cadcec6d212
+}
 
 .staff {
   padding: 100px;

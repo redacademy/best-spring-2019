@@ -206,7 +206,7 @@ a {
     text-transform: capitalize;
   }
   .fp-news-background-hand {
-    background: url(../../assets/Images/Wrench-hand-2.png) no-repeat;
+    background: url(../../assets/images/Wrench-hand-2.png) no-repeat;
     height: 160px;
     width: 160px;
     background-size: contain;
@@ -285,7 +285,7 @@ a {
 }
 
 .involved-header {
-  a{
+  a {
     color: white;
   }
   color: #fff;
@@ -301,14 +301,14 @@ a {
     left: 0%;
     font-size: 42px;
   }
-    .involved-subtext{
-      display: none;
-      @include desktop{
+  .involved-subtext {
+    display: none;
+    @include desktop {
       font-size: 16px;
       font-weight: normal;
       display: block;
-      }
     }
+  }
 }
 
 /* Sponsor Flickity-Slider */
