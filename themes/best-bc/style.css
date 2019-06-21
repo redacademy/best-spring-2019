@@ -1730,8 +1730,8 @@ object {
     width: 100%; } }
 
 .page-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/images/ProgramsBanner.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/ProgramsBanner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/ProgramsBanner.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../assets/images/ProgramsBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;
@@ -1820,7 +1820,6 @@ object {
 
 .post-type-archive-program .entry-content .overlay {
   background-color: #228f7a;
-  text-align: center;
   width: 340px;
   height: 300px;
   border-radius: 20px;
@@ -1837,22 +1836,20 @@ object {
     color: white;
     font-weight: 500;
     text-transform: capitalize;
-    padding-top: 5px; }
+    padding: 10px 5px 15px 5px; }
   .post-type-archive-program .entry-content .overlay .overlay-content {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    display: flex; }
   .post-type-archive-program .entry-content .overlay p {
     font-family: "Mukta", sans-serif;
     color: white;
     font-weight: 100;
-    margin: 0 10px 10px 10px; }
+    margin: 0 16px 10px 16px;
+    font-size: 1.25rem; }
   .post-type-archive-program .entry-content .overlay a {
     color: white;
     font-family: "Josefin Sans", sans-serif;
@@ -1863,6 +1860,9 @@ object {
     border-radius: 40px;
     background-color: #e3a72f;
     padding: 4px 60px; }
+  .post-type-archive-program .entry-content .overlay .visit-btn {
+    margin: 0 auto;
+    padding-bottom: 16px; }
 
 /* Single Post Page */
 .entry-meta {

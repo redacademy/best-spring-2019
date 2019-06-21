@@ -2,24 +2,24 @@
 # Page Templates
 --------------------------------------------------------------*/
 // page about
-.board-team{
-    .board{
-        text-align: center;
-        padding: 30px;
-        color: $color__main;
-    }   
-    img{
-        object-fit: contain;
-        padding-left: 250px;
-    }
+.board-team {
+  .board {
+    text-align: center;
+    padding: 30px;
+    color: $color__main;
+  }
+  img {
+    object-fit: contain;
+    padding-left: 250px;
+  }
 }
 
 .staff {
   padding: 100px;
   padding-left: 280px;
-  background-color:$color__background;
+  background-color: $color__background;
   display: grid;
-  grid-template-columns: 250px 250px 250px ;
+  grid-template-columns: 250px 250px 250px;
   grid-template-rows: 200px 200px;
   grid-row-gap: 100px;
   .staff-members {

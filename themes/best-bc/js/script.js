@@ -90,6 +90,8 @@
       }
     }); /* End of Timeline */
 
+    /* Start of Tab Meny Flickity */
+
     $('.tab-nav').flickity({
       cellAlign: 'center',
       contain: true,
