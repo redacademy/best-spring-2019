@@ -31,13 +31,15 @@ get_header(); ?>
 
 </div>
 
-<div class="board-team">
-    <h1 class="board">Board Members</h1>
-                <div class="board-members"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/group-photo.jpg"alt="">
+<div class="board-members">
+     <h1 class="members-title"> <?php echo CFS()->get('board_members_title');?></h1>
+    <img class="members-photo" src="<?php echo CFS()-> get('board_members_photo');?>"/>
+    <p class="members-names"><?php echo CFS()->get('board_members_names');?></p>
+
+
+<a class="annual-report" href="<?php echo get_permalink( get_page_by_title( 'Annual Reports' ));?>">View 2018 Annual Report</a>
 </div>
-<p class ="member-names">Danika Ball, Todd Spieling, Lauren Isaacsont, Ryan Skyes, Caitlin</p> 
- <p>Roberts, Tylor Sherman, Steve Tannock, Emily Willobee</p>
-			</div>
+
     </main><!-- #main -->
 </div><!-- #primary -->
 

@@ -61,6 +61,15 @@
     });
 
 
+    const dropDown = $('.arrow-down');
+    const subMenu = $('.sub-menu');
+    const test = $('.menu-item-204');
+
+    dropDown.on('click', function() {
+      test.toggleClass('open-2');
+      console.log(dropDown);
+      console.log(subMenu);
+    });
     /* End of Header */
 
     // Start of Flickity //

@@ -20,7 +20,7 @@ get_header(); ?>
       <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout2.png" alt="bike" /></div>
       <div class="fp-bike-valet">
         <h3>The Bicycle Valet</h3>
-        <p>Provided safe storage to 208,603 bikes since 2002</p>
+        <p>Provided safe storage to <span><?php echo CFS()->get('bike_counter'); ?></span> bikes since 2002</p>
       </div>
       <!--end of bike-valet-->
     </div>
