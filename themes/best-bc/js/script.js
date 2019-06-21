@@ -6,10 +6,10 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-    let mobile = window.matchMedia('(max-width:619px)');
+    const desktopWidth = 600;
 
     searchToggleIcon.on('click', function() {
-      if (mobile.matches(event)) {
+      if (window.innerWidth < desktopWidth) {
         event.preventDefault();
         searchBar.focus();
         searchBar.toggle('show');
@@ -18,7 +18,7 @@
 
     searchBar.on('blur', function(event) {
       event.preventDefault();
-      if (searchBar.val() === '' && (mobile.mathces)) {
+      if (searchBar.val() === '' && window.innerWidth < desktopWidth) {
         searchBar.hide('slide');
       }
     });
