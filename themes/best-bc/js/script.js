@@ -9,7 +9,7 @@
     let mobile = window.matchMedia('(max-width:619px)');
 
     searchToggleIcon.on('click', function() {
-      if (mobile.mathces(event)) {
+      if (mobile.matches(event)) {
         event.preventDefault();
         searchBar.focus();
         searchBar.toggle('show');
@@ -49,12 +49,9 @@
     const dropDown = $('.arrow-down');
     const dropDown2 = $('.arrow-down2');
     const navDown = $('#menu-item-204');
-    const navDown2 = $('#menu-item-261')
+    const navDown2 = $('#menu-item-261');
     dropDown.on('click', function() {
       navDown.toggleClass('nav-drop-open')
-    });
-    navDown.addEventListener('click', function(event) {
-      event.preventDefault;
     });
     dropDown2.on('click', function() {
       navDown2.toggleClass('nav-drop-open2')
