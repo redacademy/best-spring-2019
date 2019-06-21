@@ -1541,15 +1541,34 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-.board-team .board {
+.board-members .members-title {
   text-align: center;
   padding: 30px;
   color: #228f7a; }
 
-.board-team img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding-left: 250px; }
+.board-members img {
+  width: 1023px;
+  height: auto;
+  margin-left: 100px; }
+
+.board-members .members-names {
+  font-family: "Josefin Sans", sans-serif;
+  color: #404040;
+  font-size: 1.25rem;
+  line-height: 20px; }
+
+.board-members a {
+  color: white;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 450;
+  border: 1px solid #e3a72f;
+  border-radius: 40px;
+  background-color: #e3a72f;
+  padding: 4px 60px;
+  -webkit-box-shadow: 2px;
+          box-shadow: 2px; }
 
 .staff {
   padding: 100px;
@@ -1632,7 +1651,8 @@ object {
         padding-right: 10px; } }
     .site-footer .social-media-icons span .follow-text {
       padding: 0;
-      margin: 0; }
+      margin: 0;
+      font-family: "Mukta", sans-serif; }
       @media (min-width: 620px) {
         .site-footer .social-media-icons span .follow-text {
           padding-top: 15px;
@@ -1644,7 +1664,7 @@ object {
     @media (min-width: 620px) {
       .site-footer .major-sponsor-text {
         text-align: right;
-        font-size: 1.8rem; } }
+        font-size: 1.5rem; } }
   .site-footer .translink-logo-grey {
     width: 70%;
     margin-left: 50px; }
@@ -1653,6 +1673,8 @@ object {
         margin: 0;
         width: 200px;
         left: 0; } }
+  .site-footer .menu-footer-menu-container ul a {
+    font-family: "Mukta", sans-serif; }
   .site-footer a:link {
     color: #228f7a; }
   .site-footer a:visited {
