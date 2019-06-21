@@ -2,8 +2,10 @@
 # Page Templates
 --------------------------------------------------------------*/
 // page about
-.board-team{
-    .board{
+
+.board-members{
+
+    .members-title{
         text-align: center;
         padding: 30px;
         color: $color__main;
@@ -13,24 +15,26 @@
         height: auto;
         margin-left: 100px;
     }
-    .member-names{
+    .members-names{
       font-family:$font__main;
       color:$color__text-screen;
-      font-size: 14px;
+      font-size: 1.25rem;
       line-height: 20px;
     }
-    .annual-report{
+    
       a{
         color: white;
+        font-size: 20px;
         font-family: $font__main;
         text-transform: uppercase;
         font-weight: 450;
-        display: inline-block;
         @include orange-btn;
+        box-shadow: 2px;
       }
     
-    }
+    
 }
+
 
 .staff {
   padding: 100px;
