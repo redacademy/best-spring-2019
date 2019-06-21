@@ -39,7 +39,7 @@
         headerNav.hide();
       }
     });
-    
+
     /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
     let arrowDown2 = '<button class="arrow-down2"></button>';
@@ -54,7 +54,7 @@
       navDown.toggleClass('nav-drop-open')
     });
     dropDown2.on('click', function() {
-      navDown2.toggleClass('nav-drop-open2')
+      navDown2.toggleClass('nav-drop-open2');
     });
 
     /* End of Header */
