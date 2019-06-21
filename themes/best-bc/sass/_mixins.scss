@@ -6,7 +6,7 @@
 //media query//
 $desktop-width: 620px;
 @mixin desktop {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     @content;
   }
 }
@@ -17,7 +17,6 @@ $mobile-width: 619px;
   }
 }
 
-
 // Center block
 @mixin center-block {
   display: block;
@@ -27,13 +26,13 @@ $mobile-width: 619px;
 
 // Remove preset
 @mixin clean-all {
-	border: none;
+  border: none;
   box-shadow: none;
   text-shadow: none;
   background: none;
-	border-radius: unset;
-	border-color: unset;
-	padding: unset;
+  border-radius: unset;
+  border-color: unset;
+  padding: unset;
 }
 
 @mixin clean-timeline {
@@ -44,11 +43,9 @@ $mobile-width: 619px;
 }
 
 //visit button
-@mixin visit-btn{
-
+@mixin visit-btn {
   border: 1px solid $color__button-light;
   border-radius: 40px;
   background-color: $color__button-light;
   padding: 4px 60px;
-  // padding-top: 10px;
 }
