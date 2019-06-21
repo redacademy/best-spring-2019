@@ -53,9 +53,6 @@
     dropDown.on('click', function() {
       navDown.toggleClass('nav-drop-open');
     });
-    navDown.addEventListener('click', function(event) {
-      event.preventDefault;
-    });
     dropDown2.on('click', function() {
       navDown2.toggleClass('nav-drop-open2');
     });
