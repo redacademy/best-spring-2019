@@ -14,6 +14,18 @@
   }
 }
 
+<<<<<<< HEAD
+
+.staff{
+        padding: 100px;
+        padding-left: 280px;
+        background-color:$color__background;
+        display: grid;
+        grid-template-columns: 250px 250px 250px ;
+        grid-template-rows: 200px 200px;
+        grid-row-gap: 100px;
+   
+=======
 .staff {
   padding: 100px;
   padding-left: 280px;
@@ -22,6 +34,7 @@
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 200px 200px;
   grid-row-gap: 100px;
+>>>>>>> d10ab95b6afa92ea94122dff001b3519f3bfb981
   .staff-members {
     .staff-image {
       object-fit: cover;
