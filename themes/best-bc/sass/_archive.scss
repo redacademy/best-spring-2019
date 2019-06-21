@@ -1,7 +1,7 @@
 // archive-programs
 
 .page-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
     url(../../assets/images/ProgramsBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -90,7 +90,6 @@
   .entry-content {
     .overlay {
       background-color: $color__main;
-      text-align: center;
       width: 340px;
       height: 300px;
       border-radius: 20px;
@@ -103,19 +102,19 @@
         color: white;
         font-weight: 500;
         text-transform: capitalize;
-        padding-top: 5px;
+        padding: 10px 5px 15px 5px;
       }
 
       .overlay-content {
         flex-grow: 1;
         display: flex;
-        align-items: center;
       }
       p {
         font-family: $font__second;
         color: white;
         font-weight: 100;
-        margin: 0 10px 10px 10px;
+        margin: 0 16px 10px 16px;
+        font-size: 1.25rem;
       }
       a {
         // button style
@@ -125,6 +124,10 @@
         font-weight: 450;
         display: inline-block;
         @include orange-btn;
+      }
+      .visit-btn {
+        margin: 0 auto;
+        padding-bottom: 16px;
       }
     }
   }
