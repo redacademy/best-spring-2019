@@ -8,9 +8,9 @@
 
     let mobile = window.matchMedia('(max-width:619px)');
 
-    searchToggleIcon.on('click', function(event) {
-      event.preventDefault();
-      if (mobile.mathces) {
+    searchToggleIcon.on('click', function() {
+      if (mobile.mathces(event)) {
+        event.preventDefault();
         searchBar.focus();
         searchBar.toggle('show');
       }
@@ -18,40 +18,48 @@
 
     searchBar.on('blur', function(event) {
       event.preventDefault();
-      if (searchBar.val() === '' && (mobile.matches)) {
+      if (searchBar.val() === '' && (mobile.mathces)) {
         searchBar.hide('slide');
-      } else {
-        // Work in progress
       }
     });
 
-    /* Hamburger Menu */
+    /* Hamburger Menu Slider */
     const hamburger = $('.hamburger-menu');
+    const headerSlider = $('.main-navigation');
+    const headerNav = $('.header-primary-menu');
 
     hamburger.on('click', function(event) {
       event.preventDefault();
       hamburger.toggleClass('is-active');
+      headerSlider.toggleClass('open');
+      headerSlider.toggleClass('active');
+      if (headerSlider.hasClass('open')) {
+        headerNav.show();
+      } else {
+        headerNav.hide();
+      }
     });
     
-    /* Menu Slider */
-    // const headerSlider = $('.main-navigation');
-    // const headerNav = $('.header-primary-menu');
-
-    // headerSlider.on('click', function(event) {
-    //   event.preventDefault();
-    //   $(this).toggleClass('active');
-    //   headerSlider.toggleClass('open');
-    //   if (headerSlider.hasClass('open')) {
-    //     headerNav.show();
-    //   } else {
-    //     headerNav.hide();
-    //   }
-    // });
-
     /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
+    let arrowDown2 = '<button class="arrow-down2"></button>';
     $('.menu-item-204').append(arrowDown);
-    $('.menu-item-261').append(arrowDown);
+    $('.menu-item-261').append(arrowDown2);
+
+    const dropDown = $('.arrow-down');
+    const dropDown2 = $('.arrow-down2');
+    const navDown = $('#menu-item-204');
+    const navDown2 = $('#menu-item-261')
+    dropDown.on('click', function() {
+      navDown.toggleClass('nav-drop-open')
+    });
+    navDown.addEventListener('click', function(event) {
+      event.preventDefault;
+    });
+    dropDown2.on('click', function() {
+      navDown2.toggleClass('nav-drop-open2')
+    });
+
 
     /* End of Header */
 

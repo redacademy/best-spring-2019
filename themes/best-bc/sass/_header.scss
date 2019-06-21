@@ -57,11 +57,11 @@
           display: flex;
           flex-direction: column;
           @include desktop {
-	        flex-direction: row;
+            flex-direction: row;
           }
           li:first-child {
             @include desktop {
-              width: 120px
+              width: 120px;
             }
           }
           li {
@@ -83,7 +83,13 @@
               @include desktop {
                 margin-top: 56px;
               }
+              li:first-child {
+                @include desktop {
+                  border-top: unset;
+                }
+              }
               li {
+                padding-left: 16px;
                 @include desktop {
                   height: 100%;
                   width: 120%;
@@ -130,25 +136,6 @@
   }
 }
 
-/* Menu & Animation */
-.open {
-  .hamburger-menu {
-    position: fixed;
-    top: 64px;
-    right: 16px;
-  }
-  .menu-item-204,
-  .menu-item-261 {
-    .sub-menu {
-      margin-top: 24px;
-      box-shadow: none;
-      a {
-        padding-left: 48px;
-      }
-    }
-  }
-}
-
 /* Search Form */
 .search-form {
   display: flex;
@@ -158,14 +145,13 @@
     order: 3;
     margin-left: auto;
   }
-  .search-content{
+  .search-content {
     @include desktop {
       display: flex;
       align-items: center;
       position: relative;
       width: 220px;
     }
-
   }
   .search-field {
     border-radius: 16px;
@@ -202,17 +188,9 @@
   z-index: 0;
 }
 
-.open-2 {
-  margin-bottom: 150px;
-}
-
-.menu-item-204,
-.menu-item-261 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.arrow-down {
+/* Custom Nav Button */
+.arrow-down,
+.arrow-down2 {
   height: 48px;
   width: 48px;
   @include clean-all;
@@ -220,10 +198,39 @@
   background-size: 60%;
   background-repeat: no-repeat;
   background-position: center;
+  @include desktop {
+    display: none;
+  }
 }
 
-.test123 {
-  .menu-item-204 {
-    padding-bottom: 150px;
+/* Menu & Animation */
+.open {
+  .hamburger-menu {
+    position: fixed;
+    top: 64px;
+    right: 16px;
   }
+  .menu-item-204,
+  .menu-item-261 {
+    display: flex;
+    justify-content: space-between;
+    .sub-menu {
+      margin-top: 24px;
+      box-shadow: none;
+      a {
+        padding-left: 48px;
+      }
+    }
+  }
+}
+.nav-drop-open {
+  margin-bottom: 145px;
+  align-items: unset;
+  .sub-menu {
+    display: none;
+  }
+}
+.nav-drop-open2 {
+  margin-bottom: 145px;
+  align-items: unset;
 }
