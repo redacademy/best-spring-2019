@@ -30,6 +30,7 @@
         .follow-text{
             padding: 0;
             margin: 0;
+            font-family: $font__second;
             @include desktop{
                 padding-top: 15px;
                 font-size: 1.4rem;
@@ -42,7 +43,7 @@
         text-align:center;
         @include desktop{
             text-align: right;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -55,9 +56,15 @@
                 left:0;
              }
         }
-       
+       .menu-footer-menu-container{
+          
+           ul a {
+            font-family: $font__second;
+           }
+       }
         a:link {
         color: $color__main;
+     
       }
         a:visited{
             color: $color__main;

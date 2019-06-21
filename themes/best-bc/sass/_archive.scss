@@ -10,6 +10,10 @@
   margin: 25px 0px 25px 0px;
   object-fit: cover;
   background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .post-type-archive-program .page-title {

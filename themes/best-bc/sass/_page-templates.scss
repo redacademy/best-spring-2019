@@ -2,8 +2,22 @@
 # Page Templates
 --------------------------------------------------------------*/
 // page about
-.board-team{
-    .board{
+<<<<<<< HEAD
+.board-team {
+  .board {
+    text-align: center;
+    padding: 30px;
+    color: $color__main;
+  }
+  img {
+    object-fit: contain;
+    padding-left: 250px;
+  }
+=======
+
+.board-members{
+
+    .members-title{
         text-align: center;
         padding: 30px;
         color: $color__main;
@@ -13,24 +27,27 @@
         height: auto;
         margin-left: 100px;
     }
-    .member-names{
+    .members-names{
       font-family:$font__main;
       color:$color__text-screen;
-      font-size: 14px;
+      font-size: 1.25rem;
       line-height: 20px;
     }
-    .annual-report{
+    
       a{
         color: white;
+        font-size: 20px;
         font-family: $font__main;
         text-transform: uppercase;
         font-weight: 450;
-        display: inline-block;
         @include orange-btn;
+        box-shadow: 2px;
       }
     
-    }
+    
+>>>>>>> be35507afcc945d34fe82c6dc4fc98795da7e528
 }
+
 
 .staff {
   padding: 100px;
@@ -40,6 +57,7 @@
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 200px 200px;
   grid-row-gap: 100px;
+
   .staff-members {
     .staff-image {
       object-fit: cover;
