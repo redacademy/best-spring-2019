@@ -1,6 +1,103 @@
-/* Timeline for History page */
+/* History page */
 
+.history-intro-article {
+    padding: 0 80px;
+    line-height: 2;
+    @include desktop {
+        
+    }
+}
+
+.history-content-1 {
+    width: 100%;
+    h2 {
+        color: $color__main;
+        text-align: center;
+        margin: 56px;
+        line-height: 1.5;
+        .history-title-span {
+            text-transform: uppercase;
+        }
+        .history-span {
+            display: none;
+        }
+    }
+    .history-thumbnail {
+        width: 168px;
+        height: 168px;
+        display: flex;
+        margin: 0 auto;
+    }
+    p {
+        font-size: 1.3rem;
+        padding: 0 72px;
+        line-height: 2;
+        text-align: center;
+    }
+    .history-content-line img {
+        width: 100%;
+    }
+    .history-title-25years{
+        margin-bottom: 0;
+    }
+    a {
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        line-height: 1.3;
+        text-decoration: underline;
+        color: $color__button-light;
+    }
+}
+
+.history-content-2 {
+    background: rgba(24,50,65,0.1);
+    width: 100%;
+    padding-bottom: 80px;
+    h2 {
+        color: $color__main;
+        text-align: center;
+        margin-top: 56px;
+        padding-top: 32px;
+        line-height: 1.5;
+
+    }
+    p {
+        font-size: 1.3rem;
+        padding: 0 72px;
+        line-height: 2;
+        text-align: center;
+    }
+    .history-content-2-btn {
+        display: flex;
+        margin: 0 auto;
+        border-radius: 50px;
+        width: 350px;
+        height: 56px;
+        padding: unset;
+        box-shadow: none;
+        text-shadow: none;
+        a {
+            width: 100%;
+            font-size: 1.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $color__header;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* Timeline */
 .timeline {
+    .timeline-title {
+        color: $color__main;
+        padding-bottom: 32px;
+        .history-title-span {
+            text-transform: uppercase;
+        }
+    }
     text-align: center;
     margin: 64px;
     .timeline-title {
@@ -19,8 +116,8 @@
             border-right: 6px solid $color__main;
             text-align: left;
             .timeline-btn {
-                height: 88px;
-                width: 85px;
+                height: 96px;
+                width: 96px;
                 border-radius: 50px;
                 margin-left: 16px;
                 @include clean-timeline;
@@ -32,7 +129,7 @@
             .timeline-line {
                 margin: unset;
                 height: 5px;
-                width: 132px;
+                width: 121px;
                 text-align: right;
                 position: absolute;
                 right: 0;
@@ -48,8 +145,8 @@
             border-left: 6px solid $color__main;
             text-align: right;
             .timeline-btn {
-                height: 88px;
-                width: 85px;
+                height: 96px;
+                width: 96px;
                 border-radius: 50px;
                 margin-right: 16px;
                 @include clean-timeline;
@@ -61,7 +158,7 @@
             .timeline-line {
                 margin: unset;
                 height: 5px;
-                width: 132px;
+                width: 121px;
                 text-align: left;
                 position: absolute;
                 left: 0;

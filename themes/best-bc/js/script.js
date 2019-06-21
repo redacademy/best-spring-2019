@@ -27,19 +27,19 @@
     });
 
     /* Menu Slider */
-    const headerSlider = $('.main-navigation');
-    const headerNav = $('.header-primary-menu');
+    // const headerSlider = $('.main-navigation');
+    // const headerNav = $('.header-primary-menu');
 
-    headerSlider.on('click', function(event) {
-      event.preventDefault();
-      $(this).toggleClass('active');
-      headerSlider.toggleClass('open');
-      if (headerSlider.hasClass('open')) {
-        headerNav.show();
-      } else {
-        headerNav.hide();
-      }
-    });
+    // headerSlider.on('click', function(event) {
+    //   event.preventDefault();
+    //   $(this).toggleClass('active');
+    //   headerSlider.toggleClass('open');
+    //   if (headerSlider.hasClass('open')) {
+    //     headerNav.show();
+    //   } else {
+    //     headerNav.hide();
+    //   }
+    // });
 
     /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
