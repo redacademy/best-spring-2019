@@ -1,0 +1,53 @@
+//contact-us
+.page-template-page-contact-us{
+    .gform_wrapper form{
+        margin: 0 auto;
+        padding: 3rem;
+    }
+    .gform_wrapper .top_label .gfield_label{
+        color: #228f7a;
+        font-family: $font__second;
+        font-weight: normal
+    }
+    .contact-us-thank-you{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 374px;
+        padding-left: 77px;
+        padding-right: 61px;
+        font-size: 18px;
+        font-family: $font__main;
+        font-weight: 500;
+        font-style: normal;
+            @include desktop{
+                font-size: 36px;
+                font-weight: bold;
+                max-width: 1240px;
+                padding-left: 22rem;
+                padding-right: 22rem;
+                margin: 0;
+            }
+    }
+    .also-contact{
+        text-align: center;
+        font-size: 18px;
+        font-family: $font__main;
+        font-weight: 500;
+            @include desktop{
+                font-size: 24px;
+            }
+    }
+    .contact-info-block{
+        font-family: $font__second;
+        line-height: 1.5;
+        margin: auto;
+        padding-left: 2rem;
+        font-size: 16px;
+            @include desktop{
+                padding-left: 20rem;
+                padding-right: 20rem;
+                font-size:18px;
+            }
+    }
+    
+}

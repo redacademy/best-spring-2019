@@ -2311,3 +2311,52 @@ object {
 
 .error404 ul a:hover {
   color: #176f5d; }
+
+.page-template-page-contact-us .gform_wrapper form {
+  margin: 0 auto;
+  padding: 3rem; }
+
+.page-template-page-contact-us .gform_wrapper .top_label .gfield_label {
+  color: #228f7a;
+  font-family: "Mukta", sans-serif;
+  font-weight: normal; }
+
+.page-template-page-contact-us .contact-us-thank-you {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 374px;
+  padding-left: 77px;
+  padding-right: 61px;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal; }
+  @media (min-width: 620px) {
+    .page-template-page-contact-us .contact-us-thank-you {
+      font-size: 36px;
+      font-weight: bold;
+      max-width: 1240px;
+      padding-left: 22rem;
+      padding-right: 22rem;
+      margin: 0; } }
+
+.page-template-page-contact-us .also-contact {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500; }
+  @media (min-width: 620px) {
+    .page-template-page-contact-us .also-contact {
+      font-size: 24px; } }
+
+.page-template-page-contact-us .contact-info-block {
+  font-family: "Mukta", sans-serif;
+  line-height: 1.5;
+  margin: auto;
+  padding-left: 2rem;
+  font-size: 16px; }
+  @media (min-width: 620px) {
+    .page-template-page-contact-us .contact-info-block {
+      padding-left: 20rem;
+      padding-right: 20rem;
+      font-size: 18px; } }
