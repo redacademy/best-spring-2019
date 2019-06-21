@@ -6,22 +6,15 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-    let mobile = window.matchMedia('(max-width:619px)');
-
-    searchToggleIcon.on('click', function(event) {
-      event.preventDefault();
-      if (mobile.mathces) {
-        searchBar.focus();
-        searchBar.toggle('show');
-      }
+    searchToggleIcon.on('click', function() {
+      searchBar.toggle('show');
+      searchBar.focus();
     });
 
     searchBar.on('blur', function(event) {
       event.preventDefault();
-      if (searchBar.val() === '' && (mobile.matches)) {
+      if (searchBar.val() === '') {
         searchBar.hide('slide');
-      } else {
-        // Work in progress
       }
     });
 
@@ -32,7 +25,7 @@
       event.preventDefault();
       hamburger.toggleClass('is-active');
     });
-    
+
     /* Menu Slider */
     // const headerSlider = $('.main-navigation');
     // const headerNav = $('.header-primary-menu');
@@ -53,6 +46,15 @@
     $('.menu-item-204').append(arrowDown);
     $('.menu-item-261').append(arrowDown);
 
+    const dropDown = $('.arrow-down');
+    const subMenu = $('.sub-menu');
+    const test = $('.menu-item-204');
+
+    dropDown.on('click', function() {
+      test.toggleClass('open-2');
+      console.log(dropDown);
+      console.log(subMenu);
+    });
     /* End of Header */
 
     // Start of Flickity //
