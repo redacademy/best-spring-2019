@@ -10,6 +10,10 @@
   margin: 25px 0px 25px 0px;
   object-fit: cover;
   background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .post-type-archive-program .page-title {
@@ -123,7 +127,7 @@
         text-transform: uppercase;
         font-weight: 450;
         display: inline-block;
-        @include visit-btn;
+        @include orange-btn;
       }
       .visit-btn {
         margin: 0 auto;

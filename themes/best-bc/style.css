@@ -1701,12 +1701,19 @@ object {
   color: #e7e7e7; }
 
 .active-tab {
-  border-bottom: 3px solid #228f7a;
-  color: #228f7a; }
+  border-bottom: 10px solid #228f7a;
+  color: #228f7a;
+  text-decoration: underline; }
 
 .tab-link:active {
-  border-bottom: 3px solid #228f7a;
+  border-bottom: 10px solid #228f7a;
   color: #228f7a; }
+
+.page-template-page-resources .flickity-viewport {
+  margin: 0px 50px 0px 50px; }
+
+.tab-content p span {
+  font-size: 14pt !important; }
 
 @media (min-width: 620px) {
   .tab-content-flexed {
@@ -1739,7 +1746,17 @@ object {
   margin: 25px 0px 25px 0px;
   -o-object-fit: cover;
      object-fit: cover;
-  background-position: bottom; }
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white; }
 
 .post-type-archive-program .page-title {
   position: absolute;
@@ -2229,8 +2246,8 @@ object {
   position: absolute;
   color: #fff;
   z-index: 1;
-  top: 34%;
-  left: 40%;
+  top: 40%;
+  left: 44%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2246,7 +2263,7 @@ object {
   width: 100vw; }
 
 .section-intro {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding-left: 60px;
   padding-right: 25px; }
 
