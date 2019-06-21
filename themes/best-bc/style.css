@@ -1545,13 +1545,24 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.board-team .board {
+  text-align: center;
+  padding: 30px;
+  color: #228f7a; }
+
+.board-team img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-left: 250px; }
+
 .staff {
   padding: 100px;
+  padding-left: 280px;
   background-color: #e7e7e7;
   display: grid;
   grid-template-columns: 250px 250px 250px;
   grid-template-rows: 200px 200px;
-  grid-gap: 100px; }
+  grid-row-gap: 100px; }
   .staff .staff-members .staff-image {
     -o-object-fit: cover;
        object-fit: cover;
@@ -2074,4 +2085,12 @@ object {
 
 .page-template-page-privacy .terms-heading-title {
   text-align: center;
+  color: #228f7a; }
+
+.error404 .page-content {
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.error404 .widgettitle {
   color: #228f7a; }
