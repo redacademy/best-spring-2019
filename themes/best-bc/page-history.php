@@ -21,25 +21,35 @@ get_header(); ?>
                 <span class="history-title-span">best<span>
                 <span class="history-span">:</span>
             </h2>
-            
-            <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/Our-Community-Bikes-logo-orange.jpg" alt="">
-            <p>Started Our Community Bikes in 1993, Vancouver’s first do-it-yourself bike store.</p>
 
-            <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout1.png" alt="">
-            <p>Initiated the first Bike Week in 1996, before focusing on Commuter Challenge.</p>
+            <div class="history-info">
+                <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/Our-Community-Bikes-logo-orange.jpg" alt="">
+                <p>Started Our Community Bikes in 1993, Vancouver’s first do-it-yourself bike store.</p>
+            </div>
 
-            <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/Central-Valley-Greenway.png" alt="">
-            <p>Was awarded the first $1M grant from Vancity in 2001 for development of the Central Valley Greenway.</p>
+            <div class="history-info">
+                <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout1.png" alt="">
+                <p>Initiated the first Bike Week in 1996, before focusing on Commuter Challenge.</p>
+            </div>
+
+            <div class="history-info">
+                <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/Central-Valley-Greenway.png" alt="">
+                <p>Was awarded the first $1M grant from Vancity in 2001 for development of the Central Valley Greenway.</p>
+            </div>
 
             <div class="history-content-line"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Homepage Line.png" alt="bus"/></div>
 
-            <h2 class="history-title-25years">
-                <span class="history-title-span">best</span>
-                celebrates over <br>25 years of history!
-            </h2>
+            <div class="history-info-2">
+                <div class="history-info-content">
+                    <h2 class="history-title-25years">
+                        <span class="history-title-span">best</span>
+                        celebrates over <br>25 years of history!
+                    </h2>
+                    <a href="">Check out our 25th<br>anniversary e-zine</a>
+                </div>
 
-            <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/25yearbestcutout.jpg" alt="">
-            <a href="">Check out our 25th<br>anniversary e-zine</a>
+                <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/25yearbestcutout.jpg" alt="">
+            </div>
         </section>
 
         <section class="history-content-2">
