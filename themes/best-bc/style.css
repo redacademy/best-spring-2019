@@ -1547,9 +1547,26 @@ object {
   color: #228f7a; }
 
 .board-team img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  padding-left: 250px; }
+  width: 1023px;
+  height: auto;
+  margin-left: 100px; }
+
+.board-team .member-names {
+  font-family: "Josefin Sans", sans-serif;
+  color: #404040;
+  font-size: 14px;
+  line-height: 20px; }
+
+.board-team .annual-report a {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 450;
+  display: inline-block;
+  border: 1px solid #e3a72f;
+  border-radius: 40px;
+  background-color: #e3a72f;
+  padding: 4px 60px; }
 
 .staff {
   padding: 100px;
@@ -2270,8 +2287,15 @@ object {
 
 .error404 .page-content {
   margin: 0 auto;
+  margin-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2rem; }
 
-.error404 .widgettitle {
+.error404 ul a:link {
   color: #228f7a; }
+
+.error404 ul a:visited {
+  color: #228f7a; }
+
+.error404 ul a:hover {
+  color: #176f5d; }
