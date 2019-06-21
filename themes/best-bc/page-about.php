@@ -33,11 +33,12 @@ get_header(); ?>
 
 <div class="board-team">
     <h1 class="board">Board Members</h1>
-                <div class="board-members"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/group-photo.jpg"alt="">
+                <div class="board-members"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/group-photo.png"alt="">
 </div>
-<p class ="member-names">Danika Ball, Todd Spieling, Lauren Isaacsont, Ryan Skyes, Caitlin</p> 
- <p>Roberts, Tylor Sherman, Steve Tannock, Emily Willobee</p>
+<p class ="member-names">Danika Ball, Todd Spieling, Lauren Isaacsont, Ryan Skyes, Caitlin
+ Roberts, Tylor Sherman, Steve Tannock, Emily Willobee</p>
 			</div>
+<a class="annual-report" href="#">View Annual Report</a>
     </main><!-- #main -->
 </div><!-- #primary -->
 
