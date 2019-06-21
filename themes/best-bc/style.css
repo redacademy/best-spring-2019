@@ -1840,23 +1840,22 @@ object {
     margin: 10px 10px 0 10px;
     color: white;
     font-weight: 500;
-    text-align: left;
     text-transform: capitalize;
-    padding-top: 5px;
-    font-family: "Josefin Sans", sans-serif; }
+    padding-top: 5px; }
   .post-type-archive-program .entry-content .overlay .overlay-content {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    text-align: left;
-    font-family: "Mukta", sans-serif; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .post-type-archive-program .entry-content .overlay p {
     font-family: "Mukta", sans-serif;
     color: white;
-    font-size: 15px;
-    line-height: 28px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    font-weight: 100;
     margin: 0 10px 10px 10px; }
   .post-type-archive-program .entry-content .overlay a {
     color: white;

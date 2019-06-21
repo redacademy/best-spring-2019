@@ -2,7 +2,6 @@
 # Page Templates
 --------------------------------------------------------------*/
 // page about
-<<<<<<< HEAD
 .board-team{
     .board{
         text-align: center;
@@ -15,27 +14,14 @@
     }
 }
 
-
-.staff{
-        padding: 100px;
-        padding-left: 280px;
-        background-color:$color__background;
-        display: grid;
-        grid-template-columns: 250px 250px 250px ;
-        grid-template-rows: 200px 200px;
-        grid-row-gap: 100px;
-   
-.staff-members{
-=======
 .staff {
   padding: 100px;
-  background-color: $color__background;
+  padding-left: 280px;
+  background-color:$color__background;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 250px 250px 250px ;
   grid-template-rows: 200px 200px;
-  grid-gap: 100px;
->>>>>>> d58d5303b713da2209959e1209149aa645430451
-
+  grid-row-gap: 100px;
   .staff-members {
     .staff-image {
       object-fit: cover;
@@ -56,6 +42,7 @@
     }
   }
 }
+
 /* Front page */
 .site-content {
   max-width: 1240px;
