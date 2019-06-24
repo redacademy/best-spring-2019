@@ -36,6 +36,11 @@ button {
   font-family: Josefin Sans, sans-serif;
 }
 
+// Removal of WP entry titles on pages (hard code titles over "cover" images in backend instead
+.entry-header .entry-title {
+  display: none;
+}
+
 h1 {
   font-size: 36px;
 }
@@ -52,6 +57,12 @@ h3 {
 
 p {
   margin-bottom: $base__space-unit;
+  font-family: $font__main;
+  font-size: 1.25rem;
+}
+
+span {
+  font-size: inherit;
 }
 
 dfn,

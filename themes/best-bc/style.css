@@ -369,6 +369,9 @@ h3,
 button {
   font-family: Josefin Sans, sans-serif; }
 
+.entry-header .entry-title {
+  display: none; }
+
 h1 {
   font-size: 36px; }
 
@@ -380,7 +383,12 @@ h3 {
 
 /* Copy */
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem; }
+
+span {
+  font-size: inherit; }
 
 dfn,
 cite,
@@ -1559,6 +1567,9 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.has-large-font-size {
+  font-family: "Josefin Sans", sans-serif; }
+
 .board-members .members-title {
   text-align: center;
   padding: 30px;
@@ -1638,6 +1649,10 @@ object {
 .page-template-page-donate .gform_wrapper .gform_footer {
   padding-left: 50px; }
 
+.living-paragraph {
+  padding: 0px 24px 0px 24px;
+  margin: 0 auto; }
+
 .site-footer {
   padding: 20px;
   background: lightgrey;
@@ -1696,6 +1711,8 @@ object {
       .site-footer .major-sponsor-text {
         text-align: right;
         font-size: 1.5rem; } }
+  .site-footer .translink {
+    padding-top: 79px; }
   .site-footer .translink-logo-grey {
     width: 70%;
     margin-left: 50px; }
@@ -1704,8 +1721,10 @@ object {
         margin: 0;
         width: 200px;
         left: 0; } }
-  .site-footer .menu-footer-menu-container ul a {
-    font-family: "Mukta", sans-serif; }
+  .site-footer .menu-footer-menu-container {
+    padding-top: 24px; }
+    .site-footer .menu-footer-menu-container ul a {
+      font-family: "Mukta", sans-serif; }
   .site-footer a:link {
     color: #228f7a; }
   .site-footer a:visited {
@@ -1781,11 +1800,11 @@ object {
         flex-wrap: nowrap; }
   .tab-column-one {
     max-width: 45%;
-    margin-right: 20px; }
+    margin-right: 40px; }
   .tab-column-two {
     max-width: 45%;
     width: 50%;
-    margin-left: 20px; }
+    margin-left: 40px; }
   .gform_wrapper .top_label input.medium {
     width: 100%; } }
 
@@ -2126,21 +2145,22 @@ object {
     padding-bottom: 32px; }
     .timeline .timeline-title .history-title-span {
       text-transform: uppercase; }
-  .timeline .timeline-title {
+  .timeline .timeline-section {
+    border: 1px solid red;
     /* Timeline Left Side */
     /* Timeline Right Side */
     /* Timeline Color Cycle */ }
-    .timeline .timeline-title .timeline-years {
+    .timeline .timeline-section .timeline-years {
       width: 239px;
       height: 88px;
       position: relative; }
-    .timeline .timeline-title .timeline-content {
+    .timeline .timeline-section .timeline-content {
       display: none; }
-    .timeline .timeline-title div:nth-child(odd) {
+    .timeline .timeline-section div:nth-child(odd) {
       margin-right: auto;
       border-right: 6px solid #228f7a;
       text-align: left; }
-      .timeline .timeline-title div:nth-child(odd) .timeline-btn {
+      .timeline .timeline-section div:nth-child(odd) .timeline-btn {
         height: 96px;
         width: 96px;
         border-radius: 50px;
@@ -2150,10 +2170,10 @@ object {
                 box-shadow: none;
         border-color: unset;
         border: none; }
-        .timeline .timeline-title div:nth-child(odd) .timeline-btn h2 {
+        .timeline .timeline-section div:nth-child(odd) .timeline-btn h2 {
           padding: unset;
           font-size: 1.5rem; }
-      .timeline .timeline-title div:nth-child(odd) .timeline-line {
+      .timeline .timeline-section div:nth-child(odd) .timeline-line {
         margin: unset;
         height: 5px;
         width: 121px;
@@ -2163,11 +2183,11 @@ object {
         top: 50%;
         background: #e3a72f;
         background: linear-gradient(145deg, #e3a72f, #388374 100%); }
-    .timeline .timeline-title div:nth-child(even) {
+    .timeline .timeline-section div:nth-child(even) {
       margin-left: auto;
       border-left: 6px solid #228f7a;
       text-align: right; }
-      .timeline .timeline-title div:nth-child(even) .timeline-btn {
+      .timeline .timeline-section div:nth-child(even) .timeline-btn {
         height: 96px;
         width: 96px;
         border-radius: 50px;
@@ -2177,10 +2197,10 @@ object {
                 box-shadow: none;
         border-color: unset;
         border: none; }
-        .timeline .timeline-title div:nth-child(even) .timeline-btn h2 {
+        .timeline .timeline-section div:nth-child(even) .timeline-btn h2 {
           padding: unset;
           font-size: 1.5rem; }
-      .timeline .timeline-title div:nth-child(even) .timeline-line {
+      .timeline .timeline-section div:nth-child(even) .timeline-line {
         margin: unset;
         height: 5px;
         width: 121px;
@@ -2190,15 +2210,15 @@ object {
         top: 50%;
         background: #e3a72f;
         background: linear-gradient(245deg, #e3a72f, #388374 100%); }
-    .timeline .timeline-title div:nth-child(5n + 1) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 1) .timeline-btn {
       background: #8caba3; }
-    .timeline .timeline-title div:nth-child(5n + 2) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 2) .timeline-btn {
       background: #e67937; }
-    .timeline .timeline-title div:nth-child(5n + 3) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 3) .timeline-btn {
       background: #228f7a; }
-    .timeline .timeline-title div:nth-child(5n + 4) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 4) .timeline-btn {
       background: #183241; }
-    .timeline .timeline-title div:nth-child(5n + 5) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 5) .timeline-btn {
       background: #e3a72f; }
 
 .timeline-open {
@@ -2213,7 +2233,7 @@ object {
 .news-content .news-banner {
   width: 100%;
   height: 500px;
-  background-image: url(../../assets/Images/AboutUsNewsletterBanner.jpg);
+  background-image: url(../../assets/images/AboutUsNewsletterBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -2293,19 +2313,6 @@ object {
   text-align: center;
   width: 80px;
   height: 40px; }
-
-.page .entry-header .entry-title {
-  position: absolute;
-  color: #fff;
-  z-index: 1;
-  top: 40%;
-  left: 44%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  max-width: 300px; }
 
 .img-container img {
   opacity: 0.5; }
@@ -2412,3 +2419,13 @@ object {
       padding-left: 20rem;
       padding-right: 20rem;
       font-size: 18px; } }
+
+.staff-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem !important;
+  max-width: inherit; }
+
+.staff-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem !important;
+  max-width: inherit; }
