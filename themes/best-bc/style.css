@@ -1570,6 +1570,11 @@ object {
 .has-large-font-size {
   font-family: "Josefin Sans", sans-serif; }
 
+.entry-content p {
+  font-family: "Mukta", sans-serif;
+  color: #404040;
+  font-size: 18px; }
+
 .board-members .members-title {
   text-align: center;
   padding: 30px;
@@ -1711,8 +1716,6 @@ object {
       .site-footer .major-sponsor-text {
         text-align: right;
         font-size: 1.5rem; } }
-  .site-footer .translink {
-    padding-top: 79px; }
   .site-footer .translink-logo-grey {
     width: 70%;
     margin-left: 50px; }
