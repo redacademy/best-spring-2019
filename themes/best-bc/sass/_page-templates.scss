@@ -2,6 +2,13 @@
 # Page Templates
 --------------------------------------------------------------*/
 // page about
+.entry-content{
+  p{
+    font-family: $font__second;
+    color: $color__text-screen;
+    font-size: 18px;
+  }
+}
 
 .board-members {
   .members-title {
