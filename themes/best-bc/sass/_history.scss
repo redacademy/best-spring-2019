@@ -165,6 +165,8 @@
 
 /* Timeline */
 .timeline {
+    text-align: center;
+    margin: 64px;
     .timeline-title {
         color: $color__main;
         padding-bottom: 32px;
@@ -172,9 +174,8 @@
             text-transform: uppercase;
         }
     }
-    text-align: center;
-    margin: 64px;
-    .timeline-title {
+    .timeline-section {
+        border: 1px solid red;
         .timeline-years {
             width: 239px;
             height: 88px;

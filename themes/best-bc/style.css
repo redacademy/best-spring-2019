@@ -2133,21 +2133,22 @@ object {
     padding-bottom: 32px; }
     .timeline .timeline-title .history-title-span {
       text-transform: uppercase; }
-  .timeline .timeline-title {
+  .timeline .timeline-section {
+    border: 1px solid red;
     /* Timeline Left Side */
     /* Timeline Right Side */
     /* Timeline Color Cycle */ }
-    .timeline .timeline-title .timeline-years {
+    .timeline .timeline-section .timeline-years {
       width: 239px;
       height: 88px;
       position: relative; }
-    .timeline .timeline-title .timeline-content {
+    .timeline .timeline-section .timeline-content {
       display: none; }
-    .timeline .timeline-title div:nth-child(odd) {
+    .timeline .timeline-section div:nth-child(odd) {
       margin-right: auto;
       border-right: 6px solid #228f7a;
       text-align: left; }
-      .timeline .timeline-title div:nth-child(odd) .timeline-btn {
+      .timeline .timeline-section div:nth-child(odd) .timeline-btn {
         height: 96px;
         width: 96px;
         border-radius: 50px;
@@ -2157,10 +2158,10 @@ object {
                 box-shadow: none;
         border-color: unset;
         border: none; }
-        .timeline .timeline-title div:nth-child(odd) .timeline-btn h2 {
+        .timeline .timeline-section div:nth-child(odd) .timeline-btn h2 {
           padding: unset;
           font-size: 1.5rem; }
-      .timeline .timeline-title div:nth-child(odd) .timeline-line {
+      .timeline .timeline-section div:nth-child(odd) .timeline-line {
         margin: unset;
         height: 5px;
         width: 121px;
@@ -2170,11 +2171,11 @@ object {
         top: 50%;
         background: #e3a72f;
         background: linear-gradient(145deg, #e3a72f, #388374 100%); }
-    .timeline .timeline-title div:nth-child(even) {
+    .timeline .timeline-section div:nth-child(even) {
       margin-left: auto;
       border-left: 6px solid #228f7a;
       text-align: right; }
-      .timeline .timeline-title div:nth-child(even) .timeline-btn {
+      .timeline .timeline-section div:nth-child(even) .timeline-btn {
         height: 96px;
         width: 96px;
         border-radius: 50px;
@@ -2184,10 +2185,10 @@ object {
                 box-shadow: none;
         border-color: unset;
         border: none; }
-        .timeline .timeline-title div:nth-child(even) .timeline-btn h2 {
+        .timeline .timeline-section div:nth-child(even) .timeline-btn h2 {
           padding: unset;
           font-size: 1.5rem; }
-      .timeline .timeline-title div:nth-child(even) .timeline-line {
+      .timeline .timeline-section div:nth-child(even) .timeline-line {
         margin: unset;
         height: 5px;
         width: 121px;
@@ -2197,15 +2198,15 @@ object {
         top: 50%;
         background: #e3a72f;
         background: linear-gradient(245deg, #e3a72f, #388374 100%); }
-    .timeline .timeline-title div:nth-child(5n + 1) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 1) .timeline-btn {
       background: #8caba3; }
-    .timeline .timeline-title div:nth-child(5n + 2) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 2) .timeline-btn {
       background: #e67937; }
-    .timeline .timeline-title div:nth-child(5n + 3) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 3) .timeline-btn {
       background: #228f7a; }
-    .timeline .timeline-title div:nth-child(5n + 4) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 4) .timeline-btn {
       background: #183241; }
-    .timeline .timeline-title div:nth-child(5n + 5) .timeline-btn {
+    .timeline .timeline-section div:nth-child(5n + 5) .timeline-btn {
       background: #e3a72f; }
 
 .timeline-open {

@@ -89,7 +89,7 @@ get_header(); ?>
                 <span class="history-title-span">best</span> 
                 Timeline
             </h2>
-            <section class="timeline-title">
+            <section class="timeline-section">
                 <?php $tabs = CFS()->get('tab_menu_tab');
                 foreach ($tabs as $tab) :
                     $tab_title = $tab['tab_menu_title'];

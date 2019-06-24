@@ -6,22 +6,29 @@
     const searchBar = $('.search-field');
     const searchToggleIcon = $('.search-toggle-icon');
 
-    const desktopWidth = 600;
+    const desktopWidth = 601;
 
-    searchToggleIcon.on('click', function () {
+    searchToggleIcon.on('click', function (event) {
       if (window.innerWidth < desktopWidth) {
-        event.preventDefault();
-        searchBar.focus();
-        searchBar.toggle('show');
+        if (!searchBar.hasClass('.search-show')) {
+          searchBar.addClass('.search-show');
+          searchBar.focus();
+          searchBar.toggle('show');
+          event.preventDefault();
+        } else if (searchBar.val() === '') {
+          searchBar.removeClass('.search-show');
+          searchBar.hide('slide');
+          event.preventDefault();
+        }
       }
     });
 
-    searchBar.on('blur', function (event) {
-      event.preventDefault();
-      if (searchBar.val() === '' && window.innerWidth < desktopWidth) {
-        searchBar.hide('slide');
-      }
-    });
+    // const test123 = $('#menu-item-204 > a');
+    // test123.on('click', function(event) {
+    //   event.stopPropagation();
+    //   event.preventDefault();
+    // })
+
 
     /* Hamburger Menu Slider */
     const hamburger = $('.hamburger-menu');
@@ -53,14 +60,18 @@
     dropDown.on('click', function () {
       navDown.toggleClass('nav-drop-open');
     });
+    // navDown.on('click', function(event) {
+    //   event.preventDefault();
+    //   console.log(navDown);
+    // })
     dropDown2.on('click', function () {
       navDown2.toggleClass('nav-drop-open2');
     });
 
-    /* End of Header */
+    /*End of Header */
 
     // Start of Flickity //
-    $('.main-carousel').flickity({
+    ('main-carousel').flickity({
       // options
       cellAlign: 'center',
       contain: true
@@ -71,7 +82,7 @@
     const $tabLinks = $('.tab-link');
     const $tabContent = $('.tab-content');
 
-    $tabLinks.on('click', function (event) {
+    abLinks.on('click', function (event) {
       event.preventDefault();
       $tabLinks.removeClass('active-tab');
       $(this).addClass('active-tab');
