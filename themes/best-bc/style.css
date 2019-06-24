@@ -1585,11 +1585,6 @@ object {
   color: #404040;
   font-size: 18px; }
 
-.entry-content p {
-  font-family: "Mukta", sans-serif;
-  color: #404040;
-  font-size: 18px; }
-
 /* Front page */
 .site-content {
   max-width: 1240px;
@@ -1637,20 +1632,12 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .site-footer .footer-content .social-media {
-      padding-top: 80px; }
-    .site-footer .footer-content .translink {
-      padding-top: 0px; }
     @media (min-width: 620px) {
       .site-footer .footer-content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
-        .site-footer .footer-content .social-media {
-          padding-top: 0px; }
-        .site-footer .footer-content .translink {
-          padding-top: 80px; } }
+                flex-direction: column; } }
   .site-footer .social-media-icons span {
     font-size: 1.8rem; }
     @media (min-width: 620px) {
