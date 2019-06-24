@@ -2432,3 +2432,7 @@ object {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.25rem !important;
   max-width: inherit; }
+
+.staff-image {
+  -webkit-filter: sepia(60%);
+          filter: sepia(60%); }
