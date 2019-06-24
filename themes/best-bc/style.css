@@ -834,6 +834,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.gfield_label {
+  color: #228f7a; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1567,7 +1570,15 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .has-large-font-size {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif !important;
+  color: white !important;
+  font-size: 36px !important;
+  font-weight: 700 !important; }
+
+.entry-content p {
+  font-family: "Mukta", sans-serif;
+  color: #404040;
+  font-size: 18px; }
 
 .entry-content p {
   font-family: "Mukta", sans-serif;
@@ -1621,12 +1632,20 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .site-footer .footer-content .social-media {
+      padding-top: 80px; }
+    .site-footer .footer-content .translink {
+      padding-top: 0px; }
     @media (min-width: 620px) {
       .site-footer .footer-content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+        .site-footer .footer-content .social-media {
+          padding-top: 0px; }
+        .site-footer .footer-content .translink {
+          padding-top: 80px; } }
   .site-footer .social-media-icons span {
     font-size: 1.8rem; }
     @media (min-width: 620px) {
