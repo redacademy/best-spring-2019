@@ -16,8 +16,7 @@ get_header(); ?>
 
         <?php endwhile; ?>
      
-        <?php the_excerpt(); ?>
-        
+<a  href="https://best.van.cp.academy.red/history/"><p class="history-btn">View Our History</p></a>
 <!-- staff members CFS -->
 <div class="Staff-text">
 <h1>Who we are</h1>

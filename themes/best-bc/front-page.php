@@ -117,20 +117,20 @@ get_header(); ?>
       </div>
 
       <div class="membership">
-        <a href="<?php echo home_url('get-involved #membership') ?>">
+        <a href="<?php echo home_url('get-involved#membership') ?>">
           <p class="involved-header">Membership<br>
         </a>
         <span class="involved-subtext">Help keep us going!</span></p>
       </div>
 
       <div class="sponsor">
-        <a href="<?php echo home_url('get-involved #sponsorship') ?>">
+        <a href="<?php echo home_url('get-involved#sponsorship') ?>">
           <p class="involved-header">Sponsor<br>
         </a>
         <span class="involved-subtext">Help keep us going!</span></p>
       </div>
 
-      <div class="volunteer"><a href="<?php echo home_url('get-involved #volunteer') ?>">
+      <div class="volunteer"><a href="<?php echo home_url('get-involved#volunteer') ?>">
           <p class="involved-header">Volunteer<br>
         </a>
         <span class="involved-subtext">Help keep us going!</span></p>

@@ -32,5 +32,6 @@
   "bugs": {
     "url": "https://github.com/redacademy/redstarter/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/redacademy/redstarter#readme",
+  "dependencies": {}
 }

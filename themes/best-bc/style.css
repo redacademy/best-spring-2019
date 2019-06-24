@@ -110,7 +110,6 @@ small {
 
 sub,
 sup {
-  font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline; }
@@ -843,6 +842,9 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+.gfield_label {
+  color: #228f7a; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -1573,78 +1575,20 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .has-large-font-size {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif !important;
+  color: white !important;
+  font-size: 36px !important;
+  font-weight: 700 !important; }
 
 .entry-content p {
   font-family: "Mukta", sans-serif;
   color: #404040;
   font-size: 18px; }
 
-.board-members .members-title {
-  text-align: center;
-  padding: 30px;
-  color: #228f7a; }
-
-.board-members img {
-  width: 1023px;
-  height: auto;
-  margin-left: 100px; }
-
-.board-members .members-names {
-  font-family: "Josefin Sans", sans-serif;
+.entry-content p {
+  font-family: "Mukta", sans-serif;
   color: #404040;
-  font-size: 1.25rem;
-  line-height: 20px; }
-
-.board-members a {
-  color: white;
-  font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 450;
-  letter-spacing: 0;
-  margin-left: 420px;
-  padding: 10px;
-  border: 1px solid #e3a72f;
-  border-radius: 40px;
-  background-color: #e3a72f; }
-
-.staff-text h1 {
-  background-color: #e7e7e7;
-  text-align: center;
-  color: #228f7a;
-  font-family: "Josefin Sans", sans-serif; }
-
-.staff {
-  height: 1100px;
-  padding: 125px;
-  background-color: #e7e7e7;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-column-gap: 100px;
-  grid-row-gap: 70px; }
-  .staff .staff-members .staff-image {
-    width: 342px;
-    height: 380px; }
-  .staff .staff-members .staff-name {
-    text-align: center;
-    padding: 5px;
-    font-family: "Josefin Sans", sans-serif;
-    color: #228f7a;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding: 0;
-    margin: 0; }
-  .staff .staff-members .staff-title {
-    text-align: center;
-    padding: 5px;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
-    font-weight: 300; }
+  font-size: 18px; }
 
 /* Front page */
 .site-content {
@@ -1693,12 +1637,20 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .site-footer .footer-content .social-media {
+      padding-top: 80px; }
+    .site-footer .footer-content .translink {
+      padding-top: 0px; }
     @media (min-width: 620px) {
       .site-footer .footer-content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+        .site-footer .footer-content .social-media {
+          padding-top: 0px; }
+        .site-footer .footer-content .translink {
+          padding-top: 80px; } }
   .site-footer .social-media-icons span {
     font-size: 1.8rem; }
     @media (min-width: 620px) {
@@ -1953,6 +1905,7 @@ object {
     text-transform: uppercase;
     font-weight: 450;
     display: inline-block;
+    padding: 5px 30px;
     border: 1px solid #e3a72f;
     border-radius: 40px;
     background-color: #e3a72f; }
@@ -2511,12 +2464,123 @@ object {
       padding-right: 20rem;
       font-size: 18px; } }
 
-.staff-name {
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem !important;
-  max-width: inherit; }
+.quotes1, .quotes2 {
+  color: #e3a72f !important;
+  font-size: 4.5rem;
+  font-family: "Josefin Sans", sans-serif; }
 
-.staff-title {
+.quotes1 sup {
+  top: 0;
+  font-family: "Josefin Sans", sans-serif; }
+
+.quotes2 sub {
+  bottom: -1.9rem;
+  font-family: "Josefin Sans", sans-serif; }
+
+h2 {
+  font-size: 3.1rem;
+  color: #228f7a;
+  text-align: center; }
+
+h3 {
+  font-size: 2.25rem;
+  color: #404040; }
+
+p {
+  font-size: 1.12rem;
+  color: #404040;
+  text-align: center; }
+
+.history-btn {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid #e3a72f;
+  border-radius: 40px;
+  background-color: #e3a72f;
+  padding: 8px;
+  max-width: 300px; }
+  @media (min-width: 620px) {
+    .history-btn {
+      margin: 0 auto; } }
+
+.board-members .members-title {
+  text-align: center;
+  padding: 30px;
+  color: #228f7a; }
+
+.board-members img {
+  width: 1023px;
+  height: auto;
+  margin-top: 0; }
+
+.board-members .members-names {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem !important;
-  max-width: inherit; }
+  color: #404040;
+  font-size: 1.25rem;
+  line-height: 20px;
+  text-align: center; }
+
+.board-members a {
+  color: white;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 450;
+  letter-spacing: 0;
+  padding: 10px;
+  border: 1px solid #e3a72f;
+  border-radius: 40px;
+  background-color: #e3a72f; }
+
+.Staff-text {
+  padding: 30px;
+  margin: 0;
+  text-align: center;
+  background-color: #e7e7e7; }
+  .Staff-text h1 {
+    color: #228f7a; }
+  .Staff-text p {
+    padding: 0;
+    margin: 0; }
+
+.staff {
+  height: 1100px;
+  padding: 125px;
+  padding-top: 0;
+  padding-bottom: 80px;
+  background-color: #e7e7e7; }
+  @media (min-width: 620px) {
+    .staff {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-column-gap: 100px;
+      grid-row-gap: 70px; } }
+  .staff .staff-members {
+    height: auto; }
+    .staff .staff-members .staff-image {
+      width: 342px;
+      height: 380px;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .staff .staff-members .staff-name {
+      text-align: center;
+      padding: 5px;
+      font-family: "Josefin Sans", sans-serif;
+      color: #228f7a;
+      font-size: 1.3rem;
+      font-weight: 400;
+      padding: 0;
+      margin: 0; }
+    .staff .staff-members .staff-title {
+      text-align: center;
+      padding: 5px;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 200;
+      padding: 0;
+      margin: 0;
+      font-weight: 300; }

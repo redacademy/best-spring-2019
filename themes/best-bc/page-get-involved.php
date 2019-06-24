@@ -24,7 +24,7 @@ get_header(); ?>
                 foreach ($tabs as $tab) :
                     $tab_title =  $tab['tab_menu_title'];
                     ?>
-                    <li><a href="#" class="tab-link"><?php echo $tab_title; ?></a></li>
+                    <li><a href="#" id=<?php echo strtolower($tab_title); ?> class="tab-link"><?php echo $tab_title; ?></a></li>
                 <?php endforeach; ?>
             </ul>
 

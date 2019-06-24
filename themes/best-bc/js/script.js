@@ -60,7 +60,7 @@
     /*End of Header */
 
     // Start of Flickity //
-    $('main-carousel').flickity({
+    $('.main-carousel').flickity({
       // options
       cellAlign: 'center',
       contain: true
@@ -105,7 +105,20 @@
       pageDots: false,
       draggable: true,
       percentPosition: false,
-      groupCells: 1
+      groupCells: 1,
     });
+
+    let $initialTab;
+
+    if (window.location.hash !== '') {
+      $initialTab = $(window.location.hash);
+    } else {
+      $initialTab = $('.tab-nav li:first-child a');
+    }
+    $initialTab.addClass('active-tab');
+    let tabIndex = $tabLinks.index($initialTab);
+    $tabContent.hide();
+    $tabContent.eq(tabIndex).show();
+
   });
 })(jQuery);
