@@ -4,7 +4,10 @@
 
 // all hero banner texts:
 .has-large-font-size {
-  font-family: $font__main;
+  font-family: $font__main !important;
+  color: $color__header !important;
+  font-size: 36px !important;
+  font-weight: 700 !important;
 }
 
 // page about

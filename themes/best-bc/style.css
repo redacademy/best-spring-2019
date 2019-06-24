@@ -1568,7 +1568,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 .has-large-font-size {
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif !important;
+  color: white !important;
+  font-size: 36px !important;
+  font-weight: 700 !important; }
 
 .entry-content p {
   font-family: "Mukta", sans-serif;

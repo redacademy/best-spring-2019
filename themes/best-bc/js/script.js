@@ -123,7 +123,7 @@
     if (window.location.hash !== '') {
       $initialTab = $(window.location.hash);
     } else {
-      $initialTab = $('#membership');
+      $initialTab = $('.tab-nav li:first-child a');
     }
     $initialTab.addClass('active-tab');
     let tabIndex = $tabLinks.index($initialTab);
