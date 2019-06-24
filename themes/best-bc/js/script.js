@@ -71,7 +71,7 @@
     /*End of Header */
 
     // Start of Flickity //
-    ('main-carousel').flickity({
+    $('main-carousel').flickity({
       // options
       cellAlign: 'center',
       contain: true
@@ -82,7 +82,7 @@
     const $tabLinks = $('.tab-link');
     const $tabContent = $('.tab-content');
 
-    abLinks.on('click', function (event) {
+    $tabLinks.on('click', function (event) {
       event.preventDefault();
       $tabLinks.removeClass('active-tab');
       $(this).addClass('active-tab');
