@@ -1,5 +1,5 @@
-(function($) {
-  $(function() {
+(function ($) {
+  $(function () {
     /* Start of Header */
 
     /* Search Bar */
@@ -8,7 +8,7 @@
 
     const desktopWidth = 600;
 
-    searchToggleIcon.on('click', function() {
+    searchToggleIcon.on('click', function () {
       if (window.innerWidth < desktopWidth) {
         event.preventDefault();
         searchBar.focus();
@@ -16,7 +16,7 @@
       }
     });
 
-    searchBar.on('blur', function(event) {
+    searchBar.on('blur', function (event) {
       event.preventDefault();
       if (searchBar.val() === '' && window.innerWidth < desktopWidth) {
         searchBar.hide('slide');
@@ -28,7 +28,7 @@
     const headerSlider = $('.main-navigation');
     const headerNav = $('.header-primary-menu');
 
-    hamburger.on('click', function(event) {
+    hamburger.on('click', function (event) {
       event.preventDefault();
       hamburger.toggleClass('is-active');
       headerSlider.toggleClass('open');
@@ -50,10 +50,10 @@
     const dropDown2 = $('.arrow-down2');
     const navDown = $('#menu-item-204');
     const navDown2 = $('#menu-item-261');
-    dropDown.on('click', function() {
-      navDown.toggleClass('nav-drop-open')
+    dropDown.on('click', function () {
+      navDown.toggleClass('nav-drop-open');
     });
-    dropDown2.on('click', function() {
+    dropDown2.on('click', function () {
       navDown2.toggleClass('nav-drop-open2');
     });
 
@@ -71,7 +71,7 @@
     const $tabLinks = $('.tab-link');
     const $tabContent = $('.tab-content');
 
-    $tabLinks.on('click', function(event) {
+    $tabLinks.on('click', function (event) {
       event.preventDefault();
       $tabLinks.removeClass('active-tab');
       $(this).addClass('active-tab');
@@ -84,7 +84,7 @@
     const timeline = $('timeline-content');
     const timelineOpen = $('timeline-btn');
 
-    timelineOpen.on('click', function(event) {
+    timelineOpen.on('click', function (event) {
       event.preventDefault();
       timelineOpen.toggleClass('timeline-open');
       if (timelineOpen.hasClass('timeline-open')) {
