@@ -17,7 +17,8 @@ get_header(); ?>
 
 
     <div class="bike-container">
-      <div class="fp-yellow-bike"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout2.png" alt="bike" /></div>
+      <div class="fp-yellow-bike">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bike-weekcutout2.png" alt="bike" /></div>
       <div class="fp-bike-valet">
         <h3>The Bicycle Valet</h3>
         <p>Provided safe storage to <span><?php echo CFS()->get('bike_counter'); ?></span> bikes since 2002</p>
@@ -26,7 +27,8 @@ get_header(); ?>
     </div>
     <!--bike container-->
 
-    <div class="fp-linebreak-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/hp-dashed-curvy.png" alt="dashed-line" /></div>
+    <div class="fp-linebreak-image">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hp-dashed-curvy.png" alt="dashed-line" /></div>
 
     <div class="bus-container">
       <div class="fp-park-bus">
@@ -35,11 +37,14 @@ get_header(); ?>
       </div>
       <!--park bus-->
 
-      <div class="fp-bus-image"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/parkbus-cut-out.png" alt="bus" /></div>
+      <div class="fp-bus-image">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/parkbus-cut-out.png" alt="bus" /></div>
     </div>
     <!--bus container-->
 
-    <div class="fp-bus-linebreak"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Homepage Line 1.png" alt="bus" /></div>
+    <div class="fp-bus-linebreak">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Homepage Line 1.png" alt="bus" />
+      </div>
     <!--end of transportation choices-->
 
     <!--other programs-->
@@ -48,17 +53,22 @@ get_header(); ?>
     </div>
     <div class="program-wrapper">
       <div class="program-block">
-        <div class="program-block-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/star-logo.png" alt="star program logo" /></div>
-        <div class="program-block-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Living-Streets-logo.png" alt="living-street program logo" /></div>
+        <div class="program-block-item">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star-logo.png" alt="star program logo" /></div>
+        <div class="program-block-item">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Living-Streets-logo.png" alt="living-street program logo" /></div>
       </div>
       <div class="program-second-block">
-        <div class="program-block-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Parkpass-logo.png" alt="parkpass program logo" /></div>
-        <div class="program-block-item"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/commuter-logo.png" alt="commuter-challenge program logo" /></div>
+        <div class="program-block-item">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Parkpass-logo.png" alt="parkpass program logo" /></div>
+        <div class="program-block-item">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/commuter-logo.png" alt="commuter-challenge program logo" /></div>
       </div>
     </div>
     <!--program wrapper-->
     <div class="learn-more-button">
-      <p class="learn-more"><a href="<?php echo get_post_type_archive_link('program'); ?>" class="button">Learn More</a></p>
+      <p class="learn-more">
+        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="button">Learn More</a></p>
     </div>
     <!--learn more button ends-->
     <!-- News -->
