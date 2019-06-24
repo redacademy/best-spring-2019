@@ -71,7 +71,7 @@
     /*End of Header */
 
     // Start of Flickity //
-    $('main-carousel').flickity({
+    $('.main-carousel').flickity({
       // options
       cellAlign: 'center',
       contain: true
