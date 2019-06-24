@@ -64,6 +64,21 @@
               width: 120px;
             }
           }
+          .nav-drop-open {
+            margin-bottom: 145px;
+            align-items: unset;
+            .sub-menu {
+              display: flex;
+            }
+          }
+          .nav-drop-open2 {
+            margin-bottom: 145px;
+            align-items: unset;
+            .sub-menu {
+              display: flex;
+            }
+          }
+          
           li {
             @include desktop {
               margin: 0 auto;
@@ -78,7 +93,7 @@
               }
             }
             .sub-menu {
-              display: flex;
+              display: none;
               flex-direction: column;
               @include desktop {
                 margin-top: 56px;
@@ -120,6 +135,8 @@
           a {
             color: $color__header;
             padding-left: 16px;
+            display: flex;
+            align-items: center;
           }
         }
       }
@@ -222,15 +239,4 @@
       }
     }
   }
-}
-.nav-drop-open {
-  margin-bottom: 145px;
-  align-items: unset;
-  .sub-menu {
-    display: none;
-  }
-}
-.nav-drop-open2 {
-  margin-bottom: 145px;
-  align-items: unset;
 }

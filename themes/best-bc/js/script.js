@@ -23,13 +23,6 @@
       }
     });
 
-    // const test123 = $('#menu-item-204 > a');
-    // test123.on('click', function(event) {
-    //   event.stopPropagation();
-    //   event.preventDefault();
-    // })
-
-
     /* Hamburger Menu Slider */
     const hamburger = $('.hamburger-menu');
     const headerSlider = $('.main-navigation');
@@ -60,10 +53,6 @@
     dropDown.on('click', function () {
       navDown.toggleClass('nav-drop-open');
     });
-    // navDown.on('click', function(event) {
-    //   event.preventDefault();
-    //   console.log(navDown);
-    // })
     dropDown2.on('click', function () {
       navDown2.toggleClass('nav-drop-open2');
     });
@@ -92,18 +81,19 @@
     }); //END OF TAB MENU CODE
 
     /* Start of Timeline */
-    const timeline = $('timeline-content');
-    const timelineOpen = $('timeline-btn');
+    
+    // const timelineContent = $('timeline-content');
 
-    timelineOpen.on('click', function (event) {
+    $('button').on('click', function (event) {
       event.preventDefault();
-      timelineOpen.toggleClass('timeline-open');
-      if (timelineOpen.hasClass('timeline-open')) {
-        timeline.show();
-      } else {
-        timeline.hide();
-      }
+      console.log('hi');
+      // $('.timeline-content').removeClass('timeline-open');
+      $(this).parent().parent().children('.timeline-content').addClass('timeline-open');      
     }); /* End of Timeline */
+
+    $("button").on("blur", function(){
+      $(".timeline-content").removeClass("timeline-open");
+   })
 
     /* Start of Tab Meny Flickity */
 
@@ -115,7 +105,20 @@
       pageDots: false,
       draggable: true,
       percentPosition: false,
-      groupCells: 1
+      groupCells: 1,
     });
+
+    let $initialTab;
+
+    if (window.location.hash !== '') {
+      $initialTab = $(window.location.hash);
+    } else {
+      $initialTab = $('.tab-nav li:first-child a');
+    }
+    $initialTab.addClass('active-tab');
+    let tabIndex = $tabLinks.index($initialTab);
+    $tabContent.hide();
+    $tabContent.eq(tabIndex).show();
+
   });
 })(jQuery);

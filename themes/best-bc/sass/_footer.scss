@@ -17,9 +17,12 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+      
         @include desktop{
             flex-direction: column;
+    
         }
+  
     }
     .social-media-icons span{
         font-size: 1.8rem; 
