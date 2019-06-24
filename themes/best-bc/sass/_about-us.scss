@@ -5,14 +5,107 @@
 // }
 
 
-.staff-name {
-    font-family: $font__main;
-    font-size: 1.25rem !important;
-    max-width: inherit;
+h3{
+    font-size: 2.25rem;
+    color: $color__text-screen;
 }
-
-.staff-title {
-    font-family: $font__main;
-    font-size: 1.25rem !important;
-    max-width: inherit;
+p{
+    font-size: 1.12rem;
+    color: $color__text-screen;
 }
+.history-btn{
+    text-transform: uppercase;
+    color: white;
+    @include orange-btn;
+    padding: 8px;
+}
+.board-members {
+    .members-title {
+      text-align: center;
+      padding: 30px;
+      color: $color__main;
+    }
+    img {
+      width: 1023px;
+      height: auto;
+      margin-left: 100px;
+      margin-top: 0;
+    }
+    .members-names {
+      font-family: $font__main;
+      color: $color__text-screen;
+      font-size: 1.25rem;
+      line-height: 20px;
+      text-align: center;
+    }
+  
+    a {
+      color: white;
+      font-size: 20px;
+      font-family: $font__main;
+      text-transform: uppercase;
+      font-weight: 450;
+      letter-spacing: 0;
+      margin-left: 420px;
+      padding: 10px;
+      @include orange-btn
+  
+    }
+  }
+  
+  
+  .Staff-text{
+    padding:30px;
+    margin: 0;
+    text-align: center;
+    background-color: $color__background;
+    h1{
+        color: $color__main;
+    }
+    p{
+      padding: 0;
+      margin: 0;
+    }
+    }
+  
+  .staff {
+    height: 1100px;
+  padding: 125px;
+  padding-top: 0;
+  padding-bottom: 80px;
+    background-color: $color__background;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 70px;
+  
+    .staff-members {
+      .staff-image {
+      width: 342px;
+      height: 380px;
+  
+      }
+  
+      .staff-name {
+        text-align: center;
+        padding: 5px;
+        font-family: $font__main;
+        color: $color__main;
+        font-size: 1.3rem;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+      }
+      .staff-title {
+        text-align: center;
+        padding: 5px;
+        font-family: $font__main;
+        font-size: 1.1rem;
+        font-weight: 200;
+        padding: 0;
+        margin: 0;
+        font-weight: 300;
+      }
+    }
+  }

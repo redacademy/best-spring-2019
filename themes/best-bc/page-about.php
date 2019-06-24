@@ -16,8 +16,7 @@ get_header(); ?>
 
         <?php endwhile; ?>
      
-        <?php the_excerpt(); ?>
-        
+<p class="history-btn">View Our History</p>
 <!-- staff members CFS -->
 <div class="Staff-text">
 <h1>Who we are</h1>
