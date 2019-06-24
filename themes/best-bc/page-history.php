@@ -96,9 +96,13 @@ get_header(); ?>
                     $tab_body = $tab['tab_menu_body'];
                 ?>
                     <div class="timeline-years">
-                        <button type="button" class="timeline-btn">
-                            <h2><?php echo $tab_title; ?></h2>
-                        </button>
+                        <div class="timeline-btn-wrapper">
+                            <h2 class="timeline-desktop-title"><?php echo $tab_title; ?></h2>
+                            <button type="button" class="timeline-btn">
+                                <h2><?php echo $tab_title; ?></h2>
+                            </button>
+                        </div>
+
                         <hr class="timeline-line">
 
                         <div class="timeline-content">
@@ -106,6 +110,8 @@ get_header(); ?>
                             <p><?php echo $tab_body; ?></p>
                         </div>
                     </div>
+                    <div class="empty-div"></div>
+                    <div class="empty-div"></div>
                     
                 <?php endforeach; ?>
                 
