@@ -4,7 +4,25 @@
 
 // }
 
+.quotes1, .quotes2 {
+    color: $color__button-light !important;
+  font-size: 4.5rem;
+    font-family: $font__main;
 
+}
+.quotes1 sup{
+    top: 0;
+    font-family: $font__main;
+}
+.quotes2 sub{
+    bottom: -1.9rem;
+    font-family: $font__main;
+}
+
+h2{ font-size: 3.1rem;
+    color: $color__main;
+    text-align: center;
+}
 h3{
     font-size: 2.25rem;
     color: $color__text-screen;
@@ -12,12 +30,20 @@ h3{
 p{
     font-size: 1.12rem;
     color: $color__text-screen;
+    text-align: center;
 }
 .history-btn{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
     text-transform: uppercase;
     color: white;
     @include orange-btn;
     padding: 8px;
+    max-width: 300px;
+    @include desktop{
+        margin: 0 auto;
+    }
 }
 .board-members {
     .members-title {
@@ -28,7 +54,6 @@ p{
     img {
       width: 1023px;
       height: auto;
-      margin-left: 100px;
       margin-top: 0;
     }
     .members-names {
@@ -46,9 +71,10 @@ p{
       text-transform: uppercase;
       font-weight: 450;
       letter-spacing: 0;
-      margin-left: 420px;
       padding: 10px;
-      @include orange-btn
+
+      @include orange-btn;
+     
   
     }
   }
@@ -69,21 +95,30 @@ p{
     }
   
   .staff {
+
     height: 1100px;
-  padding: 125px;
+ padding: 125px;
   padding-top: 0;
   padding-bottom: 80px;
     background-color: $color__background;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr;
-    grid-column-gap: 100px;
-    grid-row-gap: 70px;
+
+
+    @include desktop{
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 100px;
+        grid-row-gap: 70px;
+    
+          }
   
     .staff-members {
+        height: auto;
       .staff-image {
       width: 342px;
       height: 380px;
+      object-fit: cover;
   
       }
   
