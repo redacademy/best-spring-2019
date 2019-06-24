@@ -105,7 +105,7 @@
       }
     }); /* End of Timeline */
 
-    /* Start of Tab Meny Flickity */
+    /* Start of Tab Menu Flickity */
 
     $('.tab-nav').flickity({
       cellAlign: 'center',
@@ -115,7 +115,20 @@
       pageDots: false,
       draggable: true,
       percentPosition: false,
-      groupCells: 1
+      groupCells: 1,
     });
+
+    let $initialTab;
+
+    if (window.location.hash !== '') {
+      $initialTab = $(window.location.hash);
+    } else {
+      $initialTab = $('#membership');
+    }
+    $initialTab.addClass('active-tab');
+    let tabIndex = $tabLinks.index($initialTab);
+    $tabContent.hide();
+    $tabContent.eq(tabIndex).show();
+
   });
 })(jQuery);
