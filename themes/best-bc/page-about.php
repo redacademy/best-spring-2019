@@ -19,13 +19,19 @@ get_header(); ?>
         <?php the_excerpt(); ?>
         
 <!-- staff members CFS -->
+<div class="Staff-text">
+<h1>Who we are</h1>
+<p>Staff</p>
+</div>
 <div class="staff">
         <?php $staff_member = CFS()->get('staff_member');
            foreach ( $staff_member as $staff) :?>
         <div class ="staff-members">
             <img class="staff-image" src="<?php echo $staff['staff_image'];?>"/>
+            
             <p class ="staff-name"><?php echo $staff['staff_name']; ?></p>
             <h3 class ="staff-title"><?php echo $staff['staff_title'];?></h3>
+
         </div>
           <?php endforeach; ?>
 

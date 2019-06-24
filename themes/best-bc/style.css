@@ -1581,33 +1581,46 @@ object {
   font-family: "Josefin Sans", sans-serif;
   text-transform: uppercase;
   font-weight: 450;
+  letter-spacing: 0;
+  margin-left: 420px;
+  padding: 10px;
   border: 1px solid #e3a72f;
   border-radius: 40px;
-  background-color: #e3a72f;
-  padding: 4px 60px;
-  -webkit-box-shadow: 2px;
-          box-shadow: 2px; }
+  background-color: #e3a72f; }
+
+.staff-text h1 {
+  background-color: #e7e7e7;
+  text-align: center;
+  color: #228f7a;
+  font-family: "Josefin Sans", sans-serif; }
 
 .staff {
-  padding: 100px;
-  padding-left: 280px;
+  height: 1100px;
+  padding: 125px;
   background-color: #e7e7e7;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
-  grid-template-rows: 200px 200px;
-  grid-row-gap: 100px; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 100px;
+  grid-row-gap: 70px; }
   .staff .staff-members .staff-image {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 164px;
-    height: 190px; }
+    width: 342px;
+    height: 380px; }
   .staff .staff-members .staff-name {
+    text-align: center;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
     color: #228f7a;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 400;
     padding: 0;
     margin: 0; }
   .staff .staff-members .staff-title {
+    text-align: center;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
     padding: 0;
     margin: 0;
     font-weight: 300; }
@@ -1915,8 +1928,7 @@ object {
     display: inline-block;
     border: 1px solid #e3a72f;
     border-radius: 40px;
-    background-color: #e3a72f;
-    padding: 4px 60px; }
+    background-color: #e3a72f; }
   .post-type-archive-program .entry-content .overlay .visit-btn {
     margin: 0 auto;
     padding-bottom: 16px; }
