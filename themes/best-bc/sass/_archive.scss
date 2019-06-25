@@ -62,7 +62,6 @@
     position: relative;
     width: 340px;
     height: 300px;
-
     margin-top: 0;
 
     .article-thumbnail {
@@ -114,6 +113,7 @@
         display: flex;
       }
       p {
+        text-align: left;
         font-family: $font__second;
         color: white;
         font-weight: 100;

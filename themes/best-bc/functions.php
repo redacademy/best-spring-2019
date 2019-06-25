@@ -139,6 +139,6 @@ add_action('pre_get_posts', 'best_pre_get_posts');
 /* Custom filter for WP Excerpt */
 function best_custom_excerpt_length()
 {
-	return 14;
+	return 12;
 }
 add_filter('excerpt_length', 'best_custom_excerpt_length');
