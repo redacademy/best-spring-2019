@@ -34,7 +34,7 @@ get_header(); ?>
                     ?>
                     <div class="tab-content">
                         <h2><?php echo $tab_title ?></h2>
-                        <p><?php echo $tab_body ?></p>
+                        <?php echo $tab_body ?>
                     </div>
 
                 <?php endforeach; ?>
