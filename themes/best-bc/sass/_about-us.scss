@@ -81,9 +81,17 @@ p{
       letter-spacing: 0;
       padding: 10px;
       @include orange-btn;
-  
+
+      
     }
+  
   }
+  .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
   // staff section
   
   .Staff-text{
@@ -109,6 +117,7 @@ p{
     grid-template-columns: 1fr 1fr  ;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 30px;
+    padding: 30px;
 
     @include desktop{
         padding: 100px;
@@ -118,13 +127,31 @@ p{
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 100px;
         grid-row-gap: 70px;
+        
     
-          }
-  
+    }
+
+}
+.gradient{
+    position: relative;
+    &:after{
+        content:""; 
+        right: 0;
+        background:linear-gradient(
+            rgba(34, 143, 122, 0.63),
+            rgba(227, 167, 47, 0.34)
+          );
+          position: absolute;
+          z-index: 999;
+          width: 100%;
+          height: 100%;
+}
+}
     .staff-members {
     .staff-image {
-         filter: sepia(0.3);
-         width: 140px;
+        //  filter: sepia(0.3);
+        position: relative;
+         width: 100%;
          height: 160px;
          object-fit: cover;
         @include desktop{
@@ -151,9 +178,9 @@ p{
         padding: 5px;
         font-family: $font__main;
         font-size: 1.1rem;
-        font-weight: 300;
+        font-weight: 400;
         padding: 0;
         margin: 0;
       }
     }
-  }
+  

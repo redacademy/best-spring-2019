@@ -979,7 +979,11 @@ a {
 
 /* Main Body Overflow */
 .site-content {
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 1240px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 /* Main Body Overflow */
 .bike-container {
@@ -1585,13 +1589,6 @@ object {
   color: #404040;
   font-size: 18px; }
 
-/* Front page */
-.site-content {
-  max-width: 1240px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
-
 .page-template-page-donate #gform_fields_6 {
   padding-left: 50px; }
 
@@ -1882,6 +1879,7 @@ object {
     display: -ms-flexbox;
     display: flex; }
   .post-type-archive-program .entry-content .overlay p {
+    text-align: left;
     font-family: "Mukta", sans-serif;
     color: white;
     font-weight: 100;
@@ -2530,6 +2528,19 @@ p {
     -webkit-filter: drop-shadow(2px 4px 5px black);
             filter: drop-shadow(2px 4px 5px black); }
 
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px; }
+
 .Staff-text {
   padding: 30px;
   margin: 0;
@@ -2549,7 +2560,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  padding: 30px; }
   @media (min-width: 620px) {
     .staff {
       padding: 100px;
@@ -2559,33 +2571,47 @@ p {
       grid-template-rows: 1fr 1fr;
       grid-column-gap: 100px;
       grid-row-gap: 70px; } }
-  .staff .staff-members .staff-image {
-    -webkit-filter: sepia(0.3);
-            filter: sepia(0.3);
-    width: 140px;
-    height: 160px;
-    -o-object-fit: cover;
-       object-fit: cover; }
-    @media (min-width: 620px) {
-      .staff .staff-members .staff-image {
-        width: 342px;
-        height: 360px;
-        -o-object-fit: cover;
-           object-fit: cover; } }
-  .staff .staff-members .staff-name {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
-    color: #228f7a;
-    text-align: center;
-    padding: 5px;
-    padding: 0;
-    margin: 0; }
-  .staff .staff-members .staff-title {
-    text-align: center;
-    padding: 5px;
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    padding: 0;
-    margin: 0; }
+
+.gradient {
+  position: relative; }
+  .gradient:after {
+    content: "";
+    right: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 143, 122, 0.63)), to(rgba(227, 167, 47, 0.34)));
+    background: linear-gradient(rgba(34, 143, 122, 0.63), rgba(227, 167, 47, 0.34));
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%; }
+
+.staff-members .staff-image {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media (min-width: 620px) {
+    .staff-members .staff-image {
+      width: 342px;
+      height: 360px;
+      -o-object-fit: cover;
+         object-fit: cover; } }
+
+.staff-members .staff-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #228f7a;
+  text-align: center;
+  padding: 5px;
+  padding: 0;
+  margin: 0; }
+
+.staff-members .staff-title {
+  text-align: center;
+  padding: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0; }

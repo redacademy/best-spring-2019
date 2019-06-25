@@ -15,8 +15,9 @@ get_header(); ?>
             <?php get_template_part('template-parts/content', 'page'); ?>
 
         <?php endwhile; ?>
-     
+<span class="button">
 <a class="history-btn" href="https://best.van.cp.academy.red/history/">View Our History</a>
+</span>
 <!-- staff members CFS -->
 <div class="Staff-text">
 <h1>Who we are</h1>
@@ -26,7 +27,7 @@ get_header(); ?>
         <?php $staff_member = CFS()->get('staff_member');
            foreach ( $staff_member as $staff) :?>
         <div class ="staff-members">
-            <img class="staff-image" src="<?php echo $staff['staff_image'];?>"/>
+         <div class="gradient"><img class="staff-image" src="<?php echo $staff['staff_image'];?>"/></div>
             
             <p class ="staff-name"><?php echo $staff['staff_name']; ?></p>
             <h3 class ="staff-title"><?php echo $staff['staff_title'];?></h3>
@@ -40,9 +41,9 @@ get_header(); ?>
      <h1 class="members-title"> <?php echo CFS()->get('board_members_title');?></h1>
     <img class="members-photo" src="<?php echo CFS()-> get('board_members_photo');?>"/>
     <p class="members-names"><?php echo CFS()->get('board_members_names');?></p>
-    <span class="report-btn">
-<a class="annual-report" href="<?php echo get_permalink( get_page_by_title( 'Annual Reports' ));?>">View 2018 Annual Report</a>
-</span>
+    <span class="button">
+<a class="annual-report" href="<?php echo get_permalink( get_page_by_title( 'Annual Reports' ));?>">View 2018 Annual Report</a></span>
+
 </div>
 
     </main><!-- #main -->

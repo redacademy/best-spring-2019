@@ -99,7 +99,7 @@ get_header(); ?>
                         <div class="timeline-btn-wrapper">
                             <h2 class="timeline-desktop-title"><?php echo $tab_title; ?></h2>
                             <button type="button" class="timeline-btn">
-                                <h2><?php echo $tab_title; ?></h2>
+                                <p><?php echo $tab_title; ?></p>
                             </button>
                         </div>
 
