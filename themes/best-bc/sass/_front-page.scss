@@ -338,11 +338,14 @@ a {
     font-size: 2rem;
   }
 }
-.main-carousel {
-  height: 200px;
+.main-carousel .flickity-viewport {
+  height: 205px;
 }
 .flickity-slider {
   padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .flickity-page-dots {
   display: none;

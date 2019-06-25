@@ -39,7 +39,7 @@ get_header(); ?>
                         <div class="tab-content-flexed">
                             <div class="tab-column-one">
                                 <h2><?php echo $tab_title ?></h2>
-                                <p><?php echo $tab_body ?></p>
+                                <?php echo $tab_body ?>
                             </div>
                             <div class="tab-column-two">
                                 <?php echo do_shortcode('[gravityform id=' . $tab_gform_id  . ' name=ContactUs title=false description=false]');  ?>

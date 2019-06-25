@@ -187,13 +187,12 @@ p {
 }
     .staff-members {
     .staff-image {
-        //  filter: sepia(0.3);
+       
         position: relative;
          width: 100%;
          height: 160px;
          object-fit: cover;
         @include desktop{
-            width: 342px;
             height: 360px;
             object-fit: cover;
 
