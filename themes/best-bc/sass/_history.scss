@@ -175,7 +175,6 @@
         }
     }
     .timeline-section {
-        position: relative;
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: auto;
@@ -189,6 +188,7 @@
             &:nth-child(odd) {
                 border-right: 3px solid $color__main;
                 text-align: left;
+                position: relative;
                 .timeline-btn-wrapper {
                     @include desktop {
                         cursor: pointer;
@@ -240,12 +240,28 @@
                         left: unset;
                     }
                 }
+                .timeline-content {
+                    position: absolute;
+                    display: none;
+                    text-align: center;
+                    width: 400px;
+                    background: white;
+                    border: 1px solid red;   
+                    &.timeline-open {
+                        z-index: 100;
+                        display: block;
+                        top: 0;
+                        left: 0;
+                        // transform: translate(-50%, -50%);
+                    }
+                }
             }
             /* Timeline Right Side */
             &:nth-child(even) {
                 border-left: 3px solid $color__main;
                 text-align: right;
                 justify-content: flex-end;
+                position: relative;
                 .timeline-btn-wrapper{
                     order: 1;
                     @include desktop {
@@ -296,6 +312,21 @@
                         width: 40%;
                         left: 0;
                         right: unset;
+                    }
+                }
+                .timeline-content {
+                    position: absolute;
+                    display: none;
+                    text-align: center;
+                    width: 200px;
+                    background: white;
+                    border: 1px solid red;   
+                    &.timeline-open {
+                        z-index: 100;
+                        display: block;
+                        top: 0;
+                        left: 0;
+                        // transform: translate(-50%, -50%);
                     }
                 }
             }
@@ -352,6 +383,5 @@
         top: 0;
         left: 0;
         // transform: translate(-50%, -50%);
-        
     }
 }

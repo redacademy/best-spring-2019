@@ -84,7 +84,7 @@
     const timelineOpen = $('.timeline-btn');
     const timelineOpenDesktop = $('.timeline-btn-wrapper')
 
-    /* Mobile */
+    /* Mobile Timeline*/
     timelineOpen.on('click', function (event) {
       event.preventDefault();
       $(this).parent().siblings('.timeline-content').addClass('timeline-open');  
@@ -94,7 +94,7 @@
       $('.timeline-content').removeClass('timeline-open');
     });
 
-    /* Desktop */
+    /* Desktop Timeline*/
     timelineOpenDesktop.on('click', function(event) {
       event.preventDefault();
       $(this).siblings('.timeline-content').addClass('timeline-open');  
