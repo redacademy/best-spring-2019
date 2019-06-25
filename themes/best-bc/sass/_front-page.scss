@@ -339,8 +339,9 @@ a {
   }
 }
 .main-carousel .flickity-viewport {
+  height: 205px; 
   @include desktop{
-  height: 205px;
+    height: 225px;
   }
 }
 .page-template-front-page .flickity-slider {

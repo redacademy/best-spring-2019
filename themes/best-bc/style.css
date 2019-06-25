@@ -1299,9 +1299,11 @@ a {
     .fp-carousel-title {
       font-size: 2rem; } }
 
-@media (min-width: 620px) {
-  .main-carousel .flickity-viewport {
-    height: 205px; } }
+.main-carousel .flickity-viewport {
+  height: 205px; }
+  @media (min-width: 620px) {
+    .main-carousel .flickity-viewport {
+      height: 225px; } }
 
 .page-template-front-page .flickity-slider {
   padding-bottom: 50px;
