@@ -81,19 +81,30 @@
     }); //END OF TAB MENU CODE
 
     /* Start of Timeline */
-    
-    // const timelineContent = $('timeline-content');
+    const timelineOpen = $('.timeline-btn');
+    const timelineOpenDesktop = $('.timeline-btn-wrapper')
 
-    $('button').on('click', function (event) {
+    /* Mobile */
+    timelineOpen.on('click', function (event) {
       event.preventDefault();
-      console.log('hi');
-      // $('.timeline-content').removeClass('timeline-open');
-      $(this).parent().parent().children('.timeline-content').addClass('timeline-open');      
-    }); /* End of Timeline */
+      $(this).parent().siblings('.timeline-content').addClass('timeline-open');  
+    }); 
 
-    $("button").on("blur", function(){
-      $(".timeline-content").removeClass("timeline-open");
-   })
+    timelineOpen.on('blur', function(){
+      $('.timeline-content').removeClass('timeline-open');
+    });
+
+    /* Desktop */
+    timelineOpenDesktop.on('click', function(event) {
+      event.preventDefault();
+      $(this).siblings('.timeline-content').addClass('timeline-open');  
+    });
+
+    timelineOpenDesktop.on('blur', function(){
+      $('.timeline-content').removeClass('timeline-open');
+    });
+
+   /* End of Timeline */
 
     /* Start of Tab Meny Flickity */
 

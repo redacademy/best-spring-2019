@@ -1,155 +1,133 @@
-
-
-// .staff-image {
-
-// }
-
-.quotes1, .quotes2 {
-    color: $color__button-light !important;
+.quotes1,
+.quotes2 {
+  color: $color__button-light !important;
   font-size: 4.5rem;
-    font-family: $font__main;
-
+  font-family: $font__main;
 }
-.quotes1 sup{
-    top: 0;
-    font-family: $font__main;
+.quotes1 sup {
+  top: 0;
+  font-family: $font__main;
 }
-.quotes2 sub{
-    bottom: -1.9rem;
-    font-family: $font__main;
-<<<<<<< HEAD
-    font-size: 1.25rem !important;
-    max-width: inherit;
-}
-.staff-image{
-    filter: sepia(60%)
-}
-=======
+.quotes2 sub {
+  bottom: -1.9rem;
+  font-family: $font__main;
 }
 
-h2{ font-size: 3.1rem;
-    color: $color__main;
-    text-align: center;
+h2 {
+  font-size: 3.1rem;
+  color: $color__main;
+  text-align: center;
 }
-h3{
-    font-size: 2.25rem;
-    color: $color__text-screen;
+h3 {
+  font-size: 2.25rem;
+  color: $color__text-screen;
 }
-p{
-    font-size: 1.12rem;
-    color: $color__text-screen;
-    text-align: center;
+p {
+  font-size: 1.12rem;
+  color: $color__text-screen;
+  text-align: center;
 }
-.history-btn{
-    max-width: 400px;
+.history-btn {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: white;
+  @include orange-btn;
+  padding: 8px;
+  max-width: 300px;
+  @include desktop {
     margin: 0 auto;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: white;
-    @include orange-btn;
-    padding: 8px;
-    max-width: 300px;
-    @include desktop{
-        margin: 0 auto;
-    }
+  }
 }
 .board-members {
-    .members-title {
-      text-align: center;
-      padding: 30px;
-      color: $color__main;
-    }
-    img {
-      width: 1023px;
-      height: auto;
-      margin-top: 0;
-    }
-    .members-names {
-      font-family: $font__main;
-      color: $color__text-screen;
-      font-size: 1.25rem;
-      line-height: 20px;
-      text-align: center;
-    }
-  
-    a {
-      color: white;
-      font-size: 20px;
-      font-family: $font__main;
-      text-transform: uppercase;
-      font-weight: 450;
-      letter-spacing: 0;
-      padding: 10px;
-
-      @include orange-btn;
-     
-  
-    }
-  }
-  
-  
-  .Staff-text{
-    padding:30px;
-    margin: 0;
+  .members-title {
     text-align: center;
-    background-color: $color__background;
-    h1{
-        color: $color__main;
-    }
-    p{
-      padding: 0;
-      margin: 0;
-    }
-    }
-  
-  .staff {
+    padding: 30px;
+    color: $color__main;
+  }
+  img {
+    width: 1023px;
+    height: auto;
+    margin-top: 0;
+  }
+  .members-names {
+    font-family: $font__main;
+    color: $color__text-screen;
+    font-size: 1.25rem;
+    line-height: 20px;
+    text-align: center;
+  }
 
-    height: 1100px;
- padding: 125px;
+  a {
+    color: white;
+    font-size: 20px;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-weight: 450;
+    letter-spacing: 0;
+    padding: 10px;
+
+    @include orange-btn;
+  }
+}
+
+.Staff-text {
+  padding: 30px;
+  margin: 0;
+  text-align: center;
+  background-color: $color__background;
+  h1 {
+    color: $color__main;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.staff {
+  height: 1100px;
+  padding: 125px;
   padding-top: 0;
   padding-bottom: 80px;
-    background-color: $color__background;
+  background-color: $color__background;
 
+  @include desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 70px;
+  }
 
-    @include desktop{
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 100px;
-        grid-row-gap: 70px;
-    
-          }
-  
-    .staff-members {
-        height: auto;
-      .staff-image {
+  .staff-members {
+    height: auto;
+    .staff-image {
       width: 342px;
       height: 380px;
       object-fit: cover;
-  
-      }
-  
-      .staff-name {
-        text-align: center;
-        padding: 5px;
-        font-family: $font__main;
-        color: $color__main;
-        font-size: 1.3rem;
-        font-weight: 400;
-        padding: 0;
-        margin: 0;
-      }
-      .staff-title {
-        text-align: center;
-        padding: 5px;
-        font-family: $font__main;
-        font-size: 1.1rem;
-        font-weight: 200;
-        padding: 0;
-        margin: 0;
-        font-weight: 300;
-      }
+    }
+
+    .staff-name {
+      text-align: center;
+      padding: 5px;
+      font-family: $font__main;
+      color: $color__main;
+      font-size: 1.3rem;
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+    }
+    .staff-title {
+      text-align: center;
+      padding: 5px;
+      font-family: $font__main;
+      font-size: 1.1rem;
+      font-weight: 200;
+      padding: 0;
+      margin: 0;
+      font-weight: 300;
     }
   }
->>>>>>> 47836b1a665b9611e98cb459225978abf842cfcf
+}
