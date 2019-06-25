@@ -460,7 +460,13 @@ a {
           margin: unset;
           margin-top: 16px;
           font-size: 1.2rem;
-          color: $color__header;
+          a {
+            color: $color__darkblue;
+            &:hover {
+              color: $color__main;
+            }
+          }
+
           @include small-mobile {
             font-size: 1rem;
           }
@@ -480,13 +486,16 @@ a {
         }
         .fp-news-btn {
           text-decoration: none;
-          color: $color__header;
+          color: $color__darkblue;
           margin-top: auto;
           position: absolute;
           bottom: 5%;
+          &:hover {
+            color: $color__main;
+          }
           @include desktop {
             text-decoration: none;
-            color: $color__header;
+            color: $color__darkblue;;
             right: 5%;
             bottom: 5%;
           }
@@ -521,6 +530,10 @@ a {
     border-radius: 50px;
     text-shadow: none;
     margin-top: 32px;
+    padding: unset;
+    & :hover {
+      background: $color__button-dark;
+    }
     @include small-mobile {
       width: 300px;
     }
@@ -531,6 +544,12 @@ a {
       color: $color__header;
       font-size: 1.3rem;
       margin: 0 auto;
+      width: inherit;
+      height: inherit;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px;
     }
   }
   .fp-news-archives {
@@ -539,6 +558,10 @@ a {
     justify-content: center;
     color: $color__button-light;
     font-size: 1.4rem;
+    &:hover {
+      text-decoration: underline;
+      color: $color__button-dark;
+    }
   }
 }
 
@@ -558,6 +581,13 @@ a {
 }
 
 .transportation-title {
+  text-align: center;
+  color: $color__main;
+  font-size: 3rem;
+  text-transform: capitalize;
+  @include mobile {
+    font-size: 2rem;
+  }
   @include small-mobile {
     font-size: 2rem;
   }
