@@ -990,7 +990,11 @@ a {
 
 /* Main Body Overflow */
 .site-content {
-  overflow: hidden; }
+  overflow: hidden;
+  max-width: 1240px;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 /* Main Body Overflow */
 .bike-container {
@@ -1709,7 +1713,8 @@ object {
   .site-footer .major-sponsor-text {
     font-weight: 400;
     color: #404040;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.3rem; }
     @media (min-width: 620px) {
       .site-footer .major-sponsor-text {
         text-align: right;
@@ -1935,6 +1940,7 @@ object {
     display: -ms-flexbox;
     display: flex; }
   .post-type-archive-program .entry-content .overlay p {
+    text-align: left;
     font-family: "Mukta", sans-serif;
     color: white;
     font-weight: 100;
@@ -1949,7 +1955,9 @@ object {
     padding: 5px 30px;
     border: 1px solid #e3a72f;
     border-radius: 40px;
-    background-color: #e3a72f; }
+    background-color: #e3a72f;
+    -webkit-filter: drop-shadow(2px 4px 5px black);
+            filter: drop-shadow(2px 4px 5px black); }
   .post-type-archive-program .entry-content .overlay .visit-btn {
     margin: 0 auto;
     padding-bottom: 16px; }
@@ -2546,7 +2554,9 @@ object {
 
 .quotes2 sub {
   bottom: -1.9rem;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25rem !important;
+  max-width: inherit; }
 
 h2 {
   font-size: 3.1rem;
@@ -2563,6 +2573,7 @@ p {
   text-align: center; }
 
 .history-btn {
+  font-family: "Josefin Sans", sans-serif;
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -2571,40 +2582,57 @@ p {
   border: 1px solid #e3a72f;
   border-radius: 40px;
   background-color: #e3a72f;
+  -webkit-filter: drop-shadow(2px 4px 5px black);
+          filter: drop-shadow(2px 4px 5px black);
   padding: 8px;
   max-width: 300px; }
   @media (min-width: 620px) {
     .history-btn {
       margin: 0 auto; } }
 
-.board-members .members-title {
-  text-align: center;
-  padding: 30px;
-  color: #228f7a; }
+.board-members {
+  max-width: 1080px;
+  margin: 0 auto; }
+  .board-members .members-title {
+    text-align: center;
+    padding: 30px;
+    color: #228f7a; }
+  .board-members img {
+    width: 1023px;
+    height: auto;
+    margin-top: 0; }
+  .board-members .members-names {
+    font-family: "Josefin Sans", sans-serif;
+    color: #404040;
+    font-size: 1.25rem;
+    line-height: 20px;
+    text-align: center; }
+  .board-members .annual-report {
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 450;
+    letter-spacing: 0;
+    padding: 10px;
+    border: 1px solid #e3a72f;
+    border-radius: 40px;
+    background-color: #e3a72f;
+    -webkit-filter: drop-shadow(2px 4px 5px black);
+            filter: drop-shadow(2px 4px 5px black); }
 
-.board-members img {
-  width: 1023px;
-  height: auto;
-  margin-top: 0; }
-
-.board-members .members-names {
-  font-family: "Josefin Sans", sans-serif;
-  color: #404040;
-  font-size: 1.25rem;
-  line-height: 20px;
-  text-align: center; }
-
-.board-members a {
-  color: white;
-  font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 450;
-  letter-spacing: 0;
-  padding: 10px;
-  border: 1px solid #e3a72f;
-  border-radius: 40px;
-  background-color: #e3a72f; }
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 50px; }
 
 .Staff-text {
   padding: 30px;
@@ -2618,40 +2646,65 @@ p {
     margin: 0; }
 
 .staff {
-  height: 1100px;
-  padding: 125px;
   padding-top: 0;
   padding-bottom: 80px;
-  background-color: #e7e7e7; }
+  background-color: #e7e7e7;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 30px; }
   @media (min-width: 620px) {
     .staff {
+      padding: 100px;
+      padding-top: 0;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-column-gap: 100px;
       grid-row-gap: 70px; } }
-  .staff .staff-members {
-    height: auto; }
-    .staff .staff-members .staff-image {
+
+.gradient {
+  position: relative; }
+  .gradient:after {
+    content: "";
+    right: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 143, 122, 0.63)), to(rgba(227, 167, 47, 0.34)));
+    background: linear-gradient(rgba(34, 143, 122, 0.63), rgba(227, 167, 47, 0.34));
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%; }
+
+.staff-members .staff-image {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover; }
+  @media (min-width: 620px) {
+    .staff-members .staff-image {
       width: 342px;
-      height: 380px;
+      height: 360px;
       -o-object-fit: cover;
-         object-fit: cover; }
-    .staff .staff-members .staff-name {
-      text-align: center;
-      padding: 5px;
-      font-family: "Josefin Sans", sans-serif;
-      color: #228f7a;
-      font-size: 1.3rem;
-      font-weight: 400;
-      padding: 0;
-      margin: 0; }
-    .staff .staff-members .staff-title {
-      text-align: center;
-      padding: 5px;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.1rem;
-      font-weight: 200;
-      padding: 0;
-      margin: 0;
-      font-weight: 300; }
+         object-fit: cover; } }
+
+.staff-members .staff-name {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #228f7a;
+  text-align: center;
+  padding: 5px;
+  padding: 0;
+  margin: 0; }
+
+.staff-members .staff-title {
+  text-align: center;
+  padding: 5px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  padding: 0;
+  margin: 0; }
