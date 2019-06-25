@@ -1298,11 +1298,20 @@ a {
     .fp-carousel-title {
       font-size: 2rem; } }
 
-.main-carousel {
-  height: 200px; }
+.main-carousel .flickity-viewport {
+  height: 205px; }
 
 .flickity-slider {
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .flickity-page-dots {
   display: none; }
@@ -1683,12 +1692,16 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .site-footer .footer-content .social-media {
+      padding-top: 85px; }
     @media (min-width: 620px) {
       .site-footer .footer-content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; } }
+                flex-direction: column; }
+        .site-footer .footer-content .social-media {
+          padding-top: 10px; } }
   .site-footer .social-media-icons span {
     font-size: 1.8rem; }
     @media (min-width: 620px) {
@@ -1737,6 +1750,12 @@ object {
   .site-footer .social-media-icons a:hover {
     color: #176f5d; }
 
+.translink {
+  padding-top: 10px; }
+  @media (min-width: 620px) {
+    .translink {
+      padding-top: 85px; } }
+
 .page .resource-p {
   padding-left: 50px;
   font-family: "Josefin Sans", sans-serif;
@@ -1756,7 +1775,7 @@ object {
 .tab-content {
   margin: 0 32px;
   display: none;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Mukta", sans-serif; }
   .tab-content:first-child {
     display: block; }
 
@@ -1784,7 +1803,11 @@ object {
   margin: 0px 50px 0px 50px; }
 
 .tab-content p span {
-  font-size: 14pt !important; }
+  font-size: 14pt !important;
+  font-family: "Mukta", sans-serif !important; }
+
+.tab-content h2 {
+  font-family: "Mukta", sans-serif !important; }
 
 @media (min-width: 620px) {
   .tab-content-flexed {
