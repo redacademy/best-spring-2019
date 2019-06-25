@@ -78,7 +78,6 @@
               display: flex;
             }
           }
-          
           li {
             @include desktop {
               margin: 0 auto;
@@ -115,6 +114,9 @@
                     height: 40px;
                     align-items: center;
                     display: flex;
+                    &:hover {
+                      color: $color__main;
+                    }
                   }
                 }
               }
@@ -174,6 +176,7 @@
   .search-field {
     border-radius: 16px;
     @include desktop {
+      padding-left: 16px;
       width: 220px;
       height: 40px;
       border-radius: 50px;
@@ -207,8 +210,8 @@
 }
 
 /* Custom Nav Button */
-.arrow-down,
-.arrow-down2 {
+// .arrow-down
+.arrow-down {
   height: 48px;
   width: 48px;
   @include clean-all;
@@ -228,8 +231,7 @@
     top: 64px;
     right: 16px;
   }
-  .menu-item-204,
-  .menu-item-261 {
+  .menu-item-has-children {
     display: flex;
     justify-content: space-between;
     .sub-menu {
