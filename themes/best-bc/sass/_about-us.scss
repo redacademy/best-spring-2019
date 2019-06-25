@@ -15,7 +15,8 @@
     max-width: inherit;
 }
 
-h2 {
+.page-template-page-about {
+  h2 {
   font-size: 3.1rem;
   color: $color__main;
   text-align: center;
@@ -41,6 +42,7 @@ p {
   @include desktop {
     margin: 0 auto;
   }
+}
 }
 .board-members {
   .members-title {
