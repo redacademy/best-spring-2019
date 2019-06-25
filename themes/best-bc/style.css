@@ -1191,6 +1191,9 @@ a {
     color: #228f7a;
     font-size: 3rem;
     text-transform: capitalize; }
+    @media (max-width: 375px) {
+      .fp-involved-title h2 {
+        font-size: 2rem; } }
   .fp-involved-title .fp-news-background-hand {
     background: url(../../assets/images/Wrench-hand-2.png) no-repeat;
     height: 160px;
@@ -1204,6 +1207,12 @@ a {
         height: 320px;
         width: 320px;
         top: -120%; } }
+    @media (max-width: 375px) {
+      .fp-involved-title .fp-news-background-hand {
+        width: 120px;
+        height: 120px;
+        right: -5%;
+        top: -100%; } }
 
 .involved-container {
   width: 100%;
@@ -1281,6 +1290,9 @@ a {
   color: #228f7a;
   font-size: 3rem;
   text-transform: capitalize; }
+  @media (max-width: 375px) {
+    .fp-carousel-title {
+      font-size: 2rem; } }
 
 .main-carousel {
   height: 200px; }
@@ -1339,11 +1351,17 @@ a {
     font-size: 3rem;
     padding-top: 32px;
     margin: unset; }
+    @media (max-width: 375px) {
+      .fp-news-background h2 {
+        font-size: 2rem; } }
   .fp-news-background .news-text {
     text-align: center;
     font-size: 1.5rem;
     margin-top: unset; }
     @media (max-width: 619px) {
+      .fp-news-background .news-text {
+        display: none; } }
+    @media (max-width: 375px) {
       .fp-news-background .news-text {
         display: none; } }
   .fp-news-background .fp-news {
@@ -1415,12 +1433,19 @@ a {
           margin-top: 16px;
           font-size: 1.2rem;
           color: white; }
+          @media (max-width: 375px) {
+            .fp-news-background .fp-news .fp-news-wrapper .fp-news-info .fp-news-title h3 {
+              font-size: 1rem; } }
         .fp-news-background .fp-news .fp-news-wrapper .fp-news-info .fp-news-post p {
           color: white;
           padding-right: 64px;
           text-align: left;
           margin: 8px 0;
           line-height: 1.3; }
+          @media (max-width: 375px) {
+            .fp-news-background .fp-news .fp-news-wrapper .fp-news-info .fp-news-post p {
+              padding-right: unset;
+              font-size: 1rem; } }
         .fp-news-background .fp-news .fp-news-wrapper .fp-news-info .fp-news-btn {
           text-decoration: none;
           color: white;
@@ -1446,6 +1471,9 @@ a {
     @media (min-width: 620px) {
       .fp-news-background .fp-news-background-letter {
         left: -8%; } }
+    @media (max-width: 375px) {
+      .fp-news-background .fp-news-background-letter {
+        left: -50%; } }
   .fp-news-background .fp-news-signup-mobile,
   .fp-news-background .fp-news-signup {
     display: -webkit-box;
@@ -1460,6 +1488,10 @@ a {
     border-radius: 50px;
     text-shadow: none;
     margin-top: 32px; }
+    @media (max-width: 375px) {
+      .fp-news-background .fp-news-signup-mobile,
+      .fp-news-background .fp-news-signup {
+        width: 300px; } }
     .fp-news-background .fp-news-signup-mobile a,
     .fp-news-background .fp-news-signup a {
       text-align: center;
@@ -1479,13 +1511,21 @@ a {
     color: #e3a72f;
     font-size: 1.4rem; }
 
+@media (max-width: 619px) {
+  .fp-news-signup {
+    display: none !important; } }
+
+@media (max-width: 375px) {
+  .fp-news-signup {
+    display: none !important; } }
+
 @media (min-width: 620px) {
   .fp-news-signup-mobile {
     display: none !important; } }
 
-@media (max-width: 619px) {
-  .fp-news-signup {
-    display: none !important; } }
+@media (max-width: 375px) {
+  .transportation-title {
+    font-size: 2rem; } }
 
 /*--------------------------------------------------------------
 # Content
