@@ -92,7 +92,7 @@ get_header(); ?>
             <!-- Title & Post-->
             <div class="fp-news-info">
               <div class="fp-news-title">
-                <h3><?php the_title(); ?></h3>
+                <h3><a href="<?php echo get_post_permalink(); ?>"><?php the_title(); ?></a></h3>
               </div>
 
               <div class="fp-news-post">
@@ -105,7 +105,7 @@ get_header(); ?>
         <?php endforeach;
       wp_reset_postdata(); ?>
       </div><!-- End of fp-news -->
-      <button class="fp-news-signup"><a href="">Sign up for our newsletter</a></button>
+      <button class="fp-news-signup"><a href="<?php echo get_permalink(); ?>/contact-us/">Sign up for our newsletter</a></button>
       <button class="fp-news-signup-mobile"><a href="">Newsletter signup</a></button>
       <a class="fp-news-archives" href="<?php echo get_the_permalink(); ?>">Read our news archive</a>
     </section><!-- End of News -->

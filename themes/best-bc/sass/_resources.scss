@@ -23,7 +23,7 @@
 .tab-content {
   margin: 0 32px;
   display: none;
-  font-family: $font__main;
+  font-family: $font__second;
   &:first-child {
     display: block;
   }
@@ -59,6 +59,11 @@
 
 .tab-content p span {
   font-size: 14pt !important;
+  font-family: $font__second !important;
+}
+
+.tab-content h2 {
+  font-family: $font__second !important;
 }
 
 @include desktop {

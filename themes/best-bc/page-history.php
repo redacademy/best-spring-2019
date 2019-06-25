@@ -83,7 +83,7 @@ get_header(); ?>
                 free and safe bicycle parking for events. Beginning in 2016, BEST is offering Parkbus BC to transport people to BC Provincial Parks without the need for a car.
             </p>
 
-            <button class="history-content-2-btn"><a href="<?php echo get_permalink(); ?>">View accomplishments</a></button>
+            <button class="history-content-2-btn"><a href="<?php echo get_permalink(); ?>/achievements">View accomplishments</a></button>
         </section>
 
         <div class="timeline">
@@ -107,7 +107,14 @@ get_header(); ?>
 
                         <hr class="timeline-line">
                         <div class="timeline-content">
+<<<<<<< HEAD
+                            <div class="inner-content-title">
+                                <div class="inner-content-circle"></div>
+                                <h2><?php echo $tab_title ?></h2>
+                            </div>
+=======
                             <h2><?php echo $tab_title ?></h2>
+>>>>>>> 89fa35e669959cec4ae079711c7d952ce880972f
                             <?php echo $tab_body; ?>
                         </div>
                     </div>

@@ -42,21 +42,14 @@
 
     /* Menu Button */
     let arrowDown = '<button class="arrow-down"></button>';
-    let arrowDown2 = '<button class="arrow-down2"></button>';
-    $('.menu-item-204').append(arrowDown);
-    $('.menu-item-261').append(arrowDown2);
-
+    $('.menu-item-has-children').append(arrowDown);
+    
     const dropDown = $('.arrow-down');
-    const dropDown2 = $('.arrow-down2');
-    const navDown = $('#menu-item-204');
-    const navDown2 = $('#menu-item-261');
+    
     dropDown.on('click', function () {
-      navDown.toggleClass('nav-drop-open');
+      $(this).parent('.menu-item-has-children').toggleClass('nav-drop-open');
     });
-    dropDown2.on('click', function () {
-      navDown2.toggleClass('nav-drop-open2');
-    });
-
+   
     /*End of Header */
 
     // Start of Flickity //

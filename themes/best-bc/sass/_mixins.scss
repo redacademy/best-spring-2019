@@ -16,7 +16,7 @@ $mobile-width: 619px;
     @content;
   }
 }
-$small-mobile-width: 375px;
+$small-mobile-width: 500px;
 @mixin small-mobile {
   @media (max-width: $small-mobile-width) {
     @content;
