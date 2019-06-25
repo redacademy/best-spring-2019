@@ -97,6 +97,7 @@
               flex-direction: column;
               @include desktop {
                 margin-top: 56px;
+                display: flex;
               }
               li:first-child {
                 @include desktop {
