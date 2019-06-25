@@ -68,7 +68,7 @@ get_header(); ?>
     <!--program wrapper-->
     <div class="learn-more-button">
       <p class="learn-more">
-        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="button">Learn More</a></p>
+        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="other-programs-button">Learn More</a></p>
     </div>
     <!--learn more button ends-->
     <!-- News -->

@@ -3,7 +3,7 @@
 
 
 
- ##Tools and Techs
+ ## Tools and Techs
  * Gulp
  * Wordpress
  * Javascript
@@ -18,14 +18,14 @@
  * Transfonter
  * Forms 
 
- ##Time-line
+ ## Time-line
 
 <img src= "assets/images/screen-shot-timeline.jpg" width="600" height ="400">
 
 Time-line was perhaps the most difficult part of the project the expectation was to create a timeline according to their history, so listing down each year and on click a pop-up appears in the center. The timeline itself looks like a branch required heavy css and javacripts to achieve its final form. The time-line appears only in the history page. 
 
  
- ##Programs
+ ## Programs
 
  <img src= "assets/images/screen-shot-programs.jpg" width="600" height ="400">
 
@@ -36,11 +36,11 @@ Time-line was perhaps the most difficult part of the project the expectation was
 
  
  
- ##Tabs
+ ## Tabs
 
  <img src= "assets/images/screen-shot-tabs.jpg" width="600" height ="400">
 
-Tabs can be seen through-out resouces and get involved page required to custom-field to implement in the program. So whenever the user clicks the tabs it is underlined and outputs the content accordin to its title question. 
+Tabs can be seen through-out resouces and get involved page required to custom-field to implement in the program. So whenever the user clicks the tabs it is underlined and outputs the content accordind to its title question. 
 
 
 
