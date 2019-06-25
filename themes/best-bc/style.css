@@ -1317,11 +1317,12 @@ a {
 .flickity-page-dots {
   display: none; }
 
-.carousel-cell img {
-  width: 200px;
-  padding: 20px; }
+@media (min-width: 620px) {
+  .carousel-cell img {
+    width: 200px;
+    padding: 20px; } }
 
-/* Custom Flickity Bottom */
+/* Custom Flickity button */
 .next {
   border: none;
   -webkit-box-shadow: none;
@@ -2707,7 +2708,6 @@ object {
   line-height: 20px;
   text-align: center; }
 
-<<<<<<< HEAD
 .board-members .members-title {
   text-align: center;
   padding: 35px;
@@ -2726,14 +2726,6 @@ object {
   text-align: center; }
 
 .board-members .annual-report {
-=======
-.board-members .history-btn {
-  font-family: "Josefin Sans", sans-serif;
-  max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  text-transform: uppercase;
->>>>>>> f8036bc64ff850b730471056ebb9bb0e0027ddc8
   color: white;
   font-size: 20px;
   font-family: "Josefin Sans", sans-serif;
@@ -2746,40 +2738,6 @@ object {
   background-color: #e3a72f;
   -webkit-filter: drop-shadow(2px 4px 5px black);
           filter: drop-shadow(2px 4px 5px black); }
-<<<<<<< HEAD
-=======
-
-.board-members {
-  max-width: 1080px;
-  margin: 0 auto; }
-  .board-members .members-title {
-    text-align: center;
-    padding: 30px;
-    color: #228f7a; }
-  .board-members img {
-    width: 1023px;
-    height: auto;
-    margin-top: 0; }
-  .board-members .members-names {
-    font-family: "Josefin Sans", sans-serif;
-    color: #404040;
-    font-size: 1.25rem;
-    line-height: 20px;
-    text-align: center; }
-  .board-members .annual-report {
-    color: white;
-    font-size: 20px;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 450;
-    letter-spacing: 0;
-    padding: 10px;
-    border: 1px solid #e3a72f;
-    border-radius: 40px;
-    background-color: #e3a72f;
-    -webkit-filter: drop-shadow(2px 4px 5px black);
-            filter: drop-shadow(2px 4px 5px black); }
->>>>>>> f8036bc64ff850b730471056ebb9bb0e0027ddc8
 
 .button {
   display: -webkit-box;
