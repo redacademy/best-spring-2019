@@ -16,7 +16,7 @@ get_header(); ?>
 
         <?php endwhile; ?>
      
-<a  href="https://best.van.cp.academy.red/history/"><p class="history-btn">View Our History</p></a>
+<a class="history-btn" href="https://best.van.cp.academy.red/history/">View Our History</a>
 <!-- staff members CFS -->
 <div class="Staff-text">
 <h1>Who we are</h1>
@@ -40,9 +40,9 @@ get_header(); ?>
      <h1 class="members-title"> <?php echo CFS()->get('board_members_title');?></h1>
     <img class="members-photo" src="<?php echo CFS()-> get('board_members_photo');?>"/>
     <p class="members-names"><?php echo CFS()->get('board_members_names');?></p>
-
-
+    <span class="report-btn">
 <a class="annual-report" href="<?php echo get_permalink( get_page_by_title( 'Annual Reports' ));?>">View 2018 Annual Report</a>
+</span>
 </div>
 
     </main><!-- #main -->

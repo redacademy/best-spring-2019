@@ -3,6 +3,7 @@
 // .staff-image {
 
 // }
+// title of page 
 
 .quotes1, .quotes2 {
     color: $color__button-light !important;
@@ -17,14 +18,6 @@
 .quotes2 sub{
     bottom: -1.9rem;
     font-family: $font__main;
-<<<<<<< HEAD
-    font-size: 1.25rem !important;
-    max-width: inherit;
-}
-.staff-image{
-    filter: sepia(60%)
-}
-=======
 }
 
 h2{ font-size: 3.1rem;
@@ -40,7 +33,11 @@ p{
     color: $color__text-screen;
     text-align: center;
 }
+// end of title 
+
+
 .history-btn{
+    font-family: $font__main;
     max-width: 400px;
     margin: 0 auto;
     margin-bottom: 30px;
@@ -53,7 +50,10 @@ p{
         margin: 0 auto;
     }
 }
+// board members section
 .board-members {
+    max-width: 1080px;
+    margin: 0 auto;
     .members-title {
       text-align: center;
       padding: 30px;
@@ -72,7 +72,7 @@ p{
       text-align: center;
     }
   
-    a {
+    .annual-report{
       color: white;
       font-size: 20px;
       font-family: $font__main;
@@ -80,13 +80,11 @@ p{
       font-weight: 450;
       letter-spacing: 0;
       padding: 10px;
-
       @include orange-btn;
-     
   
     }
   }
-  
+  // staff section
   
   .Staff-text{
     padding:30px;
@@ -103,16 +101,18 @@ p{
     }
   
   .staff {
-
-    height: 1100px;
- padding: 125px;
-  padding-top: 0;
-  padding-bottom: 80px;
+    padding-top: 0;
+    padding-bottom: 80px;
     background-color: $color__background;
-
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr  ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
 
     @include desktop{
-
+        padding: 100px;
+        padding-top: 0;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr ;
         grid-template-rows: 1fr 1fr;
@@ -122,21 +122,27 @@ p{
           }
   
     .staff-members {
-        height: auto;
-      .staff-image {
-      width: 342px;
-      height: 380px;
-      object-fit: cover;
+    .staff-image {
+         filter: sepia(0.3);
+         width: 140px;
+         height: 160px;
+         object-fit: cover;
+        @include desktop{
+            width: 342px;
+            height: 360px;
+            object-fit: cover;
+
+        }
   
       }
   
       .staff-name {
-        text-align: center;
-        padding: 5px;
         font-family: $font__main;
-        color: $color__main;
         font-size: 1.3rem;
         font-weight: 400;
+        color: $color__main;
+        text-align: center;
+        padding: 5px;
         padding: 0;
         margin: 0;
       }
@@ -145,11 +151,9 @@ p{
         padding: 5px;
         font-family: $font__main;
         font-size: 1.1rem;
-        font-weight: 200;
+        font-weight: 300;
         padding: 0;
         margin: 0;
-        font-weight: 300;
       }
     }
   }
->>>>>>> 47836b1a665b9611e98cb459225978abf842cfcf

@@ -1585,11 +1585,6 @@ object {
   color: #404040;
   font-size: 18px; }
 
-.entry-content p {
-  font-family: "Mukta", sans-serif;
-  color: #404040;
-  font-size: 18px; }
-
 /* Front page */
 .site-content {
   max-width: 1240px;
@@ -1637,20 +1632,12 @@ object {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-    .site-footer .footer-content .social-media {
-      padding-top: 80px; }
-    .site-footer .footer-content .translink {
-      padding-top: 0px; }
     @media (min-width: 620px) {
       .site-footer .footer-content {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
-                flex-direction: column; }
-        .site-footer .footer-content .social-media {
-          padding-top: 0px; }
-        .site-footer .footer-content .translink {
-          padding-top: 80px; } }
+                flex-direction: column; } }
   .site-footer .social-media-icons span {
     font-size: 1.8rem; }
     @media (min-width: 620px) {
@@ -1668,7 +1655,8 @@ object {
   .site-footer .major-sponsor-text {
     font-weight: 400;
     color: #404040;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.3rem; }
     @media (min-width: 620px) {
       .site-footer .major-sponsor-text {
         text-align: right;
@@ -1908,7 +1896,9 @@ object {
     padding: 5px 30px;
     border: 1px solid #e3a72f;
     border-radius: 40px;
-    background-color: #e3a72f; }
+    background-color: #e3a72f;
+    -webkit-filter: drop-shadow(2px 4px 5px black);
+            filter: drop-shadow(2px 4px 5px black); }
   .post-type-archive-program .entry-content .overlay .visit-btn {
     margin: 0 auto;
     padding-bottom: 16px; }
@@ -2492,6 +2482,7 @@ p {
   text-align: center; }
 
 .history-btn {
+  font-family: "Josefin Sans", sans-serif;
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -2500,40 +2491,44 @@ p {
   border: 1px solid #e3a72f;
   border-radius: 40px;
   background-color: #e3a72f;
+  -webkit-filter: drop-shadow(2px 4px 5px black);
+          filter: drop-shadow(2px 4px 5px black);
   padding: 8px;
   max-width: 300px; }
   @media (min-width: 620px) {
     .history-btn {
       margin: 0 auto; } }
 
-.board-members .members-title {
-  text-align: center;
-  padding: 30px;
-  color: #228f7a; }
-
-.board-members img {
-  width: 1023px;
-  height: auto;
-  margin-top: 0; }
-
-.board-members .members-names {
-  font-family: "Josefin Sans", sans-serif;
-  color: #404040;
-  font-size: 1.25rem;
-  line-height: 20px;
-  text-align: center; }
-
-.board-members a {
-  color: white;
-  font-size: 20px;
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: 450;
-  letter-spacing: 0;
-  padding: 10px;
-  border: 1px solid #e3a72f;
-  border-radius: 40px;
-  background-color: #e3a72f; }
+.board-members {
+  max-width: 1080px;
+  margin: 0 auto; }
+  .board-members .members-title {
+    text-align: center;
+    padding: 30px;
+    color: #228f7a; }
+  .board-members img {
+    width: 1023px;
+    height: auto;
+    margin-top: 0; }
+  .board-members .members-names {
+    font-family: "Josefin Sans", sans-serif;
+    color: #404040;
+    font-size: 1.25rem;
+    line-height: 20px;
+    text-align: center; }
+  .board-members .annual-report {
+    color: white;
+    font-size: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 450;
+    letter-spacing: 0;
+    padding: 10px;
+    border: 1px solid #e3a72f;
+    border-radius: 40px;
+    background-color: #e3a72f;
+    -webkit-filter: drop-shadow(2px 4px 5px black);
+            filter: drop-shadow(2px 4px 5px black); }
 
 .Staff-text {
   padding: 30px;
@@ -2547,40 +2542,50 @@ p {
     margin: 0; }
 
 .staff {
-  height: 1100px;
-  padding: 125px;
   padding-top: 0;
   padding-bottom: 80px;
-  background-color: #e7e7e7; }
+  background-color: #e7e7e7;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px; }
   @media (min-width: 620px) {
     .staff {
+      padding: 100px;
+      padding-top: 0;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-column-gap: 100px;
       grid-row-gap: 70px; } }
-  .staff .staff-members {
-    height: auto; }
-    .staff .staff-members .staff-image {
-      width: 342px;
-      height: 380px;
-      -o-object-fit: cover;
-         object-fit: cover; }
-    .staff .staff-members .staff-name {
-      text-align: center;
-      padding: 5px;
-      font-family: "Josefin Sans", sans-serif;
-      color: #228f7a;
-      font-size: 1.3rem;
-      font-weight: 400;
-      padding: 0;
-      margin: 0; }
-    .staff .staff-members .staff-title {
-      text-align: center;
-      padding: 5px;
-      font-family: "Josefin Sans", sans-serif;
-      font-size: 1.1rem;
-      font-weight: 200;
-      padding: 0;
-      margin: 0;
-      font-weight: 300; }
+  .staff .staff-members .staff-image {
+    -webkit-filter: sepia(0.3);
+            filter: sepia(0.3);
+    width: 140px;
+    height: 160px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+    @media (min-width: 620px) {
+      .staff .staff-members .staff-image {
+        width: 342px;
+        height: 360px;
+        -o-object-fit: cover;
+           object-fit: cover; } }
+  .staff .staff-members .staff-name {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #228f7a;
+    text-align: center;
+    padding: 5px;
+    padding: 0;
+    margin: 0; }
+  .staff .staff-members .staff-title {
+    text-align: center;
+    padding: 5px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 0;
+    margin: 0; }
