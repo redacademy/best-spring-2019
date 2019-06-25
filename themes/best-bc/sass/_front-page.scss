@@ -328,6 +328,7 @@ a {
 }
 .main-carousel {
   height: 200px;
+  width: 100%;
 }
 .flickity-slider {
   padding-bottom: 50px;
@@ -336,13 +337,17 @@ a {
   display: none;
 }
 .carousel-cell {
-  img {
-    width: 200px;
-    padding: 20px;
+
+  @include desktop{
+    img {
+      width: 200px;
+      padding: 20px;
+    }
   }
+ 
 }
 
-/* Custom Flickity Bottom */
+/* Custom Flickity button */
 .next {
   @include clean-all;
   background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important;

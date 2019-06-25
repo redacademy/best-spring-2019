@@ -1603,13 +1603,6 @@ object {
   color: #404040;
   font-size: 18px; }
 
-/* Front page */
-.site-content {
-  max-width: 1240px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
-
 .page-template-page-donate #gform_fields_6 {
   padding-left: 50px; }
 
@@ -2502,8 +2495,7 @@ object {
       padding-right: 20rem;
       font-size: 18px; } }
 
-.quotes1,
-.quotes2 {
+.quotes1, .quotes2 {
   color: #e3a72f !important;
   font-size: 4.5rem;
   font-family: "Josefin Sans", sans-serif; }
@@ -2518,22 +2510,21 @@ object {
   font-size: 1.25rem !important;
   max-width: inherit; }
 
-h2 {
+.page-template-page-about h2 {
   font-size: 3.1rem;
   color: #228f7a;
   text-align: center; }
 
-h3 {
+.page-template-page-about h3 {
   font-size: 2.25rem;
   color: #404040; }
 
-p {
+.page-template-page-about p {
   font-size: 1.12rem;
   color: #404040;
   text-align: center; }
 
-.history-btn {
-  font-family: "Josefin Sans", sans-serif;
+.page-template-page-about .history-btn {
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -2547,39 +2538,56 @@ p {
   padding: 8px;
   max-width: 300px; }
   @media (min-width: 620px) {
-    .history-btn {
+    .page-template-page-about .history-btn {
       margin: 0 auto; } }
 
-.board-members {
-  max-width: 1080px;
-  margin: 0 auto; }
-  .board-members .members-title {
-    text-align: center;
-    padding: 30px;
-    color: #228f7a; }
-  .board-members img {
-    width: 1023px;
-    height: auto;
-    margin-top: 0; }
-  .board-members .members-names {
-    font-family: "Josefin Sans", sans-serif;
-    color: #404040;
-    font-size: 1.25rem;
-    line-height: 20px;
-    text-align: center; }
-  .board-members .annual-report {
-    color: white;
-    font-size: 20px;
-    font-family: "Josefin Sans", sans-serif;
-    text-transform: uppercase;
-    font-weight: 450;
-    letter-spacing: 0;
-    padding: 10px;
-    border: 1px solid #e3a72f;
-    border-radius: 40px;
-    background-color: #e3a72f;
-    -webkit-filter: drop-shadow(2px 4px 5px black);
-            filter: drop-shadow(2px 4px 5px black); }
+.board-members .members-title {
+  text-align: center;
+  padding: 30px;
+  color: #228f7a; }
+
+.board-members img {
+  width: 1023px;
+  height: auto;
+  margin-top: 0; }
+
+.board-members .members-names {
+  font-family: "Josefin Sans", sans-serif;
+  color: #404040;
+  font-size: 1.25rem;
+  line-height: 20px;
+  text-align: center; }
+
+.board-members .members-title {
+  text-align: center;
+  padding: 35px;
+  color: #228f7a; }
+
+.board-members img {
+  width: 1023px;
+  height: auto;
+  margin-top: 0; }
+
+.board-members .members-names {
+  font-family: "Josefin Sans", sans-serif;
+  color: #404040;
+  font-size: 1.25rem;
+  line-height: 20px;
+  text-align: center; }
+
+.board-members .annual-report {
+  color: white;
+  font-size: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 450;
+  letter-spacing: 0;
+  padding: 10px;
+  border: 1px solid #e3a72f;
+  border-radius: 40px;
+  background-color: #e3a72f;
+  -webkit-filter: drop-shadow(2px 4px 5px black);
+          filter: drop-shadow(2px 4px 5px black); }
 
 .button {
   display: -webkit-box;
@@ -2645,7 +2653,6 @@ p {
      object-fit: cover; }
   @media (min-width: 620px) {
     .staff-members .staff-image {
-      width: 342px;
       height: 360px;
       -o-object-fit: cover;
          object-fit: cover; } }
