@@ -93,9 +93,9 @@
       $(this).siblings('.timeline-content').addClass('timeline-open');  
     });
 
-    // timelineOpenDesktop.on('blur', function(){
-    //   $('.timeline-content').removeClass('timeline-open');
-    // });
+    timelineOpenDesktop.on('blur', function(){
+      $('.timeline-content').removeClass('timeline-open');
+    });
 
    /* End of Timeline */
 
