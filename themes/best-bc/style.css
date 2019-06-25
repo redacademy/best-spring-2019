@@ -1299,10 +1299,11 @@ a {
     .fp-carousel-title {
       font-size: 2rem; } }
 
-.main-carousel .flickity-viewport {
-  height: 205px; }
+@media (min-width: 620px) {
+  .main-carousel .flickity-viewport {
+    height: 205px; } }
 
-.flickity-slider {
+.page-template-front-page .flickity-slider {
   padding-bottom: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1317,10 +1318,13 @@ a {
 .flickity-page-dots {
   display: none; }
 
+.carousel-cell img {
+  max-height: 100px;
+  margin: 24px; }
+
 @media (min-width: 620px) {
   .carousel-cell img {
-    width: 200px;
-    padding: 20px; } }
+    width: 200px; } }
 
 /* Custom Flickity button */
 .next {
@@ -1834,7 +1838,6 @@ object {
   text-decoration: underline; }
 
 .tab-link:active {
-  border-bottom: 10px solid #228f7a;
   color: #228f7a; }
 
 .page-template-page-resources .flickity-viewport {
