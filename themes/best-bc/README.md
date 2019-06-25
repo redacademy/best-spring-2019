@@ -1,21 +1,34 @@
-# RED Starter
+# Best Project 
+ Best is a community group project for a real client, it is a non profit organization with long history of promoting sustainable transportation. The project first went through UX and UI design process. After extensive research and design process and on the basis of the mock up we developers created the website according to the design. It is formatted to view in mobile and desktop. The webite is created from scratch we created our own custom themes by forking redstarter and it is wordpress based. 
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
 
-## Installation
 
-### 1. Download me (don't clone me!)
+ ##Tools and Techs
+ * Gulp
+ * Wordpress
+ * Javascript
+ * JQuery
+ * PHP
+ * HTML
+ * Scss
+ * Flickity
+ * Git and GitHub
+ * Command-line
+ * Plugins
+ * Transfonter
+ * Forms 
 
-Then add me to your `wp-content` directory.
+ ##Time-line
+<img src= "assets/images/screen-shot-timeline.jpg" width="600" height ="400">>
 
-### 2. Rename the `redstarter-master` directory
+ 
+ ##Programs
+ <img src= "assets/images/screen-shot-programs.jpg" width="600" height ="400">>
 
-Make sure that the theme directory name is project appropriate!
 
-### 3. Install the dev dependencies
+ 
+ 
+ ##Tabs
+ <img src= "assets/images/screen-shot-tabs.jpg" width="600" height ="400">>
 
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).

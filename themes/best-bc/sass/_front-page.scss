@@ -6,6 +6,10 @@
 /* Main Body Overflow */
 .site-content {
   overflow: hidden;
+  max-width: 1240px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+
 }
 /* Main Body Overflow */
 
@@ -204,6 +208,9 @@ a {
     color: $color__main;
     font-size: 3rem;
     text-transform: capitalize;
+    @include small-mobile {
+      font-size: 2rem;
+    }
   }
   .fp-news-background-hand {
     background: url(../../assets/images/Wrench-hand-2.png) no-repeat;
@@ -217,6 +224,12 @@ a {
       height: 320px;
       width: 320px;
       top: -120%;
+    }
+    @include small-mobile {
+      width: 120px;
+      height: 120px;
+      right: -5%;
+      top: -100%;
     }
   }
 }
@@ -321,6 +334,9 @@ a {
   color: $color__main;
   font-size: 3rem;
   text-transform: capitalize;
+  @include small-mobile {
+    font-size: 2rem;
+  }
 }
 .main-carousel {
   height: 200px;
@@ -369,12 +385,18 @@ a {
     font-size: 3rem;
     padding-top: 32px;
     margin: unset;
+    @include small-mobile {
+      font-size: 2rem;
+    }
   }
   .news-text {
     text-align: center;
     font-size: 1.5rem;
     margin-top: unset;
     @include mobile {
+      display: none;
+    }
+    @include small-mobile {
       display: none;
     }
   }
@@ -439,13 +461,22 @@ a {
           margin-top: 16px;
           font-size: 1.2rem;
           color: $color__header;
+          @include small-mobile {
+            font-size: 1rem;
+          }
         }
-        .fp-news-post p {
-          color: $color__header;
-          padding-right: 64px;
-          text-align: left;
-          margin: 8px 0;
-          line-height: 1.3;
+        .fp-news-post {
+          p {
+            color: $color__header;
+            padding-right: 64px;
+            text-align: left;
+            margin: 8px 0;
+            line-height: 1.3;
+            @include small-mobile {
+              padding-right: unset;
+              font-size: 1rem;
+            }
+          }
         }
         .fp-news-btn {
           text-decoration: none;
@@ -475,6 +506,9 @@ a {
     @include desktop {
       left: -8%;
     }
+    @include small-mobile {
+      left: -50%;
+    }
   }
   .fp-news-signup-mobile,
   .fp-news-signup {
@@ -487,6 +521,9 @@ a {
     border-radius: 50px;
     text-shadow: none;
     margin-top: 32px;
+    @include small-mobile {
+      width: 300px;
+    }
     a {
       text-align: center;
       text-decoration: none;
@@ -505,14 +542,23 @@ a {
   }
 }
 
+.fp-news-signup {
+  @include mobile {
+    display: none !important;
+  }
+  @include small-mobile {
+    display: none !important;
+  }
+}
+
 .fp-news-signup-mobile {
   @include desktop {
     display: none !important;
   }
 }
 
-.fp-news-signup {
-  @include mobile {
-    display: none !important;
+.transportation-title {
+  @include small-mobile {
+    font-size: 2rem;
   }
 }
