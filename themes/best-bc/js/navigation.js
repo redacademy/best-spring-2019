@@ -83,7 +83,7 @@
       );
 
     if ('ontouchstart' in window) {
-      touchStartFn = function(e) {
+      touchStartFn = function() {
         let menuItem = this.parentNode,
           i;
 
