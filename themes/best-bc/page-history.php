@@ -107,14 +107,11 @@ get_header(); ?>
 
                         <hr class="timeline-line">
                         <div class="timeline-content">
-<<<<<<< HEAD
                             <div class="inner-content-title">
                                 <div class="inner-content-circle"></div>
                                 <h2><?php echo $tab_title ?></h2>
                             </div>
-=======
                             <h2><?php echo $tab_title ?></h2>
->>>>>>> 89fa35e669959cec4ae079711c7d952ce880972f
                             <?php echo $tab_body; ?>
                         </div>
                     </div>
