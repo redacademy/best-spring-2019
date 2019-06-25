@@ -6,31 +6,66 @@
 // title of page 
 
 .quotes1, .quotes2 {
-    color: $color__button-light !important;
+  color: $color__button-light !important;
   font-size: 4.5rem;
-    font-family: $font__main;
-
+  font-family: $font__main;
 }
-.quotes1 sup{
-    top: 0;
-    font-family: $font__main;
+.quotes1 sup {
+  top: 0;
+  font-family: $font__main;
 }
 .quotes2 sub{
     bottom: -1.9rem;
     font-family: $font__main;
+    font-size: 1.25rem !important;
+    max-width: inherit;
 }
 
-h2{ font-size: 3.1rem;
-    color: $color__main;
+.page-template-page-about {
+  h2 {
+  font-size: 3.1rem;
+  color: $color__main;
+  text-align: center;
+}
+h3 {
+  font-size: 2.25rem;
+  color: $color__text-screen;
+}
+p {
+  font-size: 1.12rem;
+  color: $color__text-screen;
+  text-align: center;
+}
+.history-btn {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: white;
+  @include orange-btn;
+  padding: 8px;
+  max-width: 300px;
+  @include desktop {
+    margin: 0 auto;
+  }
+}
+}
+.board-members {
+  .members-title {
     text-align: center;
-}
-h3{
-    font-size: 2.25rem;
+    padding: 30px;
+    color: $color__main;
+  }
+  img {
+    width: 1023px;
+    height: auto;
+    margin-top: 0;
+  }
+  .members-names {
+    font-family: $font__main;
     color: $color__text-screen;
-}
-p{
-    font-size: 1.12rem;
-    color: $color__text-screen;
+    font-size: 1.25rem;
+    line-height: 20px;
     text-align: center;
 }
 // end of title 
@@ -43,12 +78,15 @@ p{
     margin-bottom: 30px;
     text-transform: uppercase;
     color: white;
+    font-size: 20px;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-weight: 450;
+    letter-spacing: 0;
+    padding: 10px;
+
     @include orange-btn;
-    padding: 8px;
-    max-width: 300px;
-    @include desktop{
-        margin: 0 auto;
-    }
+  }
 }
 // board members section
 .board-members {
