@@ -2510,21 +2510,21 @@ object {
   font-size: 1.25rem !important;
   max-width: inherit; }
 
-h2 {
+.page-template-page-about h2 {
   font-size: 3.1rem;
   color: #228f7a;
   text-align: center; }
 
-h3 {
+.page-template-page-about h3 {
   font-size: 2.25rem;
   color: #404040; }
 
-p {
+.page-template-page-about p {
   font-size: 1.12rem;
   color: #404040;
   text-align: center; }
 
-.history-btn {
+.page-template-page-about .history-btn {
   max-width: 400px;
   margin: 0 auto;
   margin-bottom: 30px;
@@ -2536,7 +2536,7 @@ p {
   padding: 8px;
   max-width: 300px; }
   @media (min-width: 620px) {
-    .history-btn {
+    .page-template-page-about .history-btn {
       margin: 0 auto; } }
 
 .board-members .members-title {
