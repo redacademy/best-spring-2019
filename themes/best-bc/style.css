@@ -1653,6 +1653,10 @@ object {
   padding: 0px 24px 0px 24px;
   margin: 0 auto; }
 
+.form-donation {
+  margin: 0 auto;
+  padding: 2rem; }
+
 .site-footer {
   padding: 20px;
   background: lightgrey;
