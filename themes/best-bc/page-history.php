@@ -1,6 +1,8 @@
 <?php
 /**
- * The template for displaying all pages.
+ * The template for History Page
+ * 
+ * Template Name: History
  *
  * @package Best_Theme
  */
@@ -45,7 +47,7 @@ get_header(); ?>
                         <span class="history-title-span">best</span>
                         celebrates over <br>25 years of history!
                     </h2>
-                    <a href="">Check out our 25th<br>anniversary e-zine</a>
+                    <a href="">Check out our 25th<br> anniversary e-zine</a>
                 </div>
 
                 <img class="history-thumbnail" src="<?php echo get_template_directory_uri(); ?>/assets/images/25yearbestcutout.jpg" alt="">
