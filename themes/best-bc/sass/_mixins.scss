@@ -59,8 +59,14 @@ $small-mobile-width: 500px;
   border: 1px solid $color__button-light;
   border-radius: 40px;
   background-color: $color__button-light;
-  filter: drop-shadow(2px 4px 5px black);
+  filter: drop-shadow(2px 2px 2px gray
+  );
 
 }
 
 
+@mixin button-text{
+  color: white;
+  text-transform: uppercase;
+  font-family: $font__main;
+}

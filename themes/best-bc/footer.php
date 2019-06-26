@@ -42,6 +42,7 @@
 	<!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
+<<<<<<< HEAD
 
 <div class="charity-number">
 	<p> Canadian Charitable Number: 140171216RR0001</p>
@@ -50,6 +51,12 @@
 
 <?php wp_footer(); ?>
 
+=======
+<div class="charity-number">
+<p> Canadian Charitable Number: 140171216RR0001</p>
+<p class="copyright">Copyright 2019 BEST</p>
+</div>
+>>>>>>> b93f84b882e4c456875ba3b9e9fc9caac340b089
 </body>
 
 </html>

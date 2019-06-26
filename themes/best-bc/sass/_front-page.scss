@@ -11,13 +11,20 @@
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 
 }
+// learn more 
+
+  
 /* Main Body Overflow */
+.learn-button a{
+  background-color: $color__button-light;
+}
 
 .bike-container {
   display: flex;
   justify-content: space-evenly;
 }
 .home .fp-since {
+  font-family: $font__main;
   font-size: 30px;
   color: $color__main;
   font-weight: 600;
@@ -184,18 +191,16 @@ a {
 .learn-more {
   text-align: center;
   margin-bottom: 6vw;
-
-  .other-programs-button {
+.learn-button {
     background: $color__button-light;
     border-radius: 20px;
     padding: 10px;
     padding-left: 44px;
     padding-right: 44px;
-    color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
+    @include button-text;
   }
 }
 
@@ -495,6 +500,7 @@ a {
             text-align: left;
             margin: 8px 0;
             line-height: 1.3;
+            font-family: Mukta;
             @include small-mobile {
               padding-right: unset;
               font-size: 1rem;
@@ -574,11 +580,15 @@ a {
     display: flex;
     justify-content: center;
     color: $color__button-light;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    @include desktop{
+      font-size: 1.3rem;
+    }
     &:hover {
       text-decoration: underline;
       color: $color__button-dark;
     }
+     
   }
 }
 
