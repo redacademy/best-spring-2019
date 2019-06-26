@@ -23,6 +23,11 @@ $small-mobile-width: 500px;
   }
 }
 
+@mixin desktop-inbetween {
+  @media only screen and (max-width: 1060px) and (min-width: 621px) {
+    @content;
+  }
+}
 
 // Center block
 @mixin center-block {

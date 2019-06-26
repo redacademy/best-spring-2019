@@ -50,7 +50,7 @@
 				</a>
 			</div><!-- heder-logo -->
 
-			<div class="search-form">
+			<div class="best-search-form">
 				<?php get_search_form(); ?>
 			</div><!-- search -->
 
