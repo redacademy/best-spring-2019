@@ -1060,8 +1060,18 @@ a {
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 /* Main Body Overflow */
-.learn-button a {
-  background-color: #e3a72f; }
+.fp-learn-button {
+  background: #e3a72f;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif; }
 
 .bike-container {
   display: -webkit-box;
@@ -1960,8 +1970,8 @@ object {
     width: 100%; } }
 
 .page-header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url(../../assets/images/ProgramsBanner.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../../assets/images/ProgramsBanner.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(34, 143, 122, 0.63)), to(rgba(227, 167, 47, 0.34))), url(../../assets/images/ProgramsBanner.jpg);
+  background-image: linear-gradient(rgba(34, 143, 122, 0.63), rgba(227, 167, 47, 0.34)), url(../../assets/images/ProgramsBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 65vh;

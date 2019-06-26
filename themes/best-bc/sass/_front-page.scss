@@ -15,8 +15,16 @@
 
   
 /* Main Body Overflow */
-.learn-button a{
-  background-color: $color__button-light;
+.fp-learn-button {
+  background: $color__button-light;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 44px;
+  padding-right: 44px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  @include button-text;
 }
 
 .bike-container {
