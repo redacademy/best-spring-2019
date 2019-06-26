@@ -115,10 +115,10 @@ sup {
   vertical-align: baseline; }
 
 sup {
-  top: -0.5em; }
+  top: 1rem; }
 
 sub {
-  bottom: -0.25em; }
+  bottom: -3.75rem; }
 
 img {
   border: 0; }
@@ -1300,10 +1300,10 @@ a {
       font-size: 2rem; } }
 
 .main-carousel .flickity-viewport {
-  height: 205px; }
+  height: 205px !important; }
   @media (min-width: 620px) {
     .main-carousel .flickity-viewport {
-      height: 225px; } }
+      height: 225px !important; } }
 
 .page-template-front-page .flickity-slider {
   padding-bottom: 50px;
@@ -1413,7 +1413,9 @@ a {
       .fp-news-background .fp-news .fp-news-wrapper .fp-news-thumbnail {
         width: 35%;
         position: relative;
-        overflow: hidden; }
+        overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
         .fp-news-background .fp-news .fp-news-wrapper .fp-news-thumbnail img {
           position: absolute;
           height: 200px; }
@@ -1439,7 +1441,9 @@ a {
                 flex-direction: column;
         padding-left: 16px;
         background: #8caba3;
-        position: relative; }
+        position: relative;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; }
         @media (min-width: 620px) {
           .fp-news-background .fp-news .fp-news-wrapper .fp-news-info {
             position: absolute;
@@ -2650,20 +2654,30 @@ object {
       padding-right: 20rem;
       font-size: 18px; } }
 
+.page-template-page-about-php .site-content h2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  max-width: 1180px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
 .quotes1, .quotes2 {
   color: #e3a72f !important;
-  font-size: 4.5rem;
+  font-size: 3.5rem !important;
   font-family: "Josefin Sans", sans-serif; }
 
-.quotes1 sup {
-  top: 0;
-  font-family: "Josefin Sans", sans-serif; }
+.quotes1 {
+  top: 0; }
 
-.quotes2 sub {
-  bottom: -1.9rem;
-  font-family: "Josefin Sans", sans-serif;
-  font-size: 1.25rem !important;
+.quotes2 {
   max-width: inherit; }
+
+.fa-quote-right:before {
+  margin: 5px; }
+
+.fa-quote-left:before {
+  margin: 5px; }
 
 .page-template-page-about h2 {
   font-size: 3.1rem;
@@ -2702,9 +2716,9 @@ object {
   color: #228f7a; }
 
 .board-members img {
-  width: 1023px;
   height: auto;
-  margin-top: 0; }
+  max-width: 80%;
+  margin: 0px 100px 0px 100px; }
 
 .board-members .members-names {
   font-family: "Josefin Sans", sans-serif;
@@ -2712,16 +2726,6 @@ object {
   font-size: 1.25rem;
   line-height: 20px;
   text-align: center; }
-
-.board-members .members-title {
-  text-align: center;
-  padding: 35px;
-  color: #228f7a; }
-
-.board-members img {
-  width: 1023px;
-  height: auto;
-  margin-top: 0; }
 
 .board-members .members-names {
   font-family: "Josefin Sans", sans-serif;
@@ -2766,7 +2770,8 @@ object {
     color: #228f7a; }
   .Staff-text p {
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    font-size: 2.5rem; }
 
 .staff {
   padding-top: 0;
@@ -2819,7 +2824,6 @@ object {
   color: #228f7a;
   text-align: center;
   padding: 5px;
-  padding: 0;
   margin: 0; }
 
 .staff-members .staff-title {
@@ -2828,5 +2832,4 @@ object {
   font-family: "Josefin Sans", sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
-  padding: 0;
   margin: 0; }
