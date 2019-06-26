@@ -66,10 +66,10 @@ get_header(); ?>
       </div>
     </div>
     <!--program wrapper-->
-    <div class="learn-more-button">
+    
       <p class="learn-more">
-        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="other-programs-button">Learn More</a></p>
-    </div>
+        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="learn-button">Learn More</a></p>
+    
     <!--learn more button ends-->
     <!-- News -->
     <?php $args = array('post_type' => 'post', 'posts_per_page' => 2);

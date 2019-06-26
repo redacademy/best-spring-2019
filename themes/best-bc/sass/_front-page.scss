@@ -11,7 +11,13 @@
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 
 }
+// learn more 
+
+  
 /* Main Body Overflow */
+.learn-button a{
+  background-color: $color__button-light;
+}
 
 .bike-container {
   display: flex;
@@ -185,18 +191,16 @@ a {
 .learn-more {
   text-align: center;
   margin-bottom: 6vw;
-
-  .other-programs-button {
+.learn-button {
     background: $color__button-light;
     border-radius: 20px;
     padding: 10px;
     padding-left: 44px;
     padding-right: 44px;
-    color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
     font-size: 18px;
+    @include button-text;
   }
 }
 

@@ -60,3 +60,8 @@ $small-mobile-width: 500px;
 }
 
 
+@mixin button-text{
+  color: white;
+  text-transform: uppercase;
+  font-family: $font__main;
+}
