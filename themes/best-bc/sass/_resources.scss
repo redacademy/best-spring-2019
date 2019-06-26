@@ -49,7 +49,6 @@
 }
 
 .tab-link:active {
-  border-bottom: 10px solid $color__main;
   color: $color__main;
 }
 
@@ -67,9 +66,6 @@
 }
 
 @include desktop {
-  // .tabs .tab-nav .flickity-button {
-  //   display: none;
-  // }
   .tab-content-flexed {
     display: flex;
     flex-direction: row;

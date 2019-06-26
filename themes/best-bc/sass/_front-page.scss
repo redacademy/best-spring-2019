@@ -339,9 +339,11 @@ a {
   }
 }
 .main-carousel .flickity-viewport {
+  @include desktop{
   height: 205px;
+  }
 }
-.flickity-slider {
+.page-template-front-page .flickity-slider {
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -351,11 +353,14 @@ a {
   display: none;
 }
 .carousel-cell {
+  img {
+    max-height: 100px;
+    margin: 24px;
+  }
 
   @include desktop{
     img {
       width: 200px;
-      padding: 20px;
     }
   }
  
