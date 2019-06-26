@@ -3,23 +3,19 @@
 --------------------------------------------------------------*/
 
 /* Buttons */
-
+.gform_button,
 button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e3a72f;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
-    inset 0 15px 17px rgba(255, 255, 255, 0.5),
-    inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+font-family: $font__main;
+text-transform: uppercase;
+padding: 8px 20px;
+
   color: white;
   @include font-size(0.75);
   line-height: 1;
-  padding: 0.6rem 1rem 0.4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+  
 
   &:active,
   &:focus {
@@ -56,9 +52,12 @@ input[type='search'] {
 
 textarea {
   padding-left: 3px;
-  width: 100%;
+  width: 50%;
 }
 
 .gfield_label {
   color: $color__main;
+}
+.gform_button{
+  @include orange-btn;
 }

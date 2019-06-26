@@ -27,7 +27,7 @@
                 padding-top: 10px;
             }    
         }
-  
+
     }
     .social-media-icons span{
         font-size: 1.8rem; 
@@ -100,4 +100,16 @@
         @include desktop{
             padding-top: 85px;
         }
+}
+.charity-number{
+    padding-right: 10px;
+    p{
+        font-size: 1rem;
+        text-align:right;
+    }
+    .copyright{
+        font-size: 0.5rem;
+        text-align: right;
+    }
+
 }
