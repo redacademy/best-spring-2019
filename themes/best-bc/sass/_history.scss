@@ -1,7 +1,7 @@
 /* History page */
 
 .history-intro-article {
-    padding: 0 80px;
+    padding: 0 50px;
     line-height: 2;
     @include desktop {
         padding: 0 240px;
@@ -9,7 +9,7 @@
     }
 }
 .history-intro-article-2 {
-    padding: 0 80px;
+    padding: 0 50px;
     line-height: 2;
     @include desktop {
         padding: 0 240px;
@@ -48,7 +48,7 @@
         }
         p {
             font-size: 1.3rem;
-            padding: 0 72px;
+            padding: 0 40px;
             line-height: 2;
             text-align: center;
             @include desktop {
@@ -142,9 +142,10 @@
     }
     p {
         font-size: 1.2rem;
-        padding: 0 72px;
+        padding: 0 20px;
         line-height: 2;
-        text-align: center;
+        text-align: left;
+        font-family: $font__second;
         @include desktop {
             padding: 0 240px;
         }
