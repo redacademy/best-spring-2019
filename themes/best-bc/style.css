@@ -848,10 +848,11 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  padding: 8px 20px;
   color: white;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px 20px;
+  padding-top: 5px;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1; }
@@ -901,7 +902,6 @@ textarea {
   color: #228f7a; }
 
 .gform_button {
-  border: 1px solid #e3a72f;
   border-radius: 40px;
   background-color: #e3a72f;
   -webkit-filter: drop-shadow(2px 2px 2px gray);
@@ -1060,6 +1060,9 @@ a {
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 /* Main Body Overflow */
+.learn-button a {
+  background-color: #e3a72f; }
+
 .bike-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1238,17 +1241,20 @@ a {
 .learn-more {
   text-align: center;
   margin-bottom: 6vw; }
-  .learn-more .other-programs-button {
+  .learn-more .learn-button {
     background: #e3a72f;
     border-radius: 20px;
     padding: 10px;
     padding-left: 44px;
     padding-right: 44px;
-    color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px; }
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif; }
+    .learn-more .learn-button:hover {
+      background: #e67937; }
 
 /* Get Involved Section */
 .fp-involved-title {
@@ -2092,11 +2098,12 @@ object {
     font-weight: 450;
     display: inline-block;
     padding: 5px 30px;
-    border: 1px solid #e3a72f;
     border-radius: 40px;
     background-color: #e3a72f;
     -webkit-filter: drop-shadow(2px 2px 2px gray);
             filter: drop-shadow(2px 2px 2px gray); }
+    .post-type-archive-program .entry-content .overlay a:hover {
+      background: #e67937; }
   .post-type-archive-program .entry-content .overlay .visit-btn {
     margin: 0 auto;
     padding-bottom: 16px; }
@@ -2296,7 +2303,8 @@ object {
     padding: unset;
     -webkit-box-shadow: none;
             box-shadow: none;
-    text-shadow: none; }
+    text-shadow: none;
+    background: #e3a72f; }
     .history-content-2 .history-content-2-btn :hover {
       background: #e67937; }
     .history-content-2 .history-content-2-btn a {
@@ -2808,7 +2816,8 @@ object {
   margin-left: 50px;
   margin-right: 50px; }
 
-.quotes1, .quotes2 {
+.quotes1,
+.quotes2 {
   color: #e3a72f !important;
   font-size: 3.5rem !important;
   font-family: "Josefin Sans", sans-serif; }
@@ -2845,13 +2854,15 @@ object {
   margin-bottom: 30px;
   text-transform: uppercase;
   color: white;
-  border: 1px solid #e3a72f;
+  border: none;
   border-radius: 40px;
   background-color: #e3a72f;
   -webkit-filter: drop-shadow(2px 2px 2px gray);
           filter: drop-shadow(2px 2px 2px gray);
   padding: 8px;
   max-width: 300px; }
+  .page-template-page-about .history-btn:hover {
+    background: #e67937; }
   @media (min-width: 620px) {
     .page-template-page-about .history-btn {
       margin: 0 auto; } }
@@ -2873,28 +2884,6 @@ object {
   line-height: 20px;
   text-align: center; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.board-members .members-title {
-  text-align: center;
-  padding: 35px;
-  color: #228f7a; }
-
-.board-members img {
-  width: 100%;
-  height: auto; }
-
-=======
->>>>>>> d2254b8bedcb5b9b6248dad183f744f516c2fc79
-.board-members .members-names {
-  font-family: "Josefin Sans", sans-serif;
-  color: #404040;
-  font-size: 1.25rem;
-  line-height: 20px;
-  text-align: center; }
-
->>>>>>> b93f84b882e4c456875ba3b9e9fc9caac340b089
 .board-members .annual-report {
   color: white;
   font-size: 20px;
@@ -2903,11 +2892,12 @@ object {
   font-weight: 450;
   letter-spacing: 0;
   padding: 10px;
-  border: 1px solid #e3a72f;
   border-radius: 40px;
   background-color: #e3a72f;
   -webkit-filter: drop-shadow(2px 2px 2px gray);
           filter: drop-shadow(2px 2px 2px gray); }
+  .board-members .annual-report:hover {
+    background: #e67937; }
 
 .button {
   display: -webkit-box;

@@ -1,5 +1,3 @@
-
-
 .page-template-page-about-php .site-content h2 {
   display: inline-flex;
   max-width: 1180px;
@@ -7,7 +5,8 @@
   margin-right: 50px;
 }
 
-.quotes1, .quotes2 {
+.quotes1,
+.quotes2 {
   color: $color__button-light !important;
   font-size: 3.5rem !important;
   font-family: $font__main;
@@ -16,11 +15,11 @@
   top: 0;
 }
 .quotes2 {
-    max-width: inherit;
+  max-width: inherit;
 }
 
 .fa-quote-right:before {
-  margin: 5px
+  margin: 5px;
 }
 
 .fa-quote-left:before {
@@ -29,32 +28,36 @@
 
 .page-template-page-about {
   h2 {
-  font-size: 3.1rem;
-  color: $color__main;
-  text-align: center;
-}
-h3 {
-  font-size: 2.25rem;
-  color: $color__text-screen;
-}
-p {
-  font-size: 1.12rem;
-  color: $color__text-screen;
-  text-align: center;
-}
-.history-btn {
-  max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-  color: white;
-  @include orange-btn;
-  padding: 8px;
-  max-width: 300px;
-  @include desktop {
-    margin: 0 auto;
+    font-size: 3.1rem;
+    color: $color__main;
+    text-align: center;
   }
-}
+  h3 {
+    font-size: 2.25rem;
+    color: $color__text-screen;
+  }
+  p {
+    font-size: 1.12rem;
+    color: $color__text-screen;
+    text-align: center;
+  }
+  .history-btn {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    &:hover {
+      background: $color__button-dark;
+    }
+    @include orange-btn;
+    padding: 8px;
+    max-width: 300px;
+    @include desktop {
+      margin: 0 auto;
+    }
+  }
 }
 .board-members {
   .members-title {
@@ -73,117 +76,106 @@ p {
     font-size: 1.25rem;
     line-height: 20px;
     text-align: center;
-}
-// end of title 
-
-  
-  
-    .annual-report{
-      color: white;
-      font-size: 20px;
-      font-family: $font__main;
-      text-transform: uppercase;
-      font-weight: 450;
-      letter-spacing: 0;
-      padding: 10px;
-      @include orange-btn;
-
-      
-    }
-  
   }
-  .button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 50px;
+  // end of title
+
+  .annual-report {
+    color: white;
+    font-size: 20px;
+    font-family: $font__main;
+    text-transform: uppercase;
+    font-weight: 450;
+    letter-spacing: 0;
+    padding: 10px;
+    @include orange-btn;
+    &:hover {
+      background: $color__button-dark;
+    }
+  }
 }
-  // staff section
-  
-  .Staff-text{
-    padding:30px;
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+// staff section
+
+.Staff-text {
+  padding: 30px;
+  margin: 0;
+  text-align: center;
+  background-color: $color__background;
+  h1 {
+    color: $color__main;
+  }
+  p {
+    padding: 0;
     margin: 0;
-    text-align: center;
-    background-color: $color__background;
-    h1{
-        color: $color__main;
-    }
-    p{
-      padding: 0;
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    }
-  
-  .staff {
+    font-size: 2.5rem;
+  }
+}
+
+.staff {
+  padding-top: 0;
+  padding-bottom: 80px;
+  background-color: $color__background;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding: 30px;
+
+  @include desktop {
+    padding: 100px;
     padding-top: 0;
-    padding-bottom: 80px;
-    background-color: $color__background;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr  ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    padding: 30px;
-
-    @include desktop{
-        padding: 100px;
-        padding-top: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 100px;
-        grid-row-gap: 70px;
-  
-    }
-
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 70px;
+  }
 }
-.gradient{
+.gradient {
+  position: relative;
+  &:after {
+    content: "";
+    right: 0;
+    background: linear-gradient(rgba(34, 143, 122, 0.63), rgba(227, 167, 47, 0.34));
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+  }
+}
+.staff-members {
+  .staff-image {
     position: relative;
-    &:after{
-        content:""; 
-        right: 0;
-        background:linear-gradient(
-            rgba(34, 143, 122, 0.63),
-            rgba(227, 167, 47, 0.34)
-          );
-          position: absolute;
-          z-index: 999;
-          width: 100%;
-          height: 100%;
-}
-}
-    .staff-members {
-    .staff-image {
-       
-        position: relative;
-         width: 100%;
-         height: 160px;
-         object-fit: cover;
-        @include desktop{
-            height: 360px;
-            object-fit: cover;
-
-        }
-  
-      }
-  
-      .staff-name {
-        font-family: $font__main;
-        font-size: 1.3rem;
-        font-weight: 400;
-        color: $color__main;
-        text-align: center;
-        padding: 5px;
-        margin: 0;
-      }
-      .staff-title {
-        text-align: center;
-        padding: 5px;
-        font-family: $font__main;
-        font-size: 1.1rem;
-        font-weight: 400;
-        margin: 0;
-      }
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    @include desktop {
+      height: 360px;
+      object-fit: cover;
     }
-  
+  }
+
+  .staff-name {
+    font-family: $font__main;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $color__main;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+  }
+  .staff-title {
+    text-align: center;
+    padding: 5px;
+    font-family: $font__main;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+  }
+}
