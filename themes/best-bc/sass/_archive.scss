@@ -124,7 +124,6 @@
         font-size: 1.25rem;
       }
       a {
-        // button style
         color: white;
         font-family: $font__main;
         text-transform: uppercase;
@@ -132,10 +131,14 @@
         display: inline-block;
         padding: 5px 30px;
         @include orange-btn;
+        &:hover {
+          background: $color__button-dark;
+        }
       }
       .visit-btn {
         margin: 0 auto;
         padding-bottom: 16px;
+        
       }
     }
   }

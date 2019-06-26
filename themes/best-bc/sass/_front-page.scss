@@ -209,6 +209,9 @@ a {
     font-weight: bold;
     font-size: 18px;
     @include button-text;
+    &:hover {
+      background: $color__button-dark;
+    }
   }
 }
 
