@@ -1,7 +1,7 @@
 /* History page */
 
 .history-intro-article {
-    padding: 0 80px;
+    padding: 0 50px;
     line-height: 2;
     @include desktop {
         padding: 0 240px;
@@ -9,7 +9,7 @@
     }
 }
 .history-intro-article-2 {
-    padding: 0 80px;
+    padding: 0 50px;
     line-height: 2;
     @include desktop {
         padding: 0 240px;
@@ -48,7 +48,7 @@
         }
         p {
             font-size: 1.3rem;
-            padding: 0 72px;
+            padding: 0 40px;
             line-height: 2;
             text-align: center;
             @include desktop {
@@ -142,9 +142,11 @@
     }
     p {
         font-size: 1.2rem;
-        padding: 0 72px;
+        padding: 0 20px;
         line-height: 2;
-        text-align: center;
+        text-align: left;
+        font-family: $font__second;
+        font-weight: 300;
         @include desktop {
             padding: 0 240px;
         }
@@ -183,6 +185,7 @@
 .timeline {
     text-align: center;
     margin: 64px;
+    padding-bottom: 160px;
     .timeline-title {
         color: $color__main;
         padding-bottom: 32px;
@@ -258,33 +261,46 @@
                 .timeline-content {
                     display: none;
                     text-align: center;
-                    width: 600px;
                     background: white;
-                    border: 1px solid red;
+                    box-shadow: 1px 1px 4px 3px rgb(140,171,163);
                     padding: 32px;
                     text-align: left;
+                    @include mobile {
+                        padding: 16px;
+                    }
                     .inner-content-title {
-                        padding: 0 16px;
+                        padding-right: 16px;
                         text-align: center;
+                        @include mobile {
+                            padding-top: 16px
+                        }
                         .inner-content-circle {
                             height: 60px;
                             width: 60px;
-                            background: red;
                             border-radius: 50px;
                         }
                         h2 {
                             font-size: 1.5rem;
                         }
                     }
-                    span {
-                        line-height: 1.5;
+                    .inner-content-info {
+                        line-height: 1.7;
+                        @include mobile {
+                            padding-top: 16px;
+                        }
                     }
                     &.timeline-open {
                         position: absolute;
                         z-index: 100;
                         display: flex;
+                        width: 100%;
                         right: -50%;
-                        top: 100%;
+                        top: 0%;
+                        @include mobile {
+                            left: 0%;
+                            top: 100%;
+                            width: 80vw;
+                        }
                     }
                 }
             }
@@ -349,59 +365,77 @@
                 .timeline-content {
                     display: none;
                     text-align: center;
-                    width: 600px;
                     background: white;
-                    border: 1px solid red;
+                    box-shadow: 1px 1px 4px 3px rgb(140,171,163);
                     padding: 32px;
                     text-align: left;
+                    @include mobile {
+                        padding: 16px;
+                    }
                     .inner-content-title {
-                        padding: 0 16px;
+                        padding-right: 16px;
                         text-align: center;
+                        @include mobile {
+                            padding-top: 16px;
+                        }
                         .inner-content-circle {
                             height: 60px;
                             width: 60px;
-                            background: red;
                             border-radius: 50px;
                         }
                         h2 {
                             font-size: 1.5rem;
                         }
                     }
-                    span {
-                        line-height: 1.5;
+                    .inner-content-info {
+                        line-height: 1.7;
+                        @include mobile {
+                            padding-top: 16px;
+                        }
                     }
                     &.timeline-open {
                         position: absolute;
                         z-index: 100;
                         display: flex;
+                        width: 100%;
                         left: -50%;
-                        top: 100%;
+                        top: 50%;
+                        @include mobile {
+                            left: -105%;
+                            top: 100%;
+                            width: 80vw;
+                        }
                     }
                 }
             }
             /* Timeline Color Cycle */
             &:nth-child(5n + 1) {
-                .timeline-btn {
+                .timeline-btn,
+                .inner-content-circle{
                     background: $color__background-news;
                 }
             }
             &:nth-child(5n + 2) {
-                .timeline-btn {
+                .timeline-btn,
+                .inner-content-circle {
                     background: $color__button-dark;
                 }
             }
             &:nth-child(5n + 3) {
-                .timeline-btn {
+                .timeline-btn,
+                .inner-content-circle {
                     background: $color__main;
                 }
             }
             &:nth-child(5n + 4) {
-                .timeline-btn {
+                .timeline-btn,
+                .inner-content-circle {
                     background: $color__darkblue;
                 }
             }
             &:nth-child(5n + 5) {
-                .timeline-btn {
+                .timeline-btn,
+                .inner-content-circle {
                     background: $color__button-light;
                 }
             }
@@ -418,3 +452,4 @@
         }
     }
 }
+

@@ -11,11 +11,17 @@
     padding: 0 100px;
     justify-content: unset;
   }
+  @include desktop-inbetween {
+    padding: unset;
+  }
   .nav-container {
     display: flex;
     margin-left: 8px;
     @include desktop {
       order: 2;
+    }
+    @include desktop-inbetween {
+      width: 55%;
     }
     .main-navigation {
       display: flex;
@@ -53,6 +59,11 @@
         @include mobile {
           display: none;
         }
+        @include desktop-inbetween {
+          width: 100%;
+          padding: unset;
+
+        }
         .nav-menu {
           display: flex;
           flex-direction: column;
@@ -62,6 +73,9 @@
           li:first-child {
             @include desktop {
               width: 120px;
+            }
+            @include desktop-inbetween {
+              width: 100%;
             }
           }
           .nav-drop-open {
@@ -89,6 +103,17 @@
               }
               .arrow-down {
                 display: none;
+              }
+            }
+            @include desktop-inbetween {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+            }
+            a {
+              @include desktop-inbetween {
+                font-size: .9rem;
+                padding: unset;
               }
             }
             .sub-menu {
@@ -119,6 +144,9 @@
                     }
                   }
                 }
+                @include desktop-inbetween {
+                  width: 100%;
+                }
               }
               li:last-child {
                 @include desktop {
@@ -145,19 +173,24 @@
       }
     }
   }
-  .best-header-logo img {
-    height: 28px;
-    width: 73px;
-    @include desktop {
-      order: 1;
-      height: 48px;
-      width: 124px;
+  .best-header-logo {
+    @include desktop-inbetween {
+      width: 20%;
+    }
+    img {
+      height: 28px;
+      width: 73px;
+      @include desktop {
+        order: 1;
+        height: 48px;
+        width: 124px;
+      }
     }
   }
 }
 
 /* Search Form */
-.search-form {
+.best-search-form {
   display: flex;
   align-items: center;
   margin-right: 8px;
@@ -165,62 +198,77 @@
     order: 3;
     margin-left: auto;
   }
-  .search-content {
-    @include desktop {
-      display: flex;
-      align-items: center;
-      position: relative;
-      width: 220px;
-    }
+  @include desktop-inbetween {
+    width: 25%;
   }
-  .search-field {
-    border-radius: 16px;
-    @include desktop {
-      padding-left: 16px;
-      width: 220px;
-      height: 40px;
-      border-radius: 50px;
-      border: 2px solid $color__header;
-      background: $color__main;
-      &::placeholder {
-        color: $color__header;
+  .search-form {
+    width: 100%;
+    .search-content {
+      @include desktop {
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 220px;
+      }
+      @include desktop-inbetween {
+        width: 100%;
       }
     }
-    @include mobile {
+    .search-field {
+      border-radius: 16px;
+      @include desktop {
+        padding-left: 16px;
+        width: 220px;
+        height: 40px;
+        border-radius: 50px;
+        border: 2px solid $color__header;
+        background: $color__main;
+        &::placeholder {
+          color: $color__header;
+          @include desktop-inbetween {
+            font-size: .7rem;
+          }
+        }
+      }
+      @include mobile {
+        display: none;
+      }
+      @include desktop-inbetween {
+        width: 100%;
+      }
+    }
+    .search-toggle-icon {
+      background: url(../../assets/vector-icons/icons/search.svg) no-repeat;
+      background-size: contain;
+      border: none;
+      box-shadow: none;
+      width: 24px;
+      height: 24px;
+      @include desktop {
+        position: absolute;
+        right: 5%;
+      }
+    }
+  }
+  
+  // hacks to fix WP gutenberg issue with z-index
+  .has-background-dim {
+    z-index: 0;
+  }
+  
+  /* Custom Nav Button */
+  // .arrow-down
+  .arrow-down {
+    height: 48px;
+    width: 48px;
+    @include clean-all;
+    background-image: url(../../assets/vector-icons/icons/chevrons/down.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    @include desktop {
       display: none;
     }
-  }
-  .search-toggle-icon {
-    background: url(../../assets/vector-icons/icons/search.svg) no-repeat;
-    background-size: contain;
-    border: none;
-    box-shadow: none;
-    width: 24px;
-    height: 24px;
-    @include desktop {
-      position: absolute;
-      right: 5%;
-    }
-  }
-}
-
-// hacks to fix WP gutenberg issue with z-index
-.has-background-dim {
-  z-index: 0;
-}
-
-/* Custom Nav Button */
-// .arrow-down
-.arrow-down {
-  height: 48px;
-  width: 48px;
-  @include clean-all;
-  background-image: url(../../assets/vector-icons/icons/chevrons/down.svg);
-  background-size: 60%;
-  background-repeat: no-repeat;
-  background-position: center;
-  @include desktop {
-    display: none;
   }
 }
 

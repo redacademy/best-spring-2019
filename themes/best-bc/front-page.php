@@ -105,9 +105,9 @@ get_header(); ?>
         <?php endforeach;
       wp_reset_postdata(); ?>
       </div><!-- End of fp-news -->
-      <button class="fp-news-signup"><a href="<?php echo get_permalink(); ?>/contact-us/">Sign up for our newsletter</a></button>
+      <button class="fp-news-signup"><a href="<?php echo get_permalink(); ?>/contact-us">Sign up for our newsletter</a></button>
       <button class="fp-news-signup-mobile"><a href="">Newsletter signup</a></button>
-      <a class="fp-news-archives" href="<?php echo get_the_permalink(); ?>">Read our news archive</a>
+      <a class="fp-news-archives" href="<?php echo get_the_permalink(); ?>/newsletter">Read our news archive</a>
     </section><!-- End of News -->
 
     <div class="fp-involved-title">

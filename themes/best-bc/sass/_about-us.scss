@@ -1,24 +1,30 @@
 
 
-// .staff-image {
-
-// }
-// title of page 
+.page-template-page-about-php .site-content h2 {
+  display: inline-flex;
+  max-width: 1180px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .quotes1, .quotes2 {
   color: $color__button-light !important;
-  font-size: 4.5rem;
+  font-size: 3.5rem !important;
   font-family: $font__main;
 }
-.quotes1 sup {
+.quotes1 {
   top: 0;
-  font-family: $font__main;
 }
-.quotes2 sub{
-    bottom: -1.9rem;
-    font-family: $font__main;
-    font-size: 1.25rem !important;
+.quotes2 {
     max-width: inherit;
+}
+
+.fa-quote-right:before {
+  margin: 5px
+}
+
+.fa-quote-left:before {
+  margin: 5px;
 }
 
 .page-template-page-about {
@@ -57,9 +63,9 @@ p {
     color: $color__main;
   }
   img {
-    width: 1023px;
     height: auto;
-    margin-top: 0;
+    max-width: 80%;
+    margin: 0px 100px 0px 100px;
   }
   .members-names {
     font-family: $font__main;
@@ -70,27 +76,7 @@ p {
 }
 // end of title 
 
-}
-// board members section
-.board-members {
-    // max-width: 1080px;
-    // margin: 0 auto;
-    .members-title {
-      text-align: center;
-      padding: 35px;
-      color: $color__main;
-    }
-    img {
-      width: 100%;
-      height: auto;
-    }
-    .members-names {
-      font-family: $font__main;
-      color: $color__text-screen;
-      font-size: 1.25rem;
-      line-height: 20px;
-      text-align: center;
-    }
+  
   
     .annual-report{
       color: white;
@@ -125,6 +111,7 @@ p {
     p{
       padding: 0;
       margin: 0;
+      font-size: 2.5rem;
     }
     }
   
@@ -188,7 +175,6 @@ p {
         color: $color__main;
         text-align: center;
         padding: 5px;
-        padding: 0;
         margin: 0;
       }
       .staff-title {
@@ -197,7 +183,6 @@ p {
         font-family: $font__main;
         font-size: 1.1rem;
         font-weight: 400;
-        padding: 0;
         margin: 0;
       }
     }
