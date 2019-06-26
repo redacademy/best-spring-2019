@@ -1,6 +1,7 @@
 # Best Project 
- Best is a community group project for a real client, it is a non profit organization with long history of promoting sustainable transportation. The project first went through UX and UI design process. After extensive research and design process and on the basis of the mock up we developers created the website according to the design. It is formatted to view in mobile and desktop. The webite is created from scratch we created our own custom themes by forking redstarter and it is wordpress based. 
-
+ A community group project creating a new website for for "Better Environmentally Sound Transportation", a non-profit organization with a long history of promoting sustainable transportation in Vancouver, BC. The project began through a UX and UI design process, researching who the target users were and what they would need to find the site useful for their needs. 
+ 
+ After an extensive research and design process, the client and developers were introduced to the new model in a presentation at RED Academy. The site was then created according to design. It is formatted to view in mobile and desktop. The webite is created from scratch we created our own custom themes by forking a WordPress template. 
 
 
  ## Tools and Techs
@@ -18,35 +19,34 @@
  * Transfonter
  * Forms 
 
- ## Time-line
+ # Features
+
+ ## History Page Timeline
 
 <img src= "assets/images/screen-shot-timeline.jpg" width="600" height ="400">
 
-Time-line was perhaps the most difficult part of the project the expectation was to create a timeline according to their history, so listing down each year and on click a pop-up appears in the center. The timeline itself looks like a branch required heavy css and javacripts to achieve its final form. The time-line appears only in the history page. 
+The unique timeline was one of the most difficult part of the project, displaying an interactive timeline highlighting BEST's history (and have the timeline updatable by the client). Each year has a popup when clicked describing a milestone for that year. 
+
+The timeline's expanding branch design required heavy CSS and JavaScript to achieve its final form. The timeline appears only in the History Page. 
 
  
- ## Programs
+ ## Programs Page
 
  <img src= "assets/images/screen-shot-programs.jpg" width="600" height ="400">
 
- In the program page, six programs are displayed in grid which contains image and title. On hover in each program displays out brief info regarding the specific program with a button linked to visit external site. 
-
-
-
-
+ In the Programs Page, six programs are displayed in grid which contains image and title. On hover in each program displays out brief info regarding the specific program with a button linked to visit external site. 
  
  
  ## Tabs
 
  <img src= "assets/images/screen-shot-tabs.jpg" width="600" height ="400">
 
-Tabs can be seen through-out resouces and get involved page required to custom-field to implement in the program. So whenever the user clicks the tabs it is underlined and outputs the content accordind to its title question. 
+Tabs can be seen through-out the Resources, Achivements and Get Involved pages. These required custom fields and are easily updatable by the client. Each section, when clicked, highlights a different area that BEST supports, runs, or can refer users to.
 
 
-
-
- ## Learnings
-  The project was challenging because it was a group project it required extensive amount of planning, strategizing, and communination. After mastering git version control be assumed this would be less issue but however we encountered merge conflicts very often and spend resolving it. Other challenges include creating the timeline which was fairly new for us to execute and implementing the design and functionality. Another challenge and learning was using custom-field suite to fetch data and having different data be display on hover. We also have to style for mobile and desktop which were radically little different from each other than usual. For example for the header contains a hamburger menu and the logo in centered during the mobile and in desktop their is no hamburger menu and logo moves to the left. 
+ # Learnings
+  This project was challenging as our first group project requiring extensive teamwork, coordination in planning, and strategizing. Git version control introduced merge conflicts often and we learned alot with each resolution process. 
+  Creating the timeline was a unique challenge as it was created by design, and implementing the design while making it functional required some creativity. Custom field suites were also new to many of us, specifically how to use PHP to ensure the data is updatable by the end user without having to access the site's code.  
 
 ## Group Members
 * Vincent [Link](https://github.com/a36168120)

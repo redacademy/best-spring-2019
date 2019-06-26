@@ -339,8 +339,9 @@ a {
   }
 }
 .main-carousel .flickity-viewport {
+  height: 205px !important; 
   @include desktop{
-  height: 205px;
+    height: 225px !important;
   }
 }
 .page-template-front-page .flickity-slider {
@@ -437,6 +438,8 @@ a {
         width: 35%;
         position: relative;
         overflow: hidden;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         img {
           position: absolute;
           height: 200px;
@@ -459,6 +462,8 @@ a {
         padding-left: 16px;
         background: $color__background-news;
         position: relative;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
         @include desktop {
           position: absolute;
           bottom: 0;
