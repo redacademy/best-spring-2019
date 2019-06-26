@@ -11,8 +11,8 @@ input[type='button'],
 input[type='reset'],
 input[type='submit'] {
  @include button-text;
-padding: 10px 20px;
-padding-top: 5px;
+padding: 10px 20px 10px 20px;
+
 
   @include font-size(0.75);
   line-height: 1;
