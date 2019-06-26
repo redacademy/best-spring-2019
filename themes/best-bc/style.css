@@ -2664,7 +2664,14 @@ object {
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .news-content .news-form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .news-content .news-form .news-month {
     width: 96px;
     height: 40px;
@@ -2682,8 +2689,10 @@ object {
   text-shadow: none;
   border-radius: 30px;
   text-align: center;
+  padding: unset;
   width: 80px;
-  height: 40px; }
+  height: 40px;
+  background: #e3a72f; }
   .news-content .news-submit :hover {
     background: #e67937; }
 
