@@ -1059,6 +1059,9 @@ a {
   -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
+.wp-block-cover {
+  background-attachment: fixed !important; }
+
 /* Main Body Overflow */
 .fp-learn-button {
   background: #e3a72f;

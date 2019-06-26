@@ -11,7 +11,11 @@
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 
 }
-// learn more 
+
+// Hero Banner for all pages
+.wp-block-cover {
+  background-attachment: fixed !important;
+}
 
   
 /* Main Body Overflow */
