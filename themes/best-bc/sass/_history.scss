@@ -146,6 +146,7 @@
         line-height: 2;
         text-align: left;
         font-family: $font__second;
+        font-weight: 300;
         @include desktop {
             padding: 0 240px;
         }

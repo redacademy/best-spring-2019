@@ -2182,7 +2182,8 @@ object {
     padding: 0 20px;
     line-height: 2;
     text-align: left;
-    font-family: "Mukta", sans-serif; }
+    font-family: "Mukta", sans-serif;
+    font-weight: 300; }
     @media (min-width: 620px) {
       .history-content-2 p {
         padding: 0 240px; } }
