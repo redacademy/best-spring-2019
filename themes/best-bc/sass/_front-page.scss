@@ -490,6 +490,7 @@ a {
             text-align: left;
             margin: 8px 0;
             line-height: 1.3;
+            font-family: Mukta;
             @include small-mobile {
               padding-right: unset;
               font-size: 1rem;
@@ -569,11 +570,15 @@ a {
     display: flex;
     justify-content: center;
     color: $color__button-light;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    @include desktop{
+      font-size: 1.3rem;
+    }
     &:hover {
       text-decoration: underline;
       color: $color__button-dark;
     }
+     
   }
 }
 
