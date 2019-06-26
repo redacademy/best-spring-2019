@@ -848,10 +848,11 @@ button,
 input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-  font-family: "Josefin Sans", sans-serif;
-  text-transform: uppercase;
-  padding: 8px 20px;
   color: white;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 10px 20px;
+  padding-top: 5px;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1; }
@@ -1060,6 +1061,9 @@ a {
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 /* Main Body Overflow */
+.learn-button a {
+  background-color: #e3a72f; }
+
 .bike-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1238,17 +1242,18 @@ a {
 .learn-more {
   text-align: center;
   margin-bottom: 6vw; }
-  .learn-more .other-programs-button {
+  .learn-more .learn-button {
     background: #e3a72f;
     border-radius: 20px;
     padding: 10px;
     padding-left: 44px;
     padding-right: 44px;
-    color: white;
     text-decoration: none;
-    text-transform: uppercase;
     font-weight: bold;
-    font-size: 18px; }
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif; }
 
 /* Get Involved Section */
 .fp-involved-title {
@@ -2873,28 +2878,6 @@ object {
   line-height: 20px;
   text-align: center; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-.board-members .members-title {
-  text-align: center;
-  padding: 35px;
-  color: #228f7a; }
-
-.board-members img {
-  width: 100%;
-  height: auto; }
-
-=======
->>>>>>> d2254b8bedcb5b9b6248dad183f744f516c2fc79
-.board-members .members-names {
-  font-family: "Josefin Sans", sans-serif;
-  color: #404040;
-  font-size: 1.25rem;
-  line-height: 20px;
-  text-align: center; }
-
->>>>>>> b93f84b882e4c456875ba3b9e9fc9caac340b089
 .board-members .annual-report {
   color: white;
   font-size: 20px;
