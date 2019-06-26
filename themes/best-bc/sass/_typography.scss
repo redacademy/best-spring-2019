@@ -12,9 +12,13 @@ textarea {
   // @include font-size(1);
   // line-height: $font__line-height-body;
 
-  a{
-
+  a {
     text-decoration: none;
+    color: $color__background-news;
+    &:hover {
+      color: $color__main;
+      text-decoration: underline;
+    }
   }
 }
 
@@ -43,12 +47,6 @@ button {
   }
 }
 
-// Removal post feature images for Newsletter page
-.post {
-  .entry-header img {
-    display: none;
-  }
-}
 
 h1 {
   font-size: 36px;

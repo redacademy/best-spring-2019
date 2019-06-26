@@ -8,15 +8,15 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-news-post" role="main">
+
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-
-			<?php the_post_navigation(); ?>
-
-
+			<div class="single-post-nav">
+				<?php the_post_navigation(); ?>
+			</div>
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->

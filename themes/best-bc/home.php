@@ -17,7 +17,7 @@ get_header(); ?>
 
 				<p>Stay up to date with our monthly newsletters! You can also view our older newsletters by browsing the archive.</p>
 
-				<button class="news-signup"><a href="<?php echo get_permalink(); ?>">Register for newsletter</a></button>
+				<button class="news-signup"><a href="<?php echo get_permalink(); ?>/contact-us">Register for newsletter</a></button>
 
 				<p class="news-select">Select edition of newsletter:</p>
 				<div class="news-form">
@@ -62,18 +62,18 @@ get_header(); ?>
 				<?php endif; ?>
 
 				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'template-parts/content' ); ?>
+				<section class="newsletter-posts">
+					<?php while ( have_posts() ) : the_post(); ?>
+					
+						<?php get_template_part( 'template-parts/content' ); ?>
+					
+					<?php endwhile; ?>
+				</section>
 
-				<?php endwhile; ?>
-
-				<?php the_posts_navigation(); ?>
 
 			<?php else : ?>
-
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
 			<?php endif; ?>
 
 		</main><!-- #main -->

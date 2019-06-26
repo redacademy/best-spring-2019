@@ -89,3 +89,22 @@
 }
 
 /* Post articles */ 
+.newsletter-posts {
+    text-align: center;
+    padding: 64px;
+    .post {
+        margin: 40px 0;
+        .entry-header img {
+            display: none;
+        }
+        .entry-title a {
+            color: $color__background-news;
+            &:hover {
+                color: $color__link-hover;
+            }
+        }
+        .entry-meta {
+            display: none;
+        }
+    }
+}
