@@ -359,7 +359,7 @@ textarea a {
   select a:hover,
   textarea a:hover {
     color: #228f7a;
-    text-decoration: underline; }
+    text-decoration: none; }
 
 /* Headings */
 h1,
