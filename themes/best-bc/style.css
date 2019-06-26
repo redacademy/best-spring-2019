@@ -1061,6 +1061,7 @@ a {
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 /* Main Body Overflow */
+<<<<<<< HEAD
 .fp-learn-button {
   background: #e3a72f;
   border-radius: 20px;
@@ -1073,6 +1074,10 @@ a {
   color: white;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif; }
+=======
+.learn-button a {
+  background-color: #e3a72f; }
+>>>>>>> 5876899fec8030252d14bf866b522ecb10fb5ad4
 
 .bike-container {
   display: -webkit-box;
