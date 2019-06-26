@@ -55,8 +55,11 @@
     // Start of Flickity //
     $('.main-carousel').flickity({
       // options
+      freeScroll:true,
+      wrapAround:true,
       cellAlign: 'center',
-      contain: true
+      contain: true,
+      setGallerySize:false
     });
     // End of Flickity //
 

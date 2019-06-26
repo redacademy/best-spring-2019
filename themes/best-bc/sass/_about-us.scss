@@ -70,31 +70,14 @@ p {
 }
 // end of title 
 
-
-.history-btn{
-    font-family: $font__main;
-    max-width: 400px;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    color: white;
-    font-size: 20px;
-    font-family: $font__main;
-    text-transform: uppercase;
-    font-weight: 450;
-    letter-spacing: 0;
-    padding: 10px;
-
-    @include orange-btn;
-  }
 }
 // board members section
 .board-members {
-    max-width: 1080px;
-    margin: 0 auto;
+    // max-width: 1080px;
+    // margin: 0 auto;
     .members-title {
       text-align: center;
-      padding: 30px;
+      padding: 35px;
       color: $color__main;
     }
     img {
@@ -165,8 +148,7 @@ p {
         grid-template-rows: 1fr 1fr;
         grid-column-gap: 100px;
         grid-row-gap: 70px;
-        
-    
+  
     }
 
 }

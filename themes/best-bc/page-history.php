@@ -111,8 +111,9 @@ get_header(); ?>
                                 <div class="inner-content-circle"></div>
                                 <h2><?php echo $tab_title ?></h2>
                             </div>
-                            <h2><?php echo $tab_title ?></h2>
-                            <?php echo $tab_body; ?>
+                            <div class="inner-content-info">
+                                <?php echo $tab_body; ?>
+                            </div>
                         </div>
                     </div>
 

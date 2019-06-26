@@ -3,7 +3,7 @@
 
 
 
- ##Tools and Techs
+ ## Tools and Techs
  * Gulp
  * Wordpress
  * Javascript
@@ -18,14 +18,14 @@
  * Transfonter
  * Forms 
 
- ##Time-line
+ ## Time-line
 
 <img src= "assets/images/screen-shot-timeline.jpg" width="600" height ="400">
 
 Time-line was perhaps the most difficult part of the project the expectation was to create a timeline according to their history, so listing down each year and on click a pop-up appears in the center. The timeline itself looks like a branch required heavy css and javacripts to achieve its final form. The time-line appears only in the history page. 
 
  
- ##Programs
+ ## Programs
 
  <img src= "assets/images/screen-shot-programs.jpg" width="600" height ="400">
 
@@ -36,11 +36,11 @@ Time-line was perhaps the most difficult part of the project the expectation was
 
  
  
- ##Tabs
+ ## Tabs
 
  <img src= "assets/images/screen-shot-tabs.jpg" width="600" height ="400">
 
-Tabs can be seen through-out resouces and get involved page required to custom-field to implement in the program. So whenever the user clicks the tabs it is underlined and outputs the content accordin to its title question. 
+Tabs can be seen through-out resouces and get involved page required to custom-field to implement in the program. So whenever the user clicks the tabs it is underlined and outputs the content accordind to its title question. 
 
 
 
@@ -48,3 +48,8 @@ Tabs can be seen through-out resouces and get involved page required to custom-f
  ## Learnings
   The project was challenging because it was a group project it required extensive amount of planning, strategizing, and communination. After mastering git version control be assumed this would be less issue but however we encountered merge conflicts very often and spend resolving it. Other challenges include creating the timeline which was fairly new for us to execute and implementing the design and functionality. Another challenge and learning was using custom-field suite to fetch data and having different data be display on hover. We also have to style for mobile and desktop which were radically little different from each other than usual. For example for the header contains a hamburger menu and the logo in centered during the mobile and in desktop their is no hamburger menu and logo moves to the left. 
 
+## Group Members
+Vincent [Link](https://github.com/a36168120)
+Jeff [link](https://github.com/Penner77)
+Tenzin [link](https://github.com/tenzyy)
+Rishab [link](https://github.com/rishabagrawal)

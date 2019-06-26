@@ -185,7 +185,7 @@ a {
   text-align: center;
   margin-bottom: 6vw;
 
-  .button {
+  .other-programs-button {
     background: $color__button-light;
     border-radius: 20px;
     padding: 10px;
@@ -351,13 +351,17 @@ a {
   display: none;
 }
 .carousel-cell {
-  img {
-    width: 200px;
-    padding: 20px;
+
+  @include desktop{
+    img {
+      width: 200px;
+      padding: 20px;
+    }
   }
+ 
 }
 
-/* Custom Flickity Bottom */
+/* Custom Flickity button */
 .next {
   @include clean-all;
   background: url(../../assets/vector-icons/icons/chevrons/right@1x.png) !important;

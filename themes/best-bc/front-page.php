@@ -68,7 +68,7 @@ get_header(); ?>
     <!--program wrapper-->
     <div class="learn-more-button">
       <p class="learn-more">
-        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="button">Learn More</a></p>
+        <a href="<?php echo get_post_type_archive_link('program'); ?>" class="other-programs-button">Learn More</a></p>
     </div>
     <!--learn more button ends-->
     <!-- News -->
@@ -159,6 +159,7 @@ get_header(); ?>
       <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/coastal-logo.png" alt="coastal-logo" /></div>
       <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/vancity-logo.png" alt="vancity-logo" /></div>
       <div class="carousel-cell"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/century-group-logo.png" alt="century-group-logo" /></div>
+
     </div><!-- End of Flickity -->
     <!-- staff members -->
 
