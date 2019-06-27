@@ -14,7 +14,10 @@
 
 // Hero Banner for all pages
 .wp-block-cover {
-  background-attachment: fixed !important;
+  background-attachment: fixed
+}
+.page-header {
+  background-attachment: fixed;
 }
 
   

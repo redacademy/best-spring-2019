@@ -1059,7 +1059,10 @@ a {
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3); }
 
 .wp-block-cover {
-  background-attachment: fixed !important; }
+  background-attachment: fixed; }
+
+.page-header {
+  background-attachment: fixed; }
 
 /* Main Body Overflow */
 .fp-learn-button {
@@ -2605,7 +2608,8 @@ object {
   background-image: url(../../assets/images/AboutUsNewsletterBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
   .news-content .news-banner h1 {
     height: 500px;
     display: -webkit-box;
