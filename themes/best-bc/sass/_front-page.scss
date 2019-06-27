@@ -14,10 +14,14 @@
 
 // Hero Banner for all pages
 .wp-block-cover {
-  background-attachment: fixed
+  @include desktop {
+    background-attachment: fixed;
+  }
 }
 .page-header {
-  background-attachment: fixed;
+  @include desktop {
+    background-attachment: fixed;
+  }
 }
 
   
@@ -32,11 +36,6 @@
   font-weight: bold;
   font-size: 18px;
   @include button-text;
-}
-
-.bike-container {
-  display: flex;
-  justify-content: space-evenly;
 }
 .home .fp-since {
   font-family: $font__main;
@@ -58,24 +57,25 @@
 .bike-container {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
 .fp-yellow-bike {
   text-align: center;
   width: 50%;
-  padding: 21px;
+  margin: 24px;
   img {
     width: 164px;
     height: 164px;
     @include desktop {
-      width: 433px;
-      height: 433px;
+      width: 80%;
+      height: 80%;
     }
   }
 }
 .fp-bike-valet {
   width: 50%;
-  padding: 21px;
+  margin: 24px;
   h3 {
     color: $color__button-light;
     font-size: 20px;
@@ -102,7 +102,7 @@
   justify-content: space-between;
   .fp-park-bus {
     @include desktop {
-      width: 30%;
+      width: 50%;
       flex-direction: column;
       flex-wrap: wrap;
       padding-left: 95px;
@@ -124,7 +124,7 @@
     width: 50%;
     padding: 50px;
     @include desktop {
-      width: 47%;
+      width: 57%;
       padding: 0;
     }
     img {
@@ -162,10 +162,16 @@
     display: flex;
     justify-content: center;
   }
+  @include desktop-inbetween {
+    flex-direction: column;
+  }
 }
 .program-block {
   display: flex;
   justify-content: space-evenly;
+  @include desktop-inbetween {
+    margin: 16px;
+  }
   .program-block-item img {
     width: 164px;
     height: 85px;
@@ -184,6 +190,9 @@
 .program-second-block {
   display: flex;
   justify-content: space-evenly;
+  @include desktop-inbetween {
+    margin: 16px;
+  }
   .program-block-item img {
     width: 164px;
     height: 85px;
@@ -237,21 +246,20 @@ a {
   }
   .fp-news-background-hand {
     background: url(../../assets/images/Wrench-hand-2.png) no-repeat;
-    height: 160px;
-    width: 160px;
     background-size: contain;
     position: absolute;
     right: 0;
-    top: -10%;
-    @include desktop {
-      height: 320px;
-      width: 320px;
-      top: -120%;
+    height: 320px;
+    width: 320px;
+    top: -120%;
+    @include desktop-inbetween {
+    height: 220px;
+    width: 220px;
     }
-    @include small-mobile {
-      width: 120px;
-      height: 120px;
-      right: -5%;
+    @include mobile {
+      width: 160px;
+      height: 160px;
+      right: 0%;
       top: -100%;
     }
   }
@@ -263,12 +271,11 @@ a {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 20px 20px;
-  height: 58vw;
+  height: 50vw;
   padding: 0 1.5rem 2.5rem 2.5rem;
   margin: 0 auto;
   @include desktop {
-    width: 86%;
-    height: 42vw;
+    margin: 64px 0;
   }
 }
 .donate {
@@ -282,6 +289,7 @@ a {
   background-size: cover;
   background-position: center;
   border-radius: 11px;
+  position: relative;
 }
 .membership {
   background-image: linear-gradient(
@@ -321,21 +329,22 @@ a {
 }
 
 .involved-header {
-  a {
-    color: white;
-  }
+  position: absolute;
+  margin: unset;
   color: #fff;
-  position: relative;
-  top: 25%;
-  left: 0%;
+  position: relative;;
   font-family: $font__main;
   font-weight: 600;
   font-size: 20px;
   text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    color: white;
+  }
   @include desktop {
-    top: 26%;
-    left: 0%;
-    font-size: 42px;
+    font-size: 32px;
   }
   .involved-subtext {
     display: none;
@@ -429,6 +438,11 @@ a {
     text-align: center;
     font-size: 1.5rem;
     margin-top: unset;
+    @include desktop-inbetween {
+      font-size: 1rem;
+      padding: 0 200px;
+      line-height: 1.5;
+    }
     @include mobile {
       display: none;
     }
@@ -444,6 +458,9 @@ a {
     @include desktop {
       display: flex;
       padding: 0 5rem;
+    }
+    @include desktop-inbetween {
+      padding: unset;
     }
     .fp-news-wrapper {
       display: flex;
@@ -461,8 +478,6 @@ a {
         width: 35%;
         position: relative;
         overflow: hidden;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
         img {
           position: absolute;
           height: 200px;
@@ -485,8 +500,6 @@ a {
         padding-left: 16px;
         background: $color__background-news;
         position: relative;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
         @include desktop {
           position: absolute;
           bottom: 0;
@@ -500,13 +513,15 @@ a {
           margin: unset;
           margin-top: 16px;
           font-size: 1.2rem;
+          @include desktop-inbetween {
+            font-size: 1rem;
+          }
           a {
             color: $color__darkblue;
             &:hover {
               color: $color__main;
             }
           }
-
           @include small-mobile {
             font-size: 1rem;
           }
@@ -519,6 +534,9 @@ a {
             margin: 8px 0;
             line-height: 1.3;
             font-family: Mukta;
+            @include desktop-inbetween {
+              font-size: .9rem;
+            }
             @include small-mobile {
               padding-right: unset;
               font-size: 1rem;
@@ -540,6 +558,9 @@ a {
             right: 5%;
             bottom: 5%;
           }
+          @include desktop-inbetween {
+            font-size: .8rem;
+          }
         }
       }
     }
@@ -552,9 +573,9 @@ a {
     width: 250px;
     background-size: contain;
     top: -5%;
-    left: -20%;
-    @include desktop {
-      left: -8%;
+    left: -10%;
+    @include desktop-inbetween {
+      left: -20%;
     }
     @include small-mobile {
       left: -50%;
