@@ -23,7 +23,7 @@
 
  ## History Page Timeline
 
-<img src= "themes/best-bc/assets/images/screen-shot-timeline.jpg" width="600" height ="400">
+<img src= "themes/best-bc/assets/images/presentation-production-history.png" width="600" height ="400">
 
 The unique timeline was one of the most difficult part of the project, displaying an interactive timeline highlighting BEST's history (and have the timeline updatable by the client). Each year has a popup when clicked describing a milestone for that year. 
 
@@ -32,17 +32,18 @@ The timeline's expanding branch design required heavy CSS and JavaScript to achi
  
  ## Programs Page
 
- <img src= "themes/best-bc/assets/images/screen-shot-programs.jpg" width="600" height ="400">
+ <img src= "themes/best-bc/assets/images/presentation-new-resources.png" width="600" height ="400">
 
  In the Programs Page, six programs are displayed in grid which contains image and title. On hover in each program displays out brief info regarding the specific program with a button linked to visit external site. 
  
  
  ## Tabs
 
- <img src= "themes/best-bc/assets/images/screen-shot-tabs.jpg" width="600" height ="400">
+ <img src= "themes/best-bc/assets/images/presentation-new-volunteer.png" width="600" height ="400">
 
 Tabs can be seen through-out the Resources, Achivements and Get Involved pages. These required custom fields and are easily updatable by the client. Each section, when clicked, highlights a different area that BEST supports, runs, or can refer users to.
 
+<img src= "themes/best-bc/assets/images/presentation-new-programs.png" width="600" height ="400">
 
  # Learnings
   This project was challenging as our first group project requiring extensive teamwork, coordination in planning, and strategizing. Git version control introduced merge conflicts often and we learned alot with each resolution process. 
