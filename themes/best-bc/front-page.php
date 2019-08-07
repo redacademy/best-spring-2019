@@ -54,15 +54,15 @@ get_header(); ?>
     <div class="program-wrapper">
       <div class="program-block">
         <div class="program-block-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/star-logo.png" alt="star program logo" /></div>
+          <a href="https://starcanada.ca/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/star-logo.png" alt="star program logo" /></a></div>
         <div class="program-block-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Living-Streets-logo.png" alt="living-street program logo" /></div>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Living-Streets-logo.png" alt="living-street program logo" /></div>
       </div>
       <div class="program-second-block">
         <div class="program-block-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Parkpass-logo.png" alt="parkpass program logo" /></div>
+        <a href="https://www.parkpassproject.com/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/Parkpass-logo.png" alt="parkpass program logo"/></a></div>
         <div class="program-block-item">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/images/commuter-logo.png" alt="commuter-challenge program logo" /></div>
+         <a href="https://commuterchallengebc.ca/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/commuter-logo.png" alt="commuter-challenge program logo" /></a></div>
       </div>
     </div>
     <!--program wrapper-->

@@ -47,5 +47,5 @@
 <p class="copyright">Copyright 2019 BEST</p>
 </div>
 </body>
-
+<?php get_footer(); ?>
 </html>
