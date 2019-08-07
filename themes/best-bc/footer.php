@@ -12,7 +12,7 @@
 	<div class="footer-content">
 
 		<div class="best-footer-logo">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/vector-icons/best-logo/best-newlogolrg.png" alt="footer-best-logo">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/vector-icons/best-logo/best-newlogo.png" width="250px" alt="footer-best-logo">
 			<?php wp_nav_menu(array('theme_location' => 'footer', 'menu_id' => 'footer-menu')); ?>
 			<!--end of footer logo-->
 		</div>
