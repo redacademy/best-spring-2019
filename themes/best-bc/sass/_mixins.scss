@@ -4,13 +4,13 @@
   font-size: $sizeValue * 1rem;
 }
 //media query//
-$desktop-width: 620px;
+$desktop-width: 621px;
 @mixin desktop {
   @media (min-width: $desktop-width) {
     @content;
   }
 }
-$mobile-width: 619px;
+$mobile-width: 620px;
 @mixin mobile {
   @media (max-width: $mobile-width) {
     @content;
@@ -28,6 +28,12 @@ $small-mobile-width: 500px;
     @content;
   }
 }
+
+// @mixin desktop-inbetween-2 {
+//   @media only screen and (max-width: 1000px) and (min-width: 621px) {
+//     @content;
+//   }
+// }
 
 // Center block
 @mixin center-block {
@@ -56,12 +62,16 @@ $small-mobile-width: 500px;
 
 //visit button
 @mixin orange-btn {
-  border: 1px solid $color__button-light;
   border-radius: 40px;
   background-color: $color__button-light;
+<<<<<<< HEAD
 
   
 
+=======
+  filter: drop-shadow(2px 2px 2px gray
+  );
+>>>>>>> 4b81d4c9bab4ba979d7691f4dd35e873bcc43b18
 }
 
 

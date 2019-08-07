@@ -250,26 +250,6 @@
       }
     }
   }
-  
-  // hacks to fix WP gutenberg issue with z-index
-  .has-background-dim {
-    z-index: 0;
-  }
-  
-  /* Custom Nav Button */
-  // .arrow-down
-  .arrow-down {
-    height: 48px;
-    width: 48px;
-    @include clean-all;
-    background-image: url(../../assets/vector-icons/icons/chevrons/down.svg);
-    background-size: 60%;
-    background-repeat: no-repeat;
-    background-position: center;
-    @include desktop {
-      display: none;
-    }
-  }
 }
 
 /* Menu & Animation */
@@ -289,5 +269,22 @@
         padding-left: 48px;
       }
     }
+    .arrow-down {
+      height: 48px;
+      width: 48px;
+      @include clean-all;
+      background-image: url(../../assets/vector-icons/icons/chevrons/down.svg);
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: center;
+      @include desktop {
+        display: none;
+      }
+    }
   }
+}
+
+// hacks to fix WP gutenberg issue with z-index
+.has-background-dim {
+  z-index: 0;
 }

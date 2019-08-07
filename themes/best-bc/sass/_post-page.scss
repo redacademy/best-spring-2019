@@ -8,6 +8,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        background-attachment: fixed;
         h1 {
             height: 500px;
             display: flex;
@@ -62,6 +63,10 @@
         text-align: center;
         display: flex;
         justify-content: center;
+        align-items: center;
+        form {
+            display: flex;
+        }
         .news-month {
             width: 96px;
             height: 40px;
@@ -80,8 +85,10 @@
         text-shadow: none;
         border-radius: 30px;
         text-align: center;   
+        padding: unset;
         width: 80px;
         height: 40px;
+        background: $color__button-light;
         & :hover {
             background: $color__button-dark;
         }

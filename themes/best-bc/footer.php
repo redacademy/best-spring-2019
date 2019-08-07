@@ -42,10 +42,14 @@
 	<!-- .site-info -->
 </footer><!-- #colophon -->
 </div><!-- #page -->
+
 <div class="charity-number">
-<p> Canadian Charitable Number: 140171216RR0001</p>
-<p class="copyright">Copyright 2019 BEST</p>
+	<p> Canadian Charitable Number: 140171216RR0001</p>
+	<p class="copyright">Copyright 2019 BEST</p>
 </div>
+
+<?php wp_footer(); ?>
+
 </body>
 <?php get_footer(); ?>
 </html>

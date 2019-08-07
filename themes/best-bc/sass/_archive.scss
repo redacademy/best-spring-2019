@@ -1,7 +1,10 @@
 // archive-programs
 
 .page-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+  background-image: linear-gradient(
+    rgba(34, 143, 121, 0.488),
+    rgba(227, 167, 47, 0.242)
+  ),
     url(../../assets/images/ProgramsBanner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -73,8 +76,8 @@
       height: 100%;
       top: 0;
       background: linear-gradient(
-        rgba(34, 143, 122, 0.63),
-        rgba(227, 167, 47, 0.34)
+        rgba(34, 143, 121, 0.488),
+        rgba(227, 167, 47, 0.249)
       );
       position: absolute;
       display: flex;
@@ -121,7 +124,6 @@
         font-size: 1.25rem;
       }
       a {
-        // button style
         color: white;
         font-family: $font__main;
         text-transform: uppercase;
@@ -129,10 +131,14 @@
         display: inline-block;
         padding: 5px 30px;
         @include orange-btn;
+        &:hover {
+          background: $color__button-dark;
+        }
       }
       .visit-btn {
         margin: 0 auto;
         padding-bottom: 16px;
+        
       }
     }
   }
